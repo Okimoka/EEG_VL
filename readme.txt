@@ -20,6 +20,7 @@ To get mne-bids-pipeline to work
 - run 01_split_data.py. This should generate files in data_split
 - run the mne-bids-pipeline with the command "mne_bids_pipeline config.py --task Oddball" (replace oddball with gambling or axon if desired)
 - This took around 2h on my machine for all subjects. You can see my console output in text_output.txt. It should generate reports inside Pipeline/data_split/derivatives
+- You can also see my generated results in the .htmls and .tsvs in the repo (e.g. in derivatives/mne-bids-pipeline)
 
 
 Some things to work on (sorted by priority):
