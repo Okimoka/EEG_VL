@@ -1,0 +1,8 @@
+Pipeline/data/*
+Pipeline/data_split/*
+
+Pipeline/__pycache__
+
+!Pipeline/data_split/derivatives/mne-bids-pipeline/_cache
+!Pipeline/data/**/*.html
+!Pipeline/data/**/*.tsv

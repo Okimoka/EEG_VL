@@ -1,0 +1,719 @@
+okk@okk-MS-7C56:~/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE$ mne_bids_pipeline full_config.py --task Oddball
+┌────────┬ Welcome aboard MNE-BIDS-Pipeline! 👋 ─────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:35│ 📝 Using configuration: full_config.py
+│00:38:35│ ❌ Overriding config.task = 'Oddball'
+└────────┴ 
+┌────────┬ init/_01_init_derivatives_dir ────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:35│ ⏳️ Initializing output directories.
+└────────┴ done (1s)
+┌────────┬ init/_02_find_empty_room ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:35│ ⏩ Skipping, empty-room data only relevant for MEG …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_01_data_quality ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:37│ ⏳️ sub-007 run-01 Reading experimental recording: sub-007_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-010 run-01 Reading experimental recording: sub-010_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-004 run-01 Reading experimental recording: sub-004_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-011 run-01 Reading experimental recording: sub-011_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-009 run-01 Reading experimental recording: sub-009_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-013 run-01 Reading experimental recording: sub-013_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-016 run-01 Reading experimental recording: sub-016_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-017 run-01 Reading experimental recording: sub-017_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-014 run-01 Reading experimental recording: sub-014_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-015 run-01 Reading experimental recording: sub-015_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-012 run-01 Reading experimental recording: sub-012_task-Oddball_run-01
+│00:38:37│ ⏳️ sub-001 run-01 Reading experimental recording: sub-001_task-Oddball_run-01
+│00:38:38│ ⏳️ sub-010 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-010 run-01 Found and annotated 2 break periods.
+│00:38:38│ ⏳️ sub-007 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-007 run-01 Found and annotated 2 break periods.
+│00:38:38│ ⏳️ sub-011 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-011 run-01 Found and annotated 2 break periods.
+│00:38:38│ ⏳️ sub-014 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-014 run-01 Found and annotated 1 break periods.
+│00:38:38│ ⏳️ sub-013 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-015 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-013 run-01 Found and annotated 2 break periods.
+│00:38:38│ ⏳️ sub-004 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-015 run-01 Found and annotated 2 break periods.
+│00:38:38│ ⏳️ sub-004 run-01 Found and annotated 2 break periods.
+│00:38:38│ ⏳️ sub-016 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:38│ ⏳️ sub-016 run-01 Found and annotated 2 break periods.
+│00:38:39│ ⏳️ sub-010 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-017 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:39│ ⏳️ sub-017 run-01 Found and annotated 2 break periods.
+│00:38:39│ ⏳️ sub-009 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:39│ ⏳️ sub-009 run-01 Found and annotated 2 break periods.
+│00:38:39│ ⏳️ sub-012 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:39│ ⏳️ sub-007 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-012 run-01 Found and annotated 1 break periods.
+│00:38:39│ ⏳️ sub-011 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-014 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-001 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:39│ ⏳️ sub-013 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-015 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-001 run-01 Found and annotated 2 break periods.
+│00:38:39│ ⏳️ sub-004 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-016 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-017 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-009 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-012 run-01 Adding original raw data to report
+│00:38:39│ ⏳️ sub-001 run-01 Adding original raw data to report
+/home/okk/.local/lib/python3.11/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1, using nperseg = 1
+  return _func(*args, **kwargs)
+│00:38:42│ ⏳️ sub-010 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-011 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-015 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-007 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-014 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-016 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-009 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-013 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-017 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-004 run-01 Adding config and sys info to report
+│00:38:42│ ⏳️ sub-012 run-01 Adding config and sys info to report
+│00:38:43│ ⏳️ sub-001 run-01 Adding config and sys info to report
+│00:38:46│ ⏳️ sub-015 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-011 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-007 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-010 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-014 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-016 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-017 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-012 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-013 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-009 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-004 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│00:38:46│ ⏳️ sub-001 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+└────────┴ done (12s)
+┌────────┬ preprocessing/_02_head_pos ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:46│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_03_maxfilter ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:46│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_04_frequency_filter ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:46│ ⏳️ sub-004 run-01 Reading experimental recording: sub-004_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-001 run-01 Reading experimental recording: sub-001_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-011 run-01 Reading experimental recording: sub-011_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-010 run-01 Reading experimental recording: sub-010_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-012 run-01 Reading experimental recording: sub-012_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-009 run-01 Reading experimental recording: sub-009_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-007 run-01 Reading experimental recording: sub-007_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-016 run-01 Reading experimental recording: sub-016_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-013 run-01 Reading experimental recording: sub-013_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-015 run-01 Reading experimental recording: sub-015_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-017 run-01 Reading experimental recording: sub-017_task-Oddball_run-01
+│00:38:46│ ⏳️ sub-014 run-01 Reading experimental recording: sub-014_task-Oddball_run-01
+│00:38:47│ ⏳️ sub-011 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-011 run-01 Found and annotated 2 break periods.
+│00:38:47│ ⏳️ sub-013 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-011 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-016 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-013 run-01 Found and annotated 2 break periods.
+│00:38:47│ ⏳️ sub-016 run-01 Found and annotated 2 break periods.
+│00:38:47│ ⏳️ sub-012 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-010 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-014 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-013 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-015 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-016 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-012 run-01 Found and annotated 1 break periods.
+│00:38:47│ ⏳️ sub-010 run-01 Found and annotated 2 break periods.
+│00:38:47│ ⏳️ sub-014 run-01 Found and annotated 1 break periods.
+│00:38:47│ ⏳️ sub-004 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-015 run-01 Found and annotated 2 break periods.
+│00:38:47│ ⏳️ sub-004 run-01 Found and annotated 2 break periods.
+│00:38:47│ ⏳️ sub-012 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-014 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-010 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-015 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-001 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:47│ ⏳️ sub-004 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:47│ ⏳️ sub-001 run-01 Found and annotated 2 break periods.
+│00:38:48│ ⏳️ sub-017 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:48│ ⏳️ sub-009 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:48│ ⏳️ sub-001 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:48│ ⏳️ sub-009 run-01 Found and annotated 2 break periods.
+│00:38:48│ ⏳️ sub-007 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│00:38:48│ ⏳️ sub-017 run-01 Found and annotated 2 break periods.
+│00:38:48│ ⏳️ sub-009 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:48│ ⏳️ sub-007 run-01 Found and annotated 2 break periods.
+│00:38:48│ ⏳️ sub-017 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:48│ ⏳️ sub-007 run-01 Notch filtering experimental data at 60 Hz.
+│00:38:48│ ⏳️ sub-011 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-013 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-014 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-016 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-015 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-012 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-010 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:48│ ⏳️ sub-004 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:49│ ⏳️ sub-001 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:49│ ⏳️ sub-009 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:49│ ⏳️ sub-017 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:49│ ⏳️ sub-007 run-01 Band-pass filtering experimental data; range: 1 – 120 Hz
+│00:38:49│ ⏳️ sub-011 run-01 Adding filtered raw data to report
+│00:38:50│ ⏳️ sub-013 run-01 Adding filtered raw data to report
+│00:38:50│ ⏳️ sub-014 run-01 Adding filtered raw data to report
+│00:38:50│ ⏳️ sub-012 run-01 Adding filtered raw data to report
+│00:38:50│ ⏳️ sub-004 run-01 Adding filtered raw data to report
+│00:38:50│ ⏳️ sub-016 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-015 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-010 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-001 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-017 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-009 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-007 run-01 Adding filtered raw data to report
+│00:38:51│ ⏳️ sub-011 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│00:38:51│ ⏳️ sub-013 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│00:38:51│ ⏳️ sub-014 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+/home/okk/.local/lib/python3.11/site-packages/mne/time_frequency/psd.py:257: UserWarning: nperseg = 2048 is greater than input length  = 1, using nperseg = 1
+  return _func(*args, **kwargs)
+│00:38:52│ ⏳️ sub-012 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│00:38:52│ ⏳️ sub-004 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-016 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-015 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-010 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-017 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-001 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-007 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│00:38:53│ ⏳️ sub-009 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+└────────┴ done (7s)
+┌────────┬ preprocessing/_05_regress_artifact ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:53│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_06a1_fit_ica ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│00:38:53│ ⏳️ sub-013 run-01 Processing raw data from sub-013_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-011 run-01 Processing raw data from sub-011_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-001 run-01 Processing raw data from sub-001_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-014 run-01 Processing raw data from sub-014_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-012 run-01 Processing raw data from sub-012_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-016 run-01 Processing raw data from sub-016_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-015 run-01 Processing raw data from sub-015_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-017 run-01 Processing raw data from sub-017_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-004 run-01 Processing raw data from sub-004_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-007 run-01 Processing raw data from sub-007_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-009 run-01 Processing raw data from sub-009_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-010 run-01 Processing raw data from sub-010_task-Oddball_run-01_proc-filt_raw.fif
+│00:38:53│ ⏳️ sub-013 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-014 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-011 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-016 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-015 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-012 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-001 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-004 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-017 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-010 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-007 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:53│ ⏳️ sub-009 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│00:38:54│ ⏳️ sub-011 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-014 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-013 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-016 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-015 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-001 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-004 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-010 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-012 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-009 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-017 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-007 run-01 Creating task-related epochs …
+│00:38:54│ ⏳️ sub-011 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:54│ ⏳️ sub-014 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-015 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-013 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-001 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-016 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-004 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-009 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-010 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:55│ ⏳️ sub-017 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:56│ ⏳️ sub-012 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│00:38:56│ ⏳️ sub-007 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│01:22:44│ ⏳️ sub-004 autoreject marked 60 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│01:22:44│ ⏳️ sub-004 Saving 80 ICA epochs to disk.
+│01:22:44│ ⏳️ sub-017 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:22:44│ ⏳️ sub-017 Saving 200 ICA epochs to disk.
+│01:22:44│ ⏳️ sub-013 autoreject marked 21 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│01:22:45│ ⏳️ sub-013 Saving 158 ICA epochs to disk.
+│01:22:45│ ⏳️ sub-004 Calculating ICA solution using method: picard.
+│01:22:46│ ⏳️ sub-013 Calculating ICA solution using method: picard.
+│01:22:46│ ⏳️ sub-017 Calculating ICA solution using method: picard.
+│01:23:28│ ⏳️ sub-001 autoreject marked 9 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:23:28│ ⏳️ sub-001 Saving 182 ICA epochs to disk.
+│01:23:30│ ⏳️ sub-001 Calculating ICA solution using method: picard.
+│01:23:46│ ⏳️ sub-015 autoreject marked 6 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│01:23:46│ ⏳️ sub-015 Saving 188 ICA epochs to disk.
+│01:23:48│ ⏳️ sub-015 Calculating ICA solution using method: picard.
+│01:24:04│ ⏳️ sub-010 autoreject marked 23 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│01:24:04│ ⏳️ sub-010 Saving 154 ICA epochs to disk.
+│01:24:05│ ⏳️ sub-010 Calculating ICA solution using method: picard.
+│01:24:10│ ⏳️ sub-011 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:24:10│ ⏳️ sub-011 Saving 200 ICA epochs to disk.
+│01:24:11│ ⏳️ sub-011 Calculating ICA solution using method: picard.
+│01:24:28│ ⏳️ sub-016 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:24:28│ ⏳️ sub-016 Saving 200 ICA epochs to disk.
+│01:24:29│ ⏳️ sub-016 Calculating ICA solution using method: picard.
+│01:24:39│ ⏳️ sub-007 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:24:39│ ⏳️ sub-007 Saving 200 ICA epochs to disk.
+│01:24:40│ ⏳️ sub-007 Calculating ICA solution using method: picard.
+│01:24:47│ ⏳️ sub-009 autoreject marked 2 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:24:47│ ⏳️ sub-009 Saving 196 ICA epochs to disk.
+│01:24:49│ ⏳️ sub-009 Calculating ICA solution using method: picard.
+│01:24:51│ ⏳️ sub-012 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│01:24:51│ ⏳️ sub-012 Saving 200 ICA epochs to disk.
+│01:24:53│ ⏳️ sub-012 Calculating ICA solution using method: picard.
+│01:24:53│ ⏳️ sub-014 autoreject marked 30 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│01:24:54│ ⏳️ sub-014 Saving 140 ICA epochs to disk.
+│01:24:54│ ⏳️ sub-014 Calculating ICA solution using method: picard.
+│01:28:50│ ⏳️ sub-013 Fit 63 components (explaining 100.0% of the variance) in 75 iterations.
+│01:28:50│ ⏳️ sub-013 Saving ICA solution to disk.
+│01:28:55│ ⏳️ sub-017 Fit 63 components (explaining 100.0% of the variance) in 68 iterations.
+│01:28:55│ ⏳️ sub-017 Saving ICA solution to disk.
+│01:29:08│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│01:29:16│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│01:31:18│ ⏳️ sub-016 Fit 63 components (explaining 100.0% of the variance) in 94 iterations.
+│01:31:18│ ⏳️ sub-016 Saving ICA solution to disk.
+│01:31:21│ ⏳️ sub-012 Fit 63 components (explaining 100.0% of the variance) in 87 iterations.
+│01:31:21│ ⏳️ sub-012 Saving ICA solution to disk.
+│01:31:28│ ⏳️ sub-004 Fit 63 components (explaining 100.0% of the variance) in 163 iterations.
+│01:31:28│ ⏳️ sub-004 Saving ICA solution to disk.
+│01:31:32│ ⏳️ sub-001 Fit 63 components (explaining 100.0% of the variance) in 112 iterations.
+│01:31:32│ ⏳️ sub-001 Saving ICA solution to disk.
+│01:31:33│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+│01:31:35│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│01:31:39│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│01:31:43│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│01:32:32│ ⏳️ sub-010 Fit 63 components (explaining 100.0% of the variance) in 152 iterations.
+│01:32:32│ ⏳️ sub-010 Saving ICA solution to disk.
+│01:32:33│ ⏳️ sub-014 Fit 63 components (explaining 100.0% of the variance) in 145 iterations.
+│01:32:33│ ⏳️ sub-014 Saving ICA solution to disk.
+│01:32:40│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│01:32:40│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+│01:32:49│ ⏳️ sub-009 Fit 63 components (explaining 100.0% of the variance) in 132 iterations.
+│01:32:49│ ⏳️ sub-009 Saving ICA solution to disk.
+│01:32:56│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│01:33:18│ ⏳️ sub-011 Fit 63 components (explaining 100.0% of the variance) in 160 iterations.
+│01:33:18│ ⏳️ sub-011 Saving ICA solution to disk.
+│01:33:24│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│01:33:28│ ⏳️ sub-007 Fit 63 components (explaining 100.0% of the variance) in 156 iterations.
+│01:33:28│ ⏳️ sub-007 Saving ICA solution to disk.
+│01:33:33│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│01:35:34│ ⏳️ sub-015 Fit 63 components (explaining 100.0% of the variance) in 270 iterations.
+│01:35:34│ ⏳️ sub-015 Saving ICA solution to disk.
+│01:35:39│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+└────────┴ done (56m 47s)
+┌────────┬ preprocessing/_06a2_find_ica_artifacts ───────────────────────────────────────────────────────────────────────────────────────────────────────
+│01:35:39│ ⏳️ sub-001 Loading ICA solution
+│01:35:40│ ⏳️ sub-004 Loading ICA solution
+│01:35:40│ ⏳️ sub-007 Loading ICA solution
+│01:35:40│ ⏳️ sub-009 Loading ICA solution
+│01:35:40│ ⏳️ sub-010 Loading ICA solution
+│01:35:40│ ⏳️ sub-011 Loading ICA solution
+│01:35:40│ ⏳️ sub-004 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:40│ ⏳️ sub-001 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:40│ ⏳️ sub-009 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:40│ ⏳️ sub-010 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:40│ ⏳️ sub-007 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:40│ ⏳️ sub-011 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:40│ ⏳️ sub-004 Creating EOG epochs …
+│01:35:40│ ⏳️ sub-001 Creating EOG epochs …
+│01:35:40│ ⏳️ sub-010 Creating EOG epochs …
+│01:35:40│ ⏳️ sub-009 Creating EOG epochs …
+│01:35:40│ ⏳️ sub-011 Creating EOG epochs …
+│01:35:41│ ⏳️ sub-007 Creating EOG epochs …
+│01:35:41│ ⏳️ sub-001 Performing automated EOG artifact detection …
+│01:35:41│ ⏳️ sub-004 Performing automated EOG artifact detection …
+│01:35:41│ ⏳️ sub-010 Performing automated EOG artifact detection …
+│01:35:41│ ⏳️ sub-011 Performing automated EOG artifact detection …
+│01:35:41│ ⏳️ sub-001 Detected 2 EOG-related ICs in 32 EOG epochs: 2, 6
+│01:35:41│ ⏳️ sub-009 Performing automated EOG artifact detection …
+│01:35:41│ ⏳️ sub-001 Saving ICA solution and detected artifacts to disk.
+│01:35:41│ ⏳️ sub-004 Detected 2 EOG-related ICs in 58 EOG epochs: 4, 8
+│01:35:41│ ⏳️ sub-001 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_proc-ica+eog_ave.fif
+│01:35:41│ ⏳️ sub-010 No EOG-related ICs detected, this is highly suspicious. A manual check is suggested. You may wish to lower "ica_eog_threshold".
+│01:35:41│ ⏳️ sub-004 Saving ICA solution and detected artifacts to disk.
+│01:35:41│ ⏳️ sub-007 Performing automated EOG artifact detection …
+│01:35:41│ ⏳️ sub-010 Saving ICA solution and detected artifacts to disk.
+│01:35:41│ ⏳️ sub-004 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_proc-ica+eog_ave.fif
+│01:35:41│ ⏳️ sub-010 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_proc-ica+eog_ave.fif
+│01:35:41│ ⏳️ sub-001 Adding "ICA: components" to report.
+│01:35:41│ ⏳️ sub-004 Adding "ICA: components" to report.
+│01:35:41│ ⏳️ sub-010 Adding "ICA: components" to report.
+│01:35:41│ ⏳️ sub-011 Detected 2 EOG-related ICs in 127 EOG epochs: 0, 3
+│01:35:41│ ⏳️ sub-011 Saving ICA solution and detected artifacts to disk.
+│01:35:41│ ⏳️ sub-011 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_proc-ica+eog_ave.fif
+│01:35:41│ ⏳️ sub-011 Adding "ICA: components" to report.
+│01:35:41│ ⏳️ sub-009 Detected 7 EOG-related ICs in 256 EOG epochs: 0, 18, 24, 42, 6, 26, 29
+│01:35:41│ ⏳️ sub-009 Saving ICA solution and detected artifacts to disk.
+│01:35:41│ ⏳️ sub-009 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_proc-ica+eog_ave.fif
+│01:35:41│ ⏳️ sub-007 Detected 3 EOG-related ICs in 260 EOG epochs: 0, 2, 60
+│01:35:41│ ⏳️ sub-007 Saving ICA solution and detected artifacts to disk.
+│01:35:41│ ⏳️ sub-007 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_proc-ica+eog_ave.fif
+│01:35:41│ ⏳️ sub-009 Adding "ICA: components" to report.
+│01:35:41│ ⏳️ sub-007 Adding "ICA: components" to report.
+│01:35:42│ ⏳️ sub-014 Loading ICA solution
+│01:35:42│ ⏳️ sub-015 Loading ICA solution
+│01:35:42│ ⏳️ sub-012 Loading ICA solution
+│01:35:42│ ⏳️ sub-017 Loading ICA solution
+│01:35:42│ ⏳️ sub-013 Loading ICA solution
+│01:35:42│ ⏳️ sub-016 Loading ICA solution
+│01:35:43│ ⏳️ sub-014 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:43│ ⏳️ sub-015 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:43│ ⏳️ sub-012 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:43│ ⏳️ sub-014 Creating EOG epochs …
+│01:35:43│ ⏳️ sub-017 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:43│ ⏳️ sub-013 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:43│ ⏳️ sub-015 Creating EOG epochs …
+│01:35:43│ ⏳️ sub-016 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│01:35:43│ ⏳️ sub-012 Creating EOG epochs …
+│01:35:43│ ⏳️ sub-013 Creating EOG epochs …
+│01:35:43│ ⏳️ sub-014 Performing automated EOG artifact detection …
+│01:35:43│ ⏳️ sub-017 Creating EOG epochs …
+│01:35:43│ ⏳️ sub-016 Creating EOG epochs …
+│01:35:43│ ⏳️ sub-015 Performing automated EOG artifact detection …
+│01:35:43│ ⏳️ sub-012 Performing automated EOG artifact detection …
+│01:35:43│ ⏳️ sub-013 Performing automated EOG artifact detection …
+│01:35:43│ ⏳️ sub-017 Performing automated EOG artifact detection …
+│01:35:43│ ⏳️ sub-015 Detected 3 EOG-related ICs in 80 EOG epochs: 0, 13, 8
+│01:35:43│ ⏳️ sub-015 Saving ICA solution and detected artifacts to disk.
+│01:35:43│ ⏳️ sub-014 Detected 2 EOG-related ICs in 127 EOG epochs: 0, 50
+│01:35:43│ ⏳️ sub-014 Saving ICA solution and detected artifacts to disk.
+│01:35:44│ ⏳️ sub-016 Performing automated EOG artifact detection …
+│01:35:44│ ⏳️ sub-014 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_proc-ica+eog_ave.fif
+│01:35:44│ ⏳️ sub-012 Detected 4 EOG-related ICs in 84 EOG epochs: 6, 0, 1, 23
+│01:35:44│ ⏳️ sub-012 Saving ICA solution and detected artifacts to disk.
+│01:35:44│ ⏳️ sub-015 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_proc-ica+eog_ave.fif
+│01:35:44│ ⏳️ sub-017 Detected 3 EOG-related ICs in 80 EOG epochs: 0, 17, 30
+│01:35:44│ ⏳️ sub-012 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_proc-ica+eog_ave.fif
+│01:35:44│ ⏳️ sub-013 Detected 4 EOG-related ICs in 133 EOG epochs: 1, 3, 18, 0
+│01:35:44│ ⏳️ sub-017 Saving ICA solution and detected artifacts to disk.
+│01:35:44│ ⏳️ sub-013 Saving ICA solution and detected artifacts to disk.
+│01:35:44│ ⏳️ sub-013 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_proc-ica+eog_ave.fif
+│01:35:44│ ⏳️ sub-015 Adding "ICA: components" to report.
+│01:35:44│ ⏳️ sub-014 Adding "ICA: components" to report.
+│01:35:44│ ⏳️ sub-012 Adding "ICA: components" to report.
+│01:35:44│ ⏳️ sub-017 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_proc-ica+eog_ave.fif
+│01:35:44│ ⏳️ sub-016 Detected 4 EOG-related ICs in 225 EOG epochs: 0, 2, 1, 45
+│01:35:44│ ⏳️ sub-016 Saving ICA solution and detected artifacts to disk.
+│01:35:44│ ⏳️ sub-016 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_proc-ica+eog_ave.fif
+│01:35:44│ ⏳️ sub-013 Adding "ICA: components" to report.
+│01:35:44│ ⏳️ sub-017 Adding "ICA: components" to report.
+│01:35:44│ ⏳️ sub-016 Adding "ICA: components" to report.
+│01:38:40│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│01:38:41│ 🛑 sub-004 Carefully review the extracted ICs and mark components "bad" in:
+│01:38:41│ 🛑 sub-004 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_proc-ica_components.tsv
+│01:38:54│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│01:38:55│ 🛑 sub-001 Carefully review the extracted ICs and mark components "bad" in:
+│01:38:55│ 🛑 sub-001 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_proc-ica_components.tsv
+│01:38:55│ ⏳️ sub-014 Adding config and sys info to report
+│01:38:56│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│01:38:56│ 🛑 sub-010 Carefully review the extracted ICs and mark components "bad" in:
+│01:38:56│ 🛑 sub-010 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_proc-ica_components.tsv
+│01:38:57│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│01:38:58│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+│01:38:58│ 🛑 sub-009 Carefully review the extracted ICs and mark components "bad" in:
+│01:38:58│ 🛑 sub-009 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_proc-ica_components.tsv
+│01:38:58│ 🛑 sub-014 Carefully review the extracted ICs and mark components "bad" in:
+│01:38:58│ 🛑 sub-014 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_proc-ica_components.tsv
+│01:39:00│ ⏳️ sub-013 Adding config and sys info to report
+│01:39:01│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│01:39:01│ 🛑 sub-011 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:01│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│01:39:01│ 🛑 sub-011 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_proc-ica_components.tsv
+│01:39:02│ 🛑 sub-007 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:02│ 🛑 sub-007 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_proc-ica_components.tsv
+│01:39:03│ ⏳️ sub-012 Adding config and sys info to report
+│01:39:03│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│01:39:03│ 🛑 sub-013 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:03│ 🛑 sub-013 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_proc-ica_components.tsv
+│01:39:04│ ⏳️ sub-017 Adding config and sys info to report
+│01:39:04│ ⏳️ sub-015 Adding config and sys info to report
+│01:39:05│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│01:39:05│ 🛑 sub-012 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:05│ 🛑 sub-012 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_proc-ica_components.tsv
+│01:39:06│ ⏳️ sub-016 Adding config and sys info to report
+│01:39:06│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│01:39:06│ 🛑 sub-017 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:06│ 🛑 sub-017 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_proc-ica_components.tsv
+│01:39:06│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+│01:39:07│ 🛑 sub-015 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:07│ 🛑 sub-015 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_proc-ica_components.tsv
+│01:39:08│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+│01:39:08│ 🛑 sub-016 Carefully review the extracted ICs and mark components "bad" in:
+│01:39:08│ 🛑 sub-016 /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_proc-ica_components.tsv
+└────────┴ done (3m 29s)
+┌────────┬ preprocessing/_06b_run_ssp ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│01:39:08│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_07_make_epochs ────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│01:39:08│ ⏳️ sub-012 run-01 Loading filtered raw data from sub-012_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-010 run-01 Loading filtered raw data from sub-010_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-014 run-01 Loading filtered raw data from sub-014_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-004 run-01 Loading filtered raw data from sub-004_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-015 run-01 Loading filtered raw data from sub-015_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-016 run-01 Loading filtered raw data from sub-016_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-013 run-01 Loading filtered raw data from sub-013_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-007 run-01 Loading filtered raw data from sub-007_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-009 run-01 Loading filtered raw data from sub-009_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-001 run-01 Loading filtered raw data from sub-001_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:08│ ⏳️ sub-011 run-01 Loading filtered raw data from sub-011_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:09│ ⏳️ sub-017 run-01 Loading filtered raw data from sub-017_task-Oddball_run-01_proc-filt_raw.fif
+│01:39:09│ ⏳️ sub-014 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-012 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-013 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-010 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-016 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-011 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-004 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-015 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-001 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-009 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-007 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-017 run-01 Creating task-related epochs …
+│01:39:09│ ⏳️ sub-012 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:09│ ⏳️ sub-012 Selected 200 epochs via metadata query: None
+│01:39:09│ ⏳️ sub-013 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:09│ ⏳️ sub-012 Writing 200 epochs to disk.
+│01:39:09│ ⏳️ sub-014 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:09│ ⏳️ sub-013 Selected 200 epochs via metadata query: None
+│01:39:09│ ⏳️ sub-014 Selected 200 epochs via metadata query: None
+│01:39:09│ ⏳️ sub-011 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:09│ ⏳️ sub-013 Writing 200 epochs to disk.
+│01:39:09│ ⏳️ sub-004 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:09│ ⏳️ sub-014 Writing 200 epochs to disk.
+│01:39:09│ ⏳️ sub-015 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:09│ ⏳️ sub-011 Selected 200 epochs via metadata query: None
+│01:39:09│ ⏳️ sub-004 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-001 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:10│ ⏳️ sub-016 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:10│ ⏳️ sub-011 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-015 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-010 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:10│ ⏳️ sub-009 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:10│ ⏳️ sub-007 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:10│ ⏳️ sub-004 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-001 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-016 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-010 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-009 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-007 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-010 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-001 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-016 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-015 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-007 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-009 Writing 200 epochs to disk.
+│01:39:10│ ⏳️ sub-017 Created 200 epochs with time interval: -2.0 – 2.0 sec.
+│01:39:10│ ⏳️ sub-017 Selected 200 epochs via metadata query: None
+│01:39:10│ ⏳️ sub-017 Writing 200 epochs to disk.
+│01:39:11│ ⏳️ sub-012 Adding events plot to report.
+│01:39:11│ ⏳️ sub-013 Adding events plot to report.
+│01:39:11│ ⏳️ sub-014 Adding events plot to report.
+│01:39:11│ ⏳️ sub-004 Adding events plot to report.
+│01:39:11│ ⏳️ sub-011 Adding events plot to report.
+│01:39:11│ ⏳️ sub-012 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-017 Adding events plot to report.
+│01:39:11│ ⏳️ sub-009 Adding events plot to report.
+│01:39:11│ ⏳️ sub-007 Adding events plot to report.
+│01:39:11│ ⏳️ sub-013 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-010 Adding events plot to report.
+│01:39:11│ ⏳️ sub-001 Adding events plot to report.
+│01:39:11│ ⏳️ sub-004 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-015 Adding events plot to report.
+│01:39:11│ ⏳️ sub-016 Adding events plot to report.
+│01:39:11│ ⏳️ sub-014 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-011 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-009 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-007 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-010 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-001 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-017 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-016 Adding uncleaned epochs to report.
+│01:39:11│ ⏳️ sub-015 Adding uncleaned epochs to report.
+│01:39:24│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+│01:39:24│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+└────────┴ done (18s)
+┌────────┬ preprocessing/_08a_apply_ica ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│01:39:26│ ⏳️ sub-010 Input: sub-010_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-007 Input: sub-007_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-004 Input: sub-004_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-012 Input: sub-012_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-014 Input: sub-014_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-013 Input: sub-013_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-001 Input: sub-001_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-011 Input: sub-011_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-009 Input: sub-009_task-Oddball_epo.fif
+│01:39:26│ ⏳️ sub-010 Output: sub-010_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-007 Output: sub-007_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-004 Output: sub-004_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-012 Output: sub-012_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-014 Output: sub-014_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-011 Output: sub-011_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-013 Output: sub-013_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-001 Output: sub-001_task-Oddball_proc-ica_epo.fif
+│01:39:26│ ⏳️ sub-009 Output: sub-009_task-Oddball_proc-ica_epo.fif
+│01:39:27│ ⏳️ sub-011 Rejecting ICs with the following indices: 0, 3
+│01:39:27│ ⏳️ sub-012 Rejecting ICs with the following indices: 0, 1, 6, 23
+│01:39:27│ ⏳️ sub-010 Rejecting ICs with the following indices: 
+│01:39:27│ ⏳️ sub-013 Rejecting ICs with the following indices: 0, 1, 3, 18
+│01:39:27│ ⏳️ sub-004 Rejecting ICs with the following indices: 4, 8
+│01:39:27│ ⏳️ sub-001 Rejecting ICs with the following indices: 2, 6
+│01:39:27│ ⏳️ sub-014 Rejecting ICs with the following indices: 0, 50
+│01:39:27│ ⏳️ sub-009 Rejecting ICs with the following indices: 0, 6, 18, 24, 26, 29, 42
+│01:39:27│ ⏳️ sub-007 Rejecting ICs with the following indices: 0, 2, 60
+│01:39:29│ ⏳️ sub-011 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-012 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-001 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-010 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-014 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-009 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-013 Saving 200 reconstructed epochs after ICA.
+│01:39:29│ ⏳️ sub-004 Saving 200 reconstructed epochs after ICA.
+│01:39:30│ ⏳️ sub-011 Adding ICA to report.
+│01:39:30│ ⏳️ sub-007 Saving 200 reconstructed epochs after ICA.
+│01:39:30│ ⏳️ sub-012 Adding ICA to report.
+│01:39:30│ ⏳️ sub-001 Adding ICA to report.
+/home/okk/.local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+│01:39:30│ ⏩ sub-010 Skipping ICA addition to report, no components marked as bad.
+│01:39:30│ ⏳️ sub-014 Adding ICA to report.
+│01:39:30│ ⏳️ sub-004 Adding ICA to report.
+│01:39:30│ ⏳️ sub-013 Adding ICA to report.
+│01:39:30│ ⏳️ sub-009 Adding ICA to report.
+│01:39:30│ ⏳️ sub-007 Adding ICA to report.
+│01:39:31│ ⏳️ sub-016 Input: sub-016_task-Oddball_epo.fif
+│01:39:31│ ⏳️ sub-016 Output: sub-016_task-Oddball_proc-ica_epo.fif
+│01:39:31│ ⏳️ sub-015 Input: sub-015_task-Oddball_epo.fif
+│01:39:31│ ⏳️ sub-015 Output: sub-015_task-Oddball_proc-ica_epo.fif
+│01:39:31│ ⏳️ sub-016 Rejecting ICs with the following indices: 0, 1, 2, 45
+│01:39:31│ ⏳️ sub-015 Rejecting ICs with the following indices: 0, 8, 13
+│01:39:32│ ⏳️ sub-016 Saving 200 reconstructed epochs after ICA.
+│01:39:32│ ⏳️ sub-015 Saving 200 reconstructed epochs after ICA.
+│01:39:33│ ⏳️ sub-016 Adding ICA to report.
+│01:39:33│ ⏳️ sub-017 Input: sub-017_task-Oddball_epo.fif
+│01:39:33│ ⏳️ sub-017 Output: sub-017_task-Oddball_proc-ica_epo.fif
+│01:39:33│ ⏳️ sub-015 Adding ICA to report.
+│01:39:33│ ⏳️ sub-017 Rejecting ICs with the following indices: 0, 17, 30
+│01:39:35│ ⏳️ sub-017 Saving 200 reconstructed epochs after ICA.
+│01:39:35│ ⏳️ sub-017 Adding ICA to report.
+│01:39:36│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│01:39:37│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+│01:39:37│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│01:39:38│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│01:39:40│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│01:39:40│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│01:39:41│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│01:39:42│ ⏳️ sub-015 Adding config and sys info to report
+│01:39:43│ ⏳️ sub-016 Adding config and sys info to report
+│01:39:43│ ⏳️ sub-017 Adding config and sys info to report
+│01:39:44│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+│01:39:45│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│01:39:45│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+│01:39:45│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│01:39:46│ ⏳️ sub-001 run-01 Writing sub-001_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-004 run-01 Writing sub-004_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-013 run-01 Writing sub-013_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-011 run-01 Writing sub-011_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-012 run-01 Writing sub-012_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-007 run-01 Writing sub-007_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-014 run-01 Writing sub-014_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-009 run-01 Writing sub-009_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-010 run-01 Writing sub-010_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:46│ ⏳️ sub-015 run-01 Writing sub-015_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:47│ ⏳️ sub-013 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-011 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-004 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-010 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-001 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-009 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-007 run-01 Adding cleaned raw data to report
+│01:39:47│ ⏳️ sub-014 run-01 Adding cleaned raw data to report
+│01:39:48│ ⏳️ sub-012 run-01 Adding cleaned raw data to report
+│01:39:48│ ⏳️ sub-015 run-01 Adding cleaned raw data to report
+│01:39:49│ ⏳️ sub-017 run-01 Writing sub-017_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:49│ ⏳️ sub-016 run-01 Writing sub-016_task-Oddball_run-01_proc-clean_raw.fif …
+│01:39:50│ ⏳️ sub-011 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-013 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-010 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-004 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-009 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-014 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-014/eeg/sub-014_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-015 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-015/eeg/sub-015_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-012 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-007 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│01:39:50│ ⏳️ sub-017 run-01 Adding cleaned raw data to report
+│01:39:50│ ⏳️ sub-001 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│01:39:51│ ⏳️ sub-016 run-01 Adding cleaned raw data to report
+│01:39:52│ ⏳️ sub-017 run-01 Adding config and sys info to report
+│01:39:52│ ⏳️ sub-016 run-01 Adding config and sys info to report
+│01:39:54│ ⏳️ sub-017 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-017/eeg/sub-017_task-Oddball_report.html
+│01:39:54│ ⏳️ sub-016 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-016/eeg/sub-016_task-Oddball_report.html
+└────────┴ done (30s)
+┌────────┬ preprocessing/_08b_apply_ssp ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│01:39:55│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_09_ptp_reject ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│01:39:55│ ⏳️ sub-001 Input:  sub-001_task-Oddball_proc-ica_epo.fif
+│01:39:55│ ⏳️ sub-001 Output: sub-001_task-Oddball_proc-clean_epo.fif
+│01:39:55│ ⏳️ sub-001 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│01:45:38│ ⏳️ sub-001 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:45:38│ ⏳️ sub-001 Adding cleaned epochs to report.
+│01:45:41│ ⏳️ sub-001 Adding config and sys info to report
+│01:45:43│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-001/eeg/sub-001_task-Oddball_report.html
+│01:45:44│ ⏳️ sub-004 Input:  sub-004_task-Oddball_proc-ica_epo.fif
+│01:45:44│ ⏳️ sub-004 Output: sub-004_task-Oddball_proc-clean_epo.fif
+│01:45:44│ ⏳️ sub-004 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│01:50:59│ ⏳️ sub-004 autoreject marked 95 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│01:50:59│ ⏳️ sub-004 Adding cleaned epochs to report.
+│01:51:01│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-004/eeg/sub-004_task-Oddball_report.html
+│01:51:01│ ⏳️ sub-007 Input:  sub-007_task-Oddball_proc-ica_epo.fif
+│01:51:01│ ⏳️ sub-007 Output: sub-007_task-Oddball_proc-clean_epo.fif
+│01:51:01│ ⏳️ sub-007 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│01:56:42│ ⏳️ sub-007 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│01:56:42│ ⏳️ sub-007 Adding cleaned epochs to report.
+│01:56:44│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-007/eeg/sub-007_task-Oddball_report.html
+│01:56:45│ ⏳️ sub-009 Input:  sub-009_task-Oddball_proc-ica_epo.fif
+│01:56:45│ ⏳️ sub-009 Output: sub-009_task-Oddball_proc-clean_epo.fif
+│01:56:45│ ⏳️ sub-009 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│02:01:55│ ⏳️ sub-009 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│02:01:55│ ⏳️ sub-009 Adding cleaned epochs to report.
+│02:01:57│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-009/eeg/sub-009_task-Oddball_report.html
+│02:01:58│ ⏳️ sub-010 Input:  sub-010_task-Oddball_proc-ica_epo.fif
+│02:01:58│ ⏳️ sub-010 Output: sub-010_task-Oddball_proc-clean_epo.fif
+│02:01:58│ ⏳️ sub-010 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│02:07:32│ ⏳️ sub-010 autoreject marked 37 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│02:07:32│ ⏳️ sub-010 Adding cleaned epochs to report.
+│02:07:35│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-010/eeg/sub-010_task-Oddball_report.html
+│02:07:35│ ⏳️ sub-011 Input:  sub-011_task-Oddball_proc-ica_epo.fif
+│02:07:35│ ⏳️ sub-011 Output: sub-011_task-Oddball_proc-clean_epo.fif
+│02:07:35│ ⏳️ sub-011 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│02:12:52│ ⏳️ sub-011 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│02:12:52│ ⏳️ sub-011 Adding cleaned epochs to report.
+│02:12:54│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-011/eeg/sub-011_task-Oddball_report.html
+│02:12:55│ ⏳️ sub-012 Input:  sub-012_task-Oddball_proc-ica_epo.fif
+│02:12:55│ ⏳️ sub-012 Output: sub-012_task-Oddball_proc-clean_epo.fif
+│02:12:55│ ⏳️ sub-012 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│02:18:02│ ⏳️ sub-012 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│02:18:02│ ⏳️ sub-012 Adding cleaned epochs to report.
+│02:18:05│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-012/eeg/sub-012_task-Oddball_report.html
+│02:18:05│ ⏳️ sub-013 Input:  sub-013_task-Oddball_proc-ica_epo.fif
+│02:18:05│ ⏳️ sub-013 Output: sub-013_task-Oddball_proc-clean_epo.fif
+│02:18:06│ ⏳️ sub-013 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│02:23:32│ ⏳️ sub-013 autoreject marked 17 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│02:23:32│ ⏳️ sub-013 Adding cleaned epochs to report.
+│02:23:35│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/FINAL_PIPELINE/data_split/derivatives/mne-bids-pipeline/sub-013/eeg/sub-013_task-Oddball_report.html
+│02:23:35│ ⏳️ sub-014 Input:  sub-014_task-Oddball_proc-ica_epo.fif
+│02:23:35│ ⏳️ sub-014 Output: sub-014_task-Oddball_proc-clean_epo.fif
+│02:23:35│ ⏳️ sub-014 Using autoreject to find and repair bad epochs (interpolating bad segments)

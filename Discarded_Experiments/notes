@@ -1,0 +1,60 @@
+Some notes which were done in preparation of milestone 3. Not important
+
+
+Pre-preprocessing
+- Bring into more suitable format for mne-bids-pipeline
+- Remove superfluous events occuring in rapid succession
+
+Preprocessing
+- Remove ~2 breaks (15s)
+- Bandpass Filter (1-40Hz)
+- Epoching [-0.2,1]
+- Baseline correction
+- Autoreject epochs before and after ICA (7.8%)
+
+
+
+4-16 (med. 8) Interpolated (ours)
+1-3 (med. 2) Interpolated (paper)
+
+2-7 Components 9+
+
+
+- Subject Cleaning
+- Re-referencing, interpolating bad electrodes
+- Remove 6 most ventral electrodes
+- Event epoching, segment data around key events
+- Filter bad channels and epochs using FASTER
+- Filter blinks and eye movement with ICA
+- High-pass & Low-pass filters, baseline correction
+- Time-frequency analysis 
+- Normalization & ITPC Calculation
+
+
+
+
+Paper
+Epochs -2 to 2
+Bandpass filter 0.1 - 20 Hz
+Reject Epochs with FASTER (3.27%)
+
+Image from the slide is not from the pipeline described here (there have been slight changes)
+
+
+[chatgpt text]
+Time-frequency captures both temporal and spectral information, allowing for the detection of oscillatory and transient brain activity
+
+It can reveal both phase-locked and non-phase-locked activity, providing a more detailed view of complex cognitive processes in dynamic tasks like video games
+
+This method also handles the inherent non-stationarity of EEG signals well, making it ideal for analyzing the flexible and variable demands of different experimental conditions.
+[\end]
+
+
+2,6
+4,8
+0,2
+0,6
+0,2
+0,1,?,?
+
+Most of the preprocessing done by mne-bids-pipeline
