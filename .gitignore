@@ -6,5 +6,5 @@ Pipeline/__pycache__
 !Pipeline/data_split/derivatives/mne-bids-pipeline/_cache
 !Pipeline/data_split/**/*.html
 !Pipeline/data_split/**/*.tsv
-!Pipeline/data_split/**/**/*.html
-!Pipeline/data_split/**/**/*.tsv
+!Pipeline/data_split/**/eeg/*.html
+!Pipeline/data_split/**/eeg/*.tsv
