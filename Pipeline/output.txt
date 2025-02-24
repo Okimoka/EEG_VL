@@ -1,0 +1,3174 @@
+okk@okk-MS-7C56:~/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline$ mne_bids_pipeline config.py --task OddGamble
+┌────────┬ Welcome aboard MNE-BIDS-Pipeline! 👋 ─────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:23│ 📝 Using configuration: config.py
+│17:09:23│ ❌ Overriding config.task = 'OddGamble'
+└────────┴ 
+┌────────┬ init/_01_init_derivatives_dir ────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:23│ ⏳️ Initializing output directories.
+└────────┴ done (1s)
+┌────────┬ init/_02_find_empty_room ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:23│ ⏩ Skipping, empty-room data only relevant for MEG …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_01_data_quality ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:25│ ⏳️ sub-006 run-01 Reading experimental recording: sub-006_task-OddGamble_run-01
+│17:09:25│ ⏳️ sub-004 run-01 Reading experimental recording: sub-004_task-OddGamble_run-01
+│17:09:25│ ⏳️ sub-002 run-01 Reading experimental recording: sub-002_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-005 run-01 Reading experimental recording: sub-005_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-001 run-01 Reading experimental recording: sub-001_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-007 run-01 Reading experimental recording: sub-007_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-009 run-01 Reading experimental recording: sub-009_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-003 run-01 Reading experimental recording: sub-003_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-010 run-01 Reading experimental recording: sub-010_task-OddGamble_run-01
+│17:09:26│ ⏳️ sub-008 run-01 Reading experimental recording: sub-008_task-OddGamble_run-01
+│17:09:27│ ⏳️ sub-004 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-004 run-01 Found and annotated 3 break periods.
+│17:09:27│ ⏳️ sub-004 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-006 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-006 run-01 Found and annotated 6 break periods.
+│17:09:27│ ⏳️ sub-002 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-002 run-01 Found and annotated 2 break periods.
+│17:09:27│ ⏳️ sub-003 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-003 run-01 Found and annotated 2 break periods.
+│17:09:27│ ⏳️ sub-006 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-010 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-007 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-010 run-01 Found and annotated 4 break periods.
+│17:09:27│ ⏳️ sub-007 run-01 Found and annotated 3 break periods.
+│17:09:27│ ⏳️ sub-002 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-003 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-006 run-01 Adding original raw data to report
+│17:09:27│ ⏳️ sub-004 run-01 Adding original raw data to report
+│17:09:27│ ⏳️ sub-010 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-009 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-009 run-01 Found and annotated 4 break periods.
+│17:09:27│ ⏳️ sub-002 run-01 Adding original raw data to report
+│17:09:27│ ⏳️ sub-007 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-001 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-001 run-01 Found and annotated 7 break periods.
+│17:09:27│ ⏳️ sub-003 run-01 Adding original raw data to report
+│17:09:27│ ⏳️ sub-010 run-01 Adding original raw data to report
+│17:09:27│ ⏳️ sub-008 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-008 run-01 Found and annotated 3 break periods.
+│17:09:27│ ⏳️ sub-007 run-01 Adding original raw data to report
+│17:09:27│ ⏳️ sub-009 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-005 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:27│ ⏳️ sub-005 run-01 Found and annotated 2 break periods.
+│17:09:27│ ⏳️ sub-008 run-01 Initializing report HDF5 file
+│17:09:27│ ⏳️ sub-001 run-01 Initializing report HDF5 file
+│17:09:28│ ⏳️ sub-005 run-01 Initializing report HDF5 file
+│17:09:28│ ⏳️ sub-001 run-01 Adding original raw data to report
+│17:09:28│ ⏳️ sub-009 run-01 Adding original raw data to report
+│17:09:28│ ⏳️ sub-008 run-01 Adding original raw data to report
+│17:09:28│ ⏳️ sub-005 run-01 Adding original raw data to report
+│17:09:31│ ⏳️ sub-010 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-003 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-007 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-004 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-005 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-002 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-001 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-009 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-008 run-01 Adding config and sys info to report
+│17:09:32│ ⏳️ sub-006 run-01 Adding config and sys info to report
+│17:09:36│ ⏳️ sub-010 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-003 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-007 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-004 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-002 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-009 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-011 run-01 Reading experimental recording: sub-011_task-OddGamble_run-01
+│17:09:36│ ⏳️ sub-012 run-01 Reading experimental recording: sub-012_task-OddGamble_run-01
+│17:09:36│ ⏳️ sub-013 run-01 Reading experimental recording: sub-013_task-OddGamble_run-01
+│17:09:36│ ⏳️ sub-001 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-014 run-01 Reading experimental recording: sub-014_task-OddGamble_run-01
+│17:09:36│ ⏳️ sub-006 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-008 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-005 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│17:09:36│ ⏳️ sub-015 run-01 Reading experimental recording: sub-015_task-OddGamble_run-01
+│17:09:36│ ⏳️ sub-016 run-01 Reading experimental recording: sub-016_task-OddGamble_run-01
+│17:09:37│ ⏳️ sub-017 run-01 Reading experimental recording: sub-017_task-OddGamble_run-01
+│17:09:37│ ⏳️ sub-013 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-013 run-01 Found and annotated 4 break periods.
+│17:09:37│ ⏳️ sub-013 run-01 Initializing report HDF5 file
+│17:09:37│ ⏳️ sub-014 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-012 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-014 run-01 Found and annotated 3 break periods.
+│17:09:37│ ⏳️ sub-012 run-01 Found and annotated 4 break periods.
+│17:09:37│ ⏳️ sub-013 run-01 Adding original raw data to report
+│17:09:37│ ⏳️ sub-012 run-01 Initializing report HDF5 file
+│17:09:37│ ⏳️ sub-014 run-01 Initializing report HDF5 file
+│17:09:37│ ⏳️ sub-015 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-015 run-01 Found and annotated 5 break periods.
+│17:09:37│ ⏳️ sub-012 run-01 Adding original raw data to report
+│17:09:37│ ⏳️ sub-015 run-01 Initializing report HDF5 file
+│17:09:37│ ⏳️ sub-014 run-01 Adding original raw data to report
+│17:09:37│ ⏳️ sub-011 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-011 run-01 Found and annotated 4 break periods.
+│17:09:37│ ⏳️ sub-015 run-01 Adding original raw data to report
+│17:09:37│ ⏳️ sub-011 run-01 Initializing report HDF5 file
+│17:09:37│ ⏳️ sub-016 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-016 run-01 Found and annotated 4 break periods.
+│17:09:37│ ⏳️ sub-016 run-01 Initializing report HDF5 file
+│17:09:37│ ⏳️ sub-011 run-01 Adding original raw data to report
+│17:09:37│ ⏳️ sub-016 run-01 Adding original raw data to report
+│17:09:37│ ⏳️ sub-017 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:37│ ⏳️ sub-017 run-01 Found and annotated 4 break periods.
+│17:09:38│ ⏳️ sub-017 run-01 Initializing report HDF5 file
+│17:09:38│ ⏳️ sub-017 run-01 Adding original raw data to report
+│17:09:40│ ⏳️ sub-013 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│17:09:40│ ⏳️ sub-012 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│17:09:40│ ⏳️ sub-016 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│17:09:40│ ⏳️ sub-014 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│17:09:40│ ⏳️ sub-011 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│17:09:40│ ⏳️ sub-015 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│17:09:40│ ⏳️ sub-017 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+└────────┴ done (18s)
+┌────────┬ preprocessing/_02_head_pos ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:41│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_03_maxfilter ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:41│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_04_frequency_filter ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:41│ ⏳️ sub-007 run-01 Reading experimental recording: sub-007_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-008 run-01 Reading experimental recording: sub-008_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-004 run-01 Reading experimental recording: sub-004_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-005 run-01 Reading experimental recording: sub-005_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-003 run-01 Reading experimental recording: sub-003_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-006 run-01 Reading experimental recording: sub-006_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-002 run-01 Reading experimental recording: sub-002_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-001 run-01 Reading experimental recording: sub-001_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-010 run-01 Reading experimental recording: sub-010_task-OddGamble_run-01
+│17:09:41│ ⏳️ sub-009 run-01 Reading experimental recording: sub-009_task-OddGamble_run-01
+│17:09:42│ ⏳️ sub-003 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-003 run-01 Found and annotated 2 break periods.
+│17:09:42│ ⏳️ sub-003 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-010 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-004 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-001 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-004 run-01 Found and annotated 3 break periods.
+│17:09:42│ ⏳️ sub-010 run-01 Found and annotated 4 break periods.
+│17:09:42│ ⏳️ sub-007 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-008 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-001 run-01 Found and annotated 7 break periods.
+│17:09:42│ ⏳️ sub-004 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-010 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-008 run-01 Found and annotated 3 break periods.
+│17:09:42│ ⏳️ sub-007 run-01 Found and annotated 3 break periods.
+│17:09:42│ ⏳️ sub-008 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-001 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-009 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-007 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-002 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-009 run-01 Found and annotated 4 break periods.
+│17:09:42│ ⏳️ sub-002 run-01 Found and annotated 2 break periods.
+│17:09:42│ ⏳️ sub-005 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:42│ ⏳️ sub-009 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-002 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:42│ ⏳️ sub-005 run-01 Found and annotated 2 break periods.
+│17:09:42│ ⏳️ sub-005 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:43│ ⏳️ sub-006 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:43│ ⏳️ sub-006 run-01 Found and annotated 6 break periods.
+│17:09:43│ ⏳️ sub-006 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:43│ ⏳️ sub-003 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-007 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-004 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-010 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-001 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-008 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-002 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-005 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-009 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:44│ ⏳️ sub-003 run-01 Adding filtered raw data to report
+│17:09:45│ ⏳️ sub-006 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:45│ ⏳️ sub-007 run-01 Adding filtered raw data to report
+│17:09:45│ ⏳️ sub-010 run-01 Adding filtered raw data to report
+│17:09:45│ ⏳️ sub-004 run-01 Adding filtered raw data to report
+│17:09:46│ ⏳️ sub-008 run-01 Adding filtered raw data to report
+│17:09:46│ ⏳️ sub-002 run-01 Adding filtered raw data to report
+│17:09:46│ ⏳️ sub-009 run-01 Adding filtered raw data to report
+│17:09:46│ ⏳️ sub-001 run-01 Adding filtered raw data to report
+│17:09:46│ ⏳️ sub-005 run-01 Adding filtered raw data to report
+│17:09:47│ ⏳️ sub-006 run-01 Adding filtered raw data to report
+│17:09:48│ ⏳️ sub-003 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│17:09:48│ ⏳️ sub-010 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│17:09:48│ ⏳️ sub-011 run-01 Reading experimental recording: sub-011_task-OddGamble_run-01
+│17:09:49│ ⏳️ sub-007 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│17:09:49│ ⏳️ sub-012 run-01 Reading experimental recording: sub-012_task-OddGamble_run-01
+│17:09:49│ ⏳️ sub-002 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│17:09:49│ ⏳️ sub-004 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│17:09:49│ ⏳️ sub-013 run-01 Reading experimental recording: sub-013_task-OddGamble_run-01
+│17:09:49│ ⏳️ sub-001 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│17:09:49│ ⏳️ sub-005 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│17:09:49│ ⏳️ sub-011 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:49│ ⏳️ sub-009 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│17:09:49│ ⏳️ sub-014 run-01 Reading experimental recording: sub-014_task-OddGamble_run-01
+│17:09:49│ ⏳️ sub-011 run-01 Found and annotated 4 break periods.
+│17:09:49│ ⏳️ sub-011 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:49│ ⏳️ sub-015 run-01 Reading experimental recording: sub-015_task-OddGamble_run-01
+│17:09:49│ ⏳️ sub-008 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│17:09:50│ ⏳️ sub-013 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:50│ ⏳️ sub-013 run-01 Found and annotated 4 break periods.
+│17:09:50│ ⏳️ sub-012 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:50│ ⏳️ sub-012 run-01 Found and annotated 4 break periods.
+│17:09:50│ ⏳️ sub-013 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:50│ ⏳️ sub-012 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:50│ ⏳️ sub-016 run-01 Reading experimental recording: sub-016_task-OddGamble_run-01
+│17:09:50│ ⏳️ sub-017 run-01 Reading experimental recording: sub-017_task-OddGamble_run-01
+│17:09:50│ ⏳️ sub-014 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:50│ ⏳️ sub-014 run-01 Found and annotated 3 break periods.
+│17:09:50│ ⏳️ sub-014 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:50│ ⏳️ sub-015 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:50│ ⏳️ sub-015 run-01 Found and annotated 5 break periods.
+│17:09:50│ ⏳️ sub-015 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:50│ ⏳️ sub-011 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:51│ ⏳️ sub-013 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:51│ ⏳️ sub-012 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:51│ ⏳️ sub-017 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:51│ ⏳️ sub-016 run-01 Finding breaks with a minimum duration of 15.0 seconds.
+│17:09:51│ ⏳️ sub-017 run-01 Found and annotated 4 break periods.
+│17:09:51│ ⏳️ sub-016 run-01 Found and annotated 4 break periods.
+│17:09:51│ ⏳️ sub-017 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:51│ ⏳️ sub-016 run-01 Notch filtering experimental data at 60 Hz.
+│17:09:51│ ⏳️ sub-014 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:51│ ⏳️ sub-015 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:52│ ⏳️ sub-011 run-01 Adding filtered raw data to report
+│17:09:52│ ⏳️ sub-017 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:52│ ⏳️ sub-006 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│17:09:52│ ⏳️ sub-016 run-01 Band-pass filtering experimental data; range: 1 – 100 Hz
+│17:09:52│ ⏳️ sub-013 run-01 Adding filtered raw data to report
+│17:09:52│ ⏳️ sub-012 run-01 Adding filtered raw data to report
+│17:09:52│ ⏳️ sub-014 run-01 Adding filtered raw data to report
+│17:09:53│ ⏳️ sub-015 run-01 Adding filtered raw data to report
+│17:09:53│ ⏳️ sub-017 run-01 Adding filtered raw data to report
+│17:09:53│ ⏳️ sub-016 run-01 Adding filtered raw data to report
+│17:09:55│ ⏳️ sub-011 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│17:09:55│ ⏳️ sub-013 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│17:09:55│ ⏳️ sub-012 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│17:09:55│ ⏳️ sub-015 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│17:09:55│ ⏳️ sub-014 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│17:09:56│ ⏳️ sub-016 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│17:09:56│ ⏳️ sub-017 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+└────────┴ done (16s)
+┌────────┬ preprocessing/_05_regress_artifact ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:56│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_06a1_fit_ica ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│17:09:56│ ⏳️ sub-002 run-01 Processing raw data from sub-002_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-004 run-01 Processing raw data from sub-004_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-008 run-01 Processing raw data from sub-008_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-005 run-01 Processing raw data from sub-005_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-010 run-01 Processing raw data from sub-010_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-009 run-01 Processing raw data from sub-009_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-001 run-01 Processing raw data from sub-001_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-007 run-01 Processing raw data from sub-007_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-003 run-01 Processing raw data from sub-003_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-006 run-01 Processing raw data from sub-006_task-OddGamble_run-01_proc-filt_raw.fif
+│17:09:56│ ⏳️ sub-002 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-004 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-003 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-008 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-010 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-005 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-009 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-001 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-007 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:56│ ⏳️ sub-006 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:09:57│ ⏳️ sub-003 run-01 Creating task-related epochs …
+│17:09:57│ ⏳️ sub-004 run-01 Creating task-related epochs …
+│17:09:57│ ⏳️ sub-008 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-010 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-002 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-001 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-005 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-003 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-007 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-003 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:58│ ⏳️ sub-009 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-004 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-002 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-005 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-001 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-006 run-01 Creating task-related epochs …
+│17:09:58│ ⏳️ sub-010 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-008 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:58│ ⏳️ sub-002 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:59│ ⏳️ sub-005 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:59│ ⏳️ sub-004 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:59│ ⏳️ sub-001 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:59│ ⏳️ sub-010 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:59│ ⏳️ sub-008 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:09:59│ ⏳️ sub-009 Applying average reference to EEG epochs used for ICA fitting.
+│17:09:59│ ⏳️ sub-007 Applying average reference to EEG epochs used for ICA fitting.
+│17:10:00│ ⏳️ sub-009 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:10:00│ ⏳️ sub-007 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:10:02│ ⏳️ sub-006 Applying average reference to EEG epochs used for ICA fitting.
+│17:10:04│ ⏳️ sub-006 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:39:34│ ⏳️ sub-005 autoreject marked 97 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│17:39:35│ ⏳️ sub-005 More than 50% of all epochs rejected. Please check the rejection thresholds.
+│17:39:35│ ⏳️ sub-005 Saving 6 ICA epochs to disk.
+│17:39:35│ ⏳️ sub-005 Calculating ICA solution using method: picard-extended_infomax.
+│17:39:46│ ⏳️ sub-002 autoreject marked 96 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│17:39:46│ ⏳️ sub-002 More than 50% of all epochs rejected. Please check the rejection thresholds.
+│17:39:46│ ⏳️ sub-002 Saving 8 ICA epochs to disk.
+│17:39:47│ ⏳️ sub-002 Calculating ICA solution using method: picard-extended_infomax.
+│17:39:56│ ⏳️ sub-003 autoreject marked 16 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│17:39:56│ ⏳️ sub-003 Saving 168 ICA epochs to disk.
+│17:39:57│ ⏳️ sub-003 Calculating ICA solution using method: picard-extended_infomax.
+│17:44:57│ ⏳️ sub-002 Fit 59 components (explaining 100.0% of the variance) in 136 iterations.
+│17:44:57│ ⏳️ sub-002 Saving ICA solution to disk.
+│17:45:10│ ⏳️ sub-002 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│17:45:11│ ⏳️ sub-001 autoreject marked 4 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│17:45:11│ ⏳️ sub-001 Saving 227 ICA epochs to disk.
+│17:45:12│ ⏳️ sub-001 Calculating ICA solution using method: picard-extended_infomax.
+│17:45:12│ ⏳️ sub-011 run-01 Processing raw data from sub-011_task-OddGamble_run-01_proc-filt_raw.fif
+│17:45:13│ ⏳️ sub-011 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:45:15│ ⏳️ sub-011 run-01 Creating task-related epochs …
+│17:45:19│ ⏳️ sub-011 Applying average reference to EEG epochs used for ICA fitting.
+│17:45:20│ ⏳️ sub-011 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:50:17│ ⏳️ sub-003 Fit 59 components (explaining 100.0% of the variance) in 135 iterations.
+│17:50:17│ ⏳️ sub-003 Saving ICA solution to disk.
+│17:50:40│ ⏳️ sub-003 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│17:50:42│ ⏳️ sub-012 run-01 Processing raw data from sub-012_task-OddGamble_run-01_proc-filt_raw.fif
+│17:50:42│ ⏳️ sub-012 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:50:44│ ⏳️ sub-004 autoreject marked 137 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│17:50:44│ ⏳️ sub-012 run-01 Creating task-related epochs …
+│17:50:45│ ⏳️ sub-004 More than 50% of all epochs rejected. Please check the rejection thresholds.
+│17:50:45│ ⏳️ sub-004 Saving 6 ICA epochs to disk.
+│17:50:45│ ⏳️ sub-004 Calculating ICA solution using method: picard-extended_infomax.
+│17:50:46│ ⏳️ sub-012 Applying average reference to EEG epochs used for ICA fitting.
+│17:50:47│ ⏳️ sub-012 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:53:01│ ⏳️ sub-010 autoreject marked 45 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│17:53:01│ ⏳️ sub-010 Saving 190 ICA epochs to disk.
+│17:53:03│ ⏳️ sub-010 Calculating ICA solution using method: picard-extended_infomax.
+│17:53:53│ ⏳️ sub-001 Fit 59 components (explaining 100.0% of the variance) in 95 iterations.
+│17:53:53│ ⏳️ sub-001 Saving ICA solution to disk.
+│17:54:18│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│17:54:21│ ⏳️ sub-007 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│17:54:21│ ⏳️ sub-007 Saving 280 ICA epochs to disk.
+│17:54:22│ ⏳️ sub-007 Calculating ICA solution using method: picard-extended_infomax.
+/home/okk/.local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+│17:54:29│ ⏳️ sub-005 Fit 59 components (explaining 100.0% of the variance) in 372 iterations.
+│17:54:29│ ⏳️ sub-005 Saving ICA solution to disk.
+│17:54:31│ ⏳️ sub-008 autoreject marked 4 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│17:54:31│ ⏳️ sub-008 Saving 272 ICA epochs to disk.
+│17:54:33│ ⏳️ sub-008 Calculating ICA solution using method: picard-extended_infomax.
+│17:54:36│ ⏳️ sub-013 run-01 Processing raw data from sub-013_task-OddGamble_run-01_proc-filt_raw.fif
+│17:54:36│ ⏳️ sub-013 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:54:36│ ⏳️ sub-009 autoreject marked 12 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│17:54:37│ ⏳️ sub-009 Saving 256 ICA epochs to disk.
+│17:54:38│ ⏳️ sub-013 run-01 Creating task-related epochs …
+│17:54:39│ ⏳️ sub-009 Calculating ICA solution using method: picard-extended_infomax.
+│17:54:41│ ⏳️ sub-013 Applying average reference to EEG epochs used for ICA fitting.
+│17:54:42│ ⏳️ sub-013 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│17:54:43│ ⏳️ sub-005 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│17:54:45│ ⏳️ sub-014 run-01 Processing raw data from sub-014_task-OddGamble_run-01_proc-filt_raw.fif
+│17:54:46│ ⏳️ sub-014 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│17:54:47│ ⏳️ sub-014 run-01 Creating task-related epochs …
+│17:54:48│ ⏳️ sub-014 Applying average reference to EEG epochs used for ICA fitting.
+│17:54:49│ ⏳️ sub-014 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│18:01:43│ ⏳️ sub-004 Fit 59 components (explaining 100.0% of the variance) in 205 iterations.
+│18:01:43│ ⏳️ sub-004 Saving ICA solution to disk.
+│18:01:57│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│18:01:59│ ⏳️ sub-015 run-01 Processing raw data from sub-015_task-OddGamble_run-01_proc-filt_raw.fif
+│18:02:00│ ⏳️ sub-015 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│18:02:01│ ⏳️ sub-015 run-01 Creating task-related epochs …
+│18:02:03│ ⏳️ sub-015 Applying average reference to EEG epochs used for ICA fitting.
+│18:02:03│ ⏳️ sub-015 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│18:05:47│ ⏳️ sub-008 Fit 59 components (explaining 100.0% of the variance) in 102 iterations.
+│18:05:47│ ⏳️ sub-008 Saving ICA solution to disk.
+│18:06:14│ ⏳️ sub-008 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+/home/okk/.local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+│18:06:30│ ⏳️ sub-016 run-01 Processing raw data from sub-016_task-OddGamble_run-01_proc-filt_raw.fif
+│18:06:31│ ⏳️ sub-016 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│18:06:34│ ⏳️ sub-016 run-01 Creating task-related epochs …
+│18:06:36│ ⏳️ sub-016 Applying average reference to EEG epochs used for ICA fitting.
+│18:06:37│ ⏳️ sub-016 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│18:09:04│ ⏳️ sub-010 Fit 59 components (explaining 100.0% of the variance) in 196 iterations.
+│18:09:05│ ⏳️ sub-010 Saving ICA solution to disk.
+│18:09:32│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│18:09:34│ ⏳️ sub-017 run-01 Processing raw data from sub-017_task-OddGamble_run-01_proc-filt_raw.fif
+│18:09:35│ ⏳️ sub-017 run-01 Applying high-pass filter with 1.0 Hz cutoff …
+│18:09:37│ ⏳️ sub-017 run-01 Creating task-related epochs …
+│18:09:38│ ⏳️ sub-017 Applying average reference to EEG epochs used for ICA fitting.
+│18:09:39│ ⏳️ sub-017 Using autoreject to find bad epochs for ICA (no interpolation will be performend)
+│18:22:39│ ⏳️ sub-011 autoreject marked 2 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│18:22:39│ ⏳️ sub-011 Saving 276 ICA epochs to disk.
+│18:22:41│ ⏳️ sub-011 Calculating ICA solution using method: picard-extended_infomax.
+│18:24:52│ ⏳️ sub-009 Fit 59 components (explaining 100.0% of the variance) in 278 iterations.
+│18:24:52│ ⏳️ sub-009 Saving ICA solution to disk.
+│18:25:17│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│18:25:45│ ⏳️ sub-007 Fit 59 components (explaining 100.0% of the variance) in 230 iterations.
+│18:25:45│ ⏳️ sub-007 Saving ICA solution to disk.
+│18:26:07│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│18:27:43│ ⏳️ sub-012 autoreject marked 73 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│18:27:43│ ⏳️ sub-012 Saving 134 ICA epochs to disk.
+│18:27:44│ ⏳️ sub-012 Calculating ICA solution using method: picard-extended_infomax.
+│18:29:45│ ⏳️ sub-006 autoreject marked 3 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│18:29:45│ ⏳️ sub-006 Saving 434 ICA epochs to disk.
+│18:29:46│ ⏳️ sub-006 Calculating ICA solution using method: picard-extended_infomax.
+│18:31:09│ ⏳️ sub-013 autoreject marked 143 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│18:31:09│ ⏳️ sub-013 Saving -6 ICA epochs to disk.
+│18:31:10│ ⏳️ sub-013 Calculating ICA solution using method: picard-extended_infomax.
+│18:31:45│ ⏳️ sub-014 autoreject marked 131 epochs as bad (cross-validated n_interpolate limit: {'eeg': 1})
+│18:31:45│ ⏳️ sub-014 More than 50% of all epochs rejected. Please check the rejection thresholds.
+│18:31:45│ ⏳️ sub-014 Saving 18 ICA epochs to disk.
+│18:31:45│ ⏳️ sub-014 Calculating ICA solution using method: picard-extended_infomax.
+│18:35:29│ ⏳️ sub-015 autoreject marked 44 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│18:35:29│ ⏳️ sub-015 Saving 192 ICA epochs to disk.
+│18:35:30│ ⏳️ sub-015 Calculating ICA solution using method: picard-extended_infomax.
+│18:36:51│ ⏳️ sub-014 Fit 59 components (explaining 100.0% of the variance) in 139 iterations.
+│18:36:51│ ⏳️ sub-014 Saving ICA solution to disk.
+│18:36:57│ ⏳️ sub-011 Fit 59 components (explaining 100.0% of the variance) in 182 iterations.
+│18:36:57│ ⏳️ sub-011 Saving ICA solution to disk.
+│18:37:00│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│18:37:08│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│18:37:48│ ⏳️ sub-013 Fit 59 components (explaining 100.0% of the variance) in 184 iterations.
+│18:37:48│ ⏳️ sub-013 Saving ICA solution to disk.
+│18:37:55│ ⏳️ sub-013 Adding config and sys info to report
+│18:38:00│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│18:38:07│ ⏳️ sub-016 autoreject marked 8 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│18:38:07│ ⏳️ sub-016 Saving 264 ICA epochs to disk.
+│18:38:08│ ⏳️ sub-016 Calculating ICA solution using method: picard-extended_infomax.
+│18:38:26│ ⏳️ sub-017 autoreject marked 48 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│18:38:26│ ⏳️ sub-017 Saving 184 ICA epochs to disk.
+│18:38:27│ ⏳️ sub-017 Calculating ICA solution using method: picard-extended_infomax.
+│18:39:44│ ⏳️ sub-012 Fit 59 components (explaining 100.0% of the variance) in 240 iterations.
+│18:39:44│ ⏳️ sub-012 Saving ICA solution to disk.
+│18:39:50│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│18:42:37│ ⏳️ sub-017 Fit 59 components (explaining 100.0% of the variance) in 116 iterations.
+│18:42:37│ ⏳️ sub-017 Saving ICA solution to disk.
+│18:42:42│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+│18:42:58│ ⏳️ sub-016 Fit 59 components (explaining 100.0% of the variance) in 123 iterations.
+│18:42:58│ ⏳️ sub-016 Saving ICA solution to disk.
+│18:43:05│ ⏳️ sub-016 Adding config and sys info to report
+│18:43:08│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│18:44:09│ ⏳️ sub-015 Fit 59 components (explaining 100.0% of the variance) in 260 iterations.
+│18:44:09│ ⏳️ sub-015 Saving ICA solution to disk.
+│18:44:15│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│18:48:05│ ⏳️ sub-006 Fit 59 components (explaining 100.0% of the variance) in 249 iterations.
+│18:48:05│ ⏳️ sub-006 Saving ICA solution to disk.
+│18:48:13│ ⏳️ sub-006 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+└────────┴ done (1h 38m 18s)
+┌────────┬ preprocessing/_06a2_find_ica_artifacts ────────────────────────────────────────────────────────────────────────────────────────────────────────────
+/home/okk/.local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+│18:48:15│ ⏳️ sub-001 Loading ICA solution
+│18:48:15│ ⏳️ sub-002 Loading ICA solution
+│18:48:15│ ⏳️ sub-006 Loading ICA solution
+│18:48:15│ ⏳️ sub-003 Loading ICA solution
+│18:48:15│ ⏳️ sub-005 Loading ICA solution
+│18:48:15│ ⏳️ sub-008 Loading ICA solution
+│18:48:15│ ⏳️ sub-004 Loading ICA solution
+│18:48:15│ ⏳️ sub-007 Loading ICA solution
+│18:48:15│ ⏳️ sub-009 Loading ICA solution
+│18:48:16│ ⏳️ sub-002 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-001 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-005 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-003 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-004 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-008 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-002 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-001 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-007 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-006 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-009 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:16│ ⏳️ sub-003 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-005 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-002 Performing automated EOG artifact detection …
+│18:48:16│ ⏳️ sub-004 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-001 Performing automated EOG artifact detection …
+│18:48:16│ ⏳️ sub-008 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-002 Detected 2 EOG-related ICs in 7 EOG epochs: 0, 5
+│18:48:16│ ⏳️ sub-003 Performing automated EOG artifact detection …
+│18:48:16│ ⏳️ sub-002 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:16│ ⏳️ sub-005 Performing automated EOG artifact detection …
+│18:48:16│ ⏳️ sub-007 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-009 Creating EOG epochs …
+│18:48:16│ ⏳️ sub-001 Detected 3 EOG-related ICs in 62 EOG epochs: 1, 4, 19
+│18:48:16│ ⏳️ sub-001 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:16│ ⏳️ sub-004 Performing automated EOG artifact detection …
+│18:48:16│ ⏳️ sub-003 Detected 2 EOG-related ICs in 27 EOG epochs: 1, 0
+│18:48:16│ ⏳️ sub-005 Detected 2 EOG-related ICs in 1 EOG epochs: 11, 31
+│18:48:16│ ⏳️ sub-008 Performing automated EOG artifact detection …
+│18:48:16│ ⏳️ sub-003 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:16│ ⏳️ sub-006 Creating EOG epochs …
+│18:48:17│ ⏳️ sub-005 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:17│ ⏳️ sub-010 Loading ICA solution
+│18:48:17│ ⏳️ sub-004 No EOG-related ICs detected, this is highly suspicious. A manual check is suggested. You may wish to lower "ica_eog_threshold".
+│18:48:17│ ⏳️ sub-008 Detected 4 EOG-related ICs in 70 EOG epochs: 3, 1, 2, 6
+│18:48:17│ ⏳️ sub-008 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:17│ ⏳️ sub-004 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:17│ ⏳️ sub-009 Performing automated EOG artifact detection …
+│18:48:17│ ⏳️ sub-006 Performing automated EOG artifact detection …
+│18:48:17│ ⏳️ sub-007 Performing automated EOG artifact detection …
+│18:48:17│ ⏳️ sub-006 Detected 3 EOG-related ICs in 131 EOG epochs: 1, 5, 2
+│18:48:17│ ⏳️ sub-006 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:17│ ⏳️ sub-010 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:48:17│ ⏳️ sub-009 Detected 1 EOG-related ICs in 278 EOG epochs: 0
+│18:48:17│ ⏳️ sub-009 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:18│ ⏳️ sub-010 Creating EOG epochs …
+│18:48:18│ ⏳️ sub-010 Performing automated EOG artifact detection …
+│18:48:18│ ⏳️ sub-007 Detected 2 EOG-related ICs in 480 EOG epochs: 1, 0
+│18:48:18│ ⏳️ sub-007 Performing automated artifact detection (MNE-ICALabel) …
+│18:48:18│ ⏳️ sub-010 No EOG-related ICs detected, this is highly suspicious. A manual check is suggested. You may wish to lower "ica_eog_threshold".
+│18:48:18│ ⏳️ sub-010 Performing automated artifact detection (MNE-ICALabel) …
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+brain
+0.81858706
+brain
+0.705301
+brain
+0.9233395
+brain
+0.983412
+brain
+0.909314
+muscle artifact
+0.594051
+brain
+0.5185672
+brain
+0.94632554
+other
+0.4279355
+muscle artifact
+0.4245908
+brain
+0.9939468
+brain
+0.97005135
+other
+0.45965064
+brain
+0.6467705
+brain
+0.8492779
+brain
+0.5319666
+muscle artifact
+0.97490084
+brain
+0.8347007
+brain
+0.9091213
+other
+0.9520459
+eye blink
+0.45886692
+brain
+0.95666516
+brain
+0.769266
+other
+0.57154894
+brain
+0.72366154
+brain
+0.5048721
+muscle artifact
+0.95900536
+other
+0.52461904
+muscle artifact
+0.98154736
+brain
+0.9937844
+other
+0.4701975
+channel noise
+0.41941124
+brain
+0.8405422
+brain
+0.48270532
+brain
+0.5836739
+muscle artifact
+0.8117899
+muscle artifact
+0.40168947
+muscle artifact
+0.7313565
+brain
+0.7333561
+other
+0.8246755
+muscle artifact
+0.9713818
+muscle artifact
+0.8907689
+brain
+0.9314296
+other
+0.8905817
+other
+0.57807505
+brain
+0.6867958
+other
+0.7981423
+other
+0.74733865
+other
+0.7283902
+brain
+0.7908834
+muscle artifact
+0.39280155
+other
+0.9478053
+other
+0.61420435
+muscle artifact
+0.65275466
+other
+0.84238994
+other
+0.7756631
+other
+0.6093284
+brain
+0.49065197
+other
+0.5445234
+│18:48:27│ ⏳️ sub-005 Detected 14 artifact-related independent component(s) in 103 epochs.
+│18:48:27│ ⏳️ sub-005 Saving ICA solution and detected artifacts to disk.
+│18:48:27│ ⏳️ sub-005 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_proc-ica+eog_ave.fif
+other
+0.58232456
+muscle artifact
+0.8591143
+brain
+0.8364706
+brain
+0.98627424
+brain
+0.8402237
+other
+0.5224124
+brain
+0.9719489
+eye blink
+0.60958475
+brain
+0.98760796
+brain
+0.95560336
+brain
+0.9915405
+brain
+0.9970027
+muscle artifact
+0.989518
+muscle artifact
+0.9640849
+other
+0.39142796
+brain
+0.56857073
+other
+0.89890504
+brain
+0.98857355
+brain
+0.5428456
+brain
+0.8286304
+brain
+0.6131016
+brain
+0.978445
+muscle artifact
+0.8847221
+muscle artifact
+0.758222
+brain
+0.83246225
+other
+0.9766334
+eye blink
+0.46499515
+brain
+0.95709693
+other
+0.6461646
+other
+0.62094665
+other
+0.5430544
+channel noise
+0.3617634
+other
+0.81741816
+other
+0.93968755
+other
+0.500252
+other
+0.9975529
+muscle artifact
+0.88186765
+brain
+0.8629142
+brain
+0.80290073
+brain
+0.44091594
+other
+0.75025725
+heart beat
+0.8977747
+muscle artifact
+0.53501827
+brain
+0.43223447
+muscle artifact
+0.8898507
+brain
+0.7371874
+muscle artifact
+0.96979874
+muscle artifact
+0.6645798
+other
+0.9660731
+other
+0.48204345
+other
+0.7853526
+other
+0.517256
+brain
+0.7019174
+other
+0.6989901
+other
+0.9904398
+other
+0.7526446
+other
+0.8617144
+other
+0.3450815
+other
+0.83036774
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+│18:48:27│ ⏳️ sub-002 Detected 14 artifact-related independent component(s) in 104 epochs.
+│18:48:27│ ⏳️ sub-002 Saving ICA solution and detected artifacts to disk.
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+│18:48:27│ ⏳️ sub-002 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_proc-ica+eog_ave.fif
+│18:48:27│ ⏳️ sub-005 Adding "ICA: components" to report.
+brain
+0.6882585
+other
+0.6557337
+brain
+0.99900526
+brain
+0.9995141
+muscle artifact
+0.9946251
+brain
+0.9902217
+brain
+0.9999627
+brain
+0.9525673
+brain
+0.97632885
+muscle artifact
+0.6086934
+brain
+0.999667
+brain
+0.9934192
+other
+0.60145444
+brain
+0.9254434
+brain
+0.95090896
+brain
+0.99970293
+brain
+0.9969147
+eye blink
+0.5931473
+brain
+0.9946189
+brain
+0.99444366
+muscle artifact
+0.9921253
+muscle artifact
+0.6554859
+brain
+0.45511326
+other
+0.8536435
+brain
+0.3542531
+brain
+0.59045345
+other
+0.49826604
+other
+0.5847107
+brain
+0.97621125
+other
+0.4190699
+brain
+0.99957097
+brain
+0.6592994
+channel noise
+0.49072313
+other
+0.9383241
+other
+0.64257526
+brain
+0.99622536
+channel noise
+0.6953659
+muscle artifact
+0.9389426
+muscle artifact
+0.5219733
+other
+0.7715976
+muscle artifact
+0.9922377
+brain
+0.5939779
+other
+0.82818985
+other
+0.68532574
+other
+0.70143557
+brain
+0.59952945
+brain
+0.31578615
+other
+0.6686014
+brain
+0.68818045
+brain
+0.48660025
+other
+0.55658185
+other
+0.6400639
+other
+0.90719247
+brain
+0.73199195
+muscle artifact
+0.6361053
+other
+0.3890494
+brain
+0.5653908
+other
+0.81560767
+other
+0.7612276
+│18:48:28│ ⏳️ sub-003 Detected 11 artifact-related independent component(s) in 184 epochs.
+│18:48:28│ ⏳️ sub-002 Adding "ICA: components" to report.
+│18:48:28│ ⏳️ sub-003 Saving ICA solution and detected artifacts to disk.
+│18:48:28│ ⏳️ sub-003 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_proc-ica+eog_ave.fif
+muscle artifact
+0.9933092
+brain
+0.83577186
+muscle artifact
+0.99976856
+muscle artifact
+0.9996482
+brain
+0.6082361
+muscle artifact
+0.9997576
+muscle artifact
+0.9998735
+muscle artifact
+0.99064714
+muscle artifact
+0.99642956
+brain
+0.99834955
+brain
+0.9985687
+muscle artifact
+0.992681
+brain
+0.5001818
+muscle artifact
+0.9894613
+muscle artifact
+0.9964786
+muscle artifact
+0.9961434
+muscle artifact
+0.99598485
+muscle artifact
+0.9199674
+brain
+0.9876185
+muscle artifact
+0.9618391
+brain
+0.9972476
+brain
+0.9982064
+muscle artifact
+0.9998034
+muscle artifact
+0.9863224
+muscle artifact
+0.8157777
+brain
+0.996909
+muscle artifact
+0.69483346
+muscle artifact
+0.77022994
+brain
+0.59168273
+muscle artifact
+0.91917217
+other
+0.9276395
+other
+0.6264237
+brain
+0.81916225
+brain
+0.9602846
+other
+0.9045203
+muscle artifact
+0.9960489
+other
+0.58251333
+channel noise
+0.5233861
+muscle artifact
+0.3464925
+brain
+0.49867973
+other
+0.9379301
+other
+0.7209376
+other
+0.49876952
+other
+0.91530377
+channel noise
+0.6686477
+other
+0.9001864
+brain
+0.32005554
+other
+0.63013935
+channel noise
+0.4824482
+other
+0.72657514
+brain
+0.99245954
+other
+0.7973352
+other
+0.7225143
+brain
+0.46558386
+brain
+0.42891982
+other
+0.57202256
+muscle artifact
+0.55512846
+other
+0.8862549
+muscle artifact
+0.7442838
+│18:48:28│ ⏳️ sub-001 Detected 27 artifact-related independent component(s) in 231 epochs.
+brain
+0.47642863
+brain
+0.84246475
+brain
+0.97134453
+brain
+0.9804764
+brain
+0.6961795
+muscle artifact
+0.44083536
+brain
+0.8833693
+brain
+0.99540716
+brain
+0.9636468
+muscle artifact
+0.9148258
+brain
+0.4241952
+brain
+0.56133854
+brain
+0.43959183
+other
+0.45238888
+brain
+0.97215116
+muscle artifact
+0.8684226
+muscle artifact
+0.4714884
+brain
+0.833582
+brain
+0.89242244
+brain
+0.7368671
+muscle artifact
+0.51781684
+brain
+0.5849198
+brain
+0.68828523
+brain
+0.47291872
+other
+0.414643
+other
+0.62643033
+brain
+0.6199219
+brain
+0.79320693
+other
+0.42931244
+other
+0.76403767
+brain
+0.844831
+brain
+0.5325862
+brain
+0.380701
+brain
+0.9014797
+eye blink
+0.45963287
+channel noise
+0.37272337
+other
+0.82401764
+brain
+0.75790846
+channel noise
+0.45645267
+brain
+0.7133516
+brain
+0.7198214
+brain
+0.45280612
+muscle artifact
+0.95143086
+channel noise
+0.5859429
+brain
+0.9777572
+brain
+0.5503497
+other
+0.64390326
+other
+0.45712185
+muscle artifact
+0.56673604
+other
+0.6220166
+brain
+0.83193064
+brain
+0.9084215
+│18:48:28│ ⏳️ sub-001 Saving ICA solution and detected artifacts to disk.
+other
+0.8309177
+other
+0.6522226
+other
+0.7297432
+other
+0.6321717
+other
+0.6847744
+other
+0.82125205
+other
+0.83294207
+│18:48:28│ ⏳️ sub-004 Detected 11 artifact-related independent component(s) in 143 epochs.
+│18:48:28│ ⏳️ sub-004 Saving ICA solution and detected artifacts to disk.
+│18:48:28│ ⏳️ sub-001 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_proc-ica+eog_ave.fif
+│18:48:28│ ⏳️ sub-004 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_proc-ica+eog_ave.fif
+│18:48:28│ ⏳️ sub-003 Adding "ICA: components" to report.
+│18:48:29│ ⏳️ sub-004 Adding "ICA: components" to report.
+│18:48:29│ ⏳️ sub-001 Adding "ICA: components" to report.
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+other
+0.59815
+brain
+0.7563866
+brain
+0.53464603
+other
+0.5229485
+other
+0.5886709
+channel noise
+0.31704864
+brain
+0.52783704
+other
+0.39266378
+brain
+0.7954777
+brain
+0.998459
+brain
+0.9770497
+brain
+0.9991037
+brain
+0.99770844
+brain
+0.9726735
+channel noise
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+0.31717843
+other
+0.4860704
+other
+0.32060206
+muscle artifact
+0.7541781
+brain
+0.51200664
+other
+0.46920937
+other
+0.45759356
+eye blink
+0.6888412
+brain
+0.8151964
+brain
+0.4043056
+other
+0.41889834
+muscle artifact
+0.94134814
+other
+0.332405
+muscle artifact
+0.9139181
+brain
+0.8789879
+brain
+0.5620364
+muscle artifact
+0.39725995
+other
+0.7643931
+brain
+0.86823666
+other
+0.5731268
+brain
+0.40623355
+other
+0.39091092
+other
+0.6068819
+brain
+0.35512242
+muscle artifact
+0.65128744
+other
+0.5814302
+brain
+0.9299828
+brain
+0.45117363
+other
+0.49481446
+other
+0.86274534
+brain
+0.7433845
+channel noise
+0.47611177
+brain
+0.80952674
+channel noise
+0.53211683
+other
+0.7449594
+other
+0.46864387
+channel noise
+0.50456464
+other
+0.76815945
+other
+0.7550547
+muscle artifact
+0.5362116
+other
+0.4152047
+brain
+0.5856894
+other
+0.43781146
+other
+0.53142464
+other
+0.9548101
+│18:48:30│ ⏳️ sub-008 Detected 12 artifact-related independent component(s) in 276 epochs.
+│18:48:30│ ⏳️ sub-008 Saving ICA solution and detected artifacts to disk.
+│18:48:30│ ⏳️ sub-008 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_proc-ica+eog_ave.fif
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+│18:48:31│ ⏳️ sub-008 Adding "ICA: components" to report.
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+brain
+0.7761573
+brain
+0.48709017
+brain
+0.9993732
+brain
+0.99930906
+brain
+0.38929737
+brain
+0.9996485
+brain
+0.5652822
+brain
+0.99692327
+muscle artifact
+0.99257576
+brain
+0.9836261
+brain
+0.99622875
+muscle artifact
+0.99559176
+brain
+0.99443316
+muscle artifact
+0.8495102
+brain
+0.44365016
+muscle artifact
+0.89986384
+brain
+0.94977206
+other
+0.40169334
+brain
+0.9158641
+other
+0.5498795
+other
+0.39984822
+muscle artifact
+0.6736393
+other
+0.5841247
+other
+0.6773902
+other
+0.76169103
+other
+0.69706786
+muscle artifact
+0.5006474
+other
+0.5148005
+muscle artifact
+0.73564416
+brain
+0.8123438
+other
+0.7110852
+brain
+0.6755328
+brain
+0.41440558
+brain
+0.4830387
+brain
+0.5195842
+other
+0.70909375
+brain
+0.59384584
+other
+0.6085155
+muscle artifact
+0.8743677
+brain
+0.98174286
+brain
+0.68872905
+brain
+0.6774723
+brain
+0.9110457
+channel noise
+0.35669574
+other
+0.8906029
+other
+0.71674633
+other
+0.9060799
+brain
+0.84212947
+other
+0.9308363
+brain
+0.8703766
+other
+0.8620443
+brain
+0.6248661
+other
+0.63482845
+other
+0.36398107
+brain
+0.40068722
+other
+0.70833623
+other
+0.7994224
+other
+0.8061178
+other
+0.9976165
+│18:48:31│ ⏳️ sub-009 Detected 9 artifact-related independent component(s) in 268 epochs.
+│18:48:31│ ⏳️ sub-009 Saving ICA solution and detected artifacts to disk.
+│18:48:31│ ⏳️ sub-009 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_proc-ica+eog_ave.fif
+other
+0.86883426
+brain
+0.6979034
+brain
+0.5854915
+channel noise
+0.36919314
+brain
+0.9978026
+brain
+0.99729776
+brain
+0.9949579
+other
+0.553517
+brain
+0.99687123
+brain
+0.99836206
+muscle artifact
+0.91133845
+muscle artifact
+0.77771604
+brain
+0.5116528
+brain
+0.9871998
+muscle artifact
+0.9314248
+brain
+0.5242005
+muscle artifact
+0.63627577
+other
+0.5688075
+other
+0.5974165
+muscle artifact
+0.7651162
+muscle artifact
+0.7548624
+brain
+0.98440164
+brain
+0.91283584
+brain
+0.6833482
+channel noise
+0.41199207
+brain
+0.9717573
+other
+0.47127953
+brain
+0.6533315
+brain
+0.9941905
+muscle artifact
+0.82233274
+brain
+0.53607583
+brain
+0.9324573
+muscle artifact
+0.4671722
+brain
+0.9034232
+muscle artifact
+0.41065803
+other
+0.77832663
+other
+0.80995053
+brain
+0.9083762
+brain
+0.8095834
+muscle artifact
+0.30212235
+brain
+0.96433634
+other
+0.5657823
+channel noise
+0.57996094
+muscle artifact
+0.52841455
+other
+0.8934657
+brain
+0.69473135
+brain
+0.5769403
+other
+0.55712867
+other
+0.5324702
+other
+0.6718764
+other
+0.6407731
+channel noise
+0.5210965
+other
+0.45383778
+other
+0.5206153
+other
+0.38513285
+brain
+0.72194743
+brain
+0.6558544
+other
+0.7682475
+other
+0.47445267
+│18:48:31│ ⏳️ sub-007 Detected 15 artifact-related independent component(s) in 280 epochs.
+│18:48:31│ ⏳️ sub-007 Saving ICA solution and detected artifacts to disk.
+│18:48:32│ ⏳️ sub-007 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_proc-ica+eog_ave.fif
+│18:48:32│ ⏳️ sub-009 Adding "ICA: components" to report.
+brain
+0.7490552
+brain
+0.94149995
+brain
+0.9898492
+brain
+0.56155455
+brain
+0.92042804
+brain
+0.9973811
+brain
+0.99795085
+brain
+0.9999486
+muscle artifact
+0.93742603
+brain
+0.9930801
+other
+0.79648674
+brain
+0.99886674
+brain
+0.99514526
+brain
+0.8272345
+brain
+0.9996305
+brain
+0.867879
+brain
+0.98990786
+brain
+0.9874082
+brain
+0.980468
+brain
+0.9411868
+other
+0.63507897
+channel noise
+0.3214261
+muscle artifact
+0.5640855
+brain
+0.91509384
+brain
+0.9524804
+brain
+0.9324517
+muscle artifact
+0.58705604
+brain
+0.8590434
+brain
+0.8455857
+other
+0.5525485
+other
+0.3076471
+muscle artifact
+0.4068636
+other
+0.5431555
+brain
+0.7081699
+brain
+0.56244755
+muscle artifact
+0.8781499
+other
+0.836882
+brain
+0.55840063
+brain
+0.94183457
+brain
+0.77491844
+brain
+0.53335
+brain
+0.75229686
+brain
+0.4901115
+other
+0.75565755
+other
+0.47739643
+other
+0.9510605
+other
+0.51767474
+other
+0.5579611
+muscle artifact
+0.4840119
+brain
+0.8435701
+other
+0.47898513
+other
+0.6397996
+other
+0.8324306
+brain
+0.5303134
+other
+0.69433177
+other
+0.5819603
+other
+0.89333713
+eye blink
+0.5423746
+other
+0.8977295
+│18:48:32│ ⏳️ sub-010 Detected 8 artifact-related independent component(s) in 235 epochs.
+│18:48:32│ ⏳️ sub-010 Saving ICA solution and detected artifacts to disk.
+│18:48:32│ ⏳️ sub-010 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_proc-ica+eog_ave.fif
+│18:48:32│ ⏳️ sub-007 Adding "ICA: components" to report.
+│18:48:32│ ⏳️ sub-010 Adding "ICA: components" to report.
+/home/okk/.local/lib/python3.11/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+muscle artifact
+0.9467015
+brain
+0.84231514
+brain
+0.8685675
+brain
+0.99449086
+muscle artifact
+0.9995085
+brain
+0.9412614
+muscle artifact
+0.83200645
+muscle artifact
+0.9958087
+brain
+0.99785686
+brain
+0.9939843
+muscle artifact
+0.6920152
+muscle artifact
+0.9890546
+brain
+0.6587928
+brain
+0.9998618
+brain
+0.47304088
+brain
+0.6043584
+muscle artifact
+0.49229857
+brain
+0.8357433
+brain
+0.99641716
+brain
+0.99707144
+muscle artifact
+0.9623057
+muscle artifact
+0.97791344
+muscle artifact
+0.9248563
+brain
+0.43908516
+muscle artifact
+0.9707651
+brain
+0.70568365
+eye blink
+0.7012966
+muscle artifact
+0.9548096
+eye blink
+0.629262
+other
+0.55894035
+brain
+0.96729726
+brain
+0.8013444
+brain
+0.9413427
+muscle artifact
+0.81118274
+brain
+0.78977764
+other
+0.79990077
+muscle artifact
+0.71437705
+brain
+0.8980504
+brain
+0.9833532
+muscle artifact
+0.57001466
+brain
+0.87190586
+brain
+0.5373614
+brain
+0.7913162
+brain
+0.89941573
+other
+0.86569965
+brain
+0.75290585
+other
+0.6540739
+brain
+0.73342794
+brain
+0.48543257
+other
+0.7611631
+other
+0.9169438
+brain
+0.49955118
+other
+0.53538924
+other
+0.92926013
+other
+0.9658937
+other
+0.94199324
+other
+0.9033851
+other
+0.59000206
+muscle artifact
+0.68720365
+│18:48:34│ ⏳️ sub-006 Detected 18 artifact-related independent component(s) in 437 epochs.
+│18:48:34│ ⏳️ sub-006 Saving ICA solution and detected artifacts to disk.
+│18:48:34│ ⏳️ sub-006 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_proc-ica+eog_ave.fif
+│18:48:34│ ⏳️ sub-006 Adding "ICA: components" to report.
+│18:50:22│ ⏳️ sub-002 Adding config and sys info to report
+│18:50:23│ ⏳️ sub-005 Adding config and sys info to report
+│18:50:28│ ⏳️ sub-002 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│18:50:28│ 🛑 sub-002 Carefully review the extracted ICs and mark components "bad" in:
+│18:50:28│ 🛑 sub-002 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_proc-ica_components.tsv
+│18:50:29│ ⏳️ sub-011 Loading ICA solution
+│18:50:29│ ⏳️ sub-011 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:50:29│ ⏳️ sub-005 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│18:50:29│ ⏳️ sub-011 Creating EOG epochs …
+│18:50:30│ ⏳️ sub-011 Performing automated EOG artifact detection …
+│18:50:30│ 🛑 sub-005 Carefully review the extracted ICs and mark components "bad" in:
+│18:50:30│ 🛑 sub-005 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_proc-ica_components.tsv
+│18:50:30│ ⏳️ sub-011 Detected 1 EOG-related ICs in 170 EOG epochs: 0
+│18:50:30│ ⏳️ sub-011 Performing automated artifact detection (MNE-ICALabel) …
+│18:50:31│ ⏳️ sub-012 Loading ICA solution
+│18:50:31│ ⏳️ sub-004 Adding config and sys info to report
+│18:50:31│ ⏳️ sub-012 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:50:31│ ⏳️ sub-012 Creating EOG epochs …
+│18:50:31│ ⏳️ sub-012 Performing automated EOG artifact detection …
+│18:50:32│ ⏳️ sub-012 Detected 2 EOG-related ICs in 105 EOG epochs: 2, 0
+│18:50:32│ ⏳️ sub-012 Performing automated artifact detection (MNE-ICALabel) …
+│18:50:36│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│18:50:37│ 🛑 sub-004 Carefully review the extracted ICs and mark components "bad" in:
+│18:50:37│ 🛑 sub-004 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_proc-ica_components.tsv
+│18:50:37│ ⏳️ sub-013 Loading ICA solution
+│18:50:37│ ⏳️ sub-013 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:50:38│ ⏳️ sub-013 Creating EOG epochs …
+│18:50:38│ ⏳️ sub-013 Performing automated EOG artifact detection …
+│18:50:39│ ⏳️ sub-013 Detected 2 EOG-related ICs in 174 EOG epochs: 0, 1
+│18:50:39│ ⏳️ sub-013 Performing automated artifact detection (MNE-ICALabel) …
+│18:50:39│ ⏳️ sub-003 Adding config and sys info to report
+brain
+0.5590472
+brain
+0.6559427
+brain
+0.6689272
+brain
+0.99574494
+brain
+0.97358495
+brain
+0.98320514
+brain
+0.94862413
+brain
+0.9892549
+muscle artifact
+0.7108184
+other
+0.5973151
+brain
+0.62558055
+brain
+0.8599697
+brain
+0.64074785
+brain
+0.9045699
+eye blink
+0.5942265
+brain
+0.7583089
+other
+0.67460793
+eye blink
+0.37281364
+brain
+0.6645953
+brain
+0.6164565
+muscle artifact
+0.7414846
+other
+0.3643057
+other
+0.83390963
+muscle artifact
+0.830082
+muscle artifact
+0.7011219
+muscle artifact
+0.67979264
+brain
+0.9543551
+brain
+0.5432853
+muscle artifact
+0.43249613
+other
+0.60528094
+muscle artifact
+0.53124225
+muscle artifact
+0.96561706
+muscle artifact
+0.93563604
+brain
+0.5247583
+other
+0.52110654
+brain
+0.5976918
+other
+0.4968301
+brain
+0.7425965
+other
+0.6831773
+brain
+0.37043527
+brain
+0.9990883
+muscle artifact
+0.87894815
+muscle artifact
+0.8764566
+other
+0.96247876
+other
+0.88953286
+other
+0.766443
+brain
+0.67571306
+brain
+0.52833766
+channel noise
+0.5716238
+other
+0.59093136
+brain
+0.6427715
+brain
+0.4831963
+brain
+0.49956018
+other
+0.66654325
+other
+0.82085294
+brain
+0.48214924
+other
+0.6972242
+brain
+0.36859143
+other
+0.8772362
+│18:50:41│ ⏳️ sub-011 Detected 14 artifact-related independent component(s) in 278 epochs.
+│18:50:41│ ⏳️ sub-011 Saving ICA solution and detected artifacts to disk.
+│18:50:41│ ⏳️ sub-011 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_proc-ica+eog_ave.fif
+│18:50:41│ ⏳️ sub-011 Adding "ICA: components" to report.
+other
+0.55886495
+eye blink
+0.48327228
+brain
+0.76955736
+brain
+0.99544716
+heart beat
+0.82827383
+brain
+0.99894667
+brain
+0.91600746
+brain
+0.97346234
+eye blink
+0.8493526
+brain
+0.9996696
+brain
+0.99966687
+brain
+0.40811384
+brain
+0.99913526
+brain
+0.99856997
+other
+0.51336896
+brain
+0.96948266
+brain
+0.4340996
+other
+0.43471614
+other
+0.7260839
+eye blink
+0.47899324
+brain
+0.8716695
+brain
+0.56205666
+brain
+0.58048844
+brain
+0.959491
+other
+0.8439608
+brain
+0.6287101
+brain
+0.63675976
+brain
+0.56754464
+brain
+0.9537578
+other
+0.4083732
+other
+0.49791217
+other
+0.5967412
+brain
+0.9652108
+brain
+0.6038913
+other
+0.6274257
+channel noise
+0.42779803
+other
+0.56140524
+other
+0.6556146
+brain
+0.92178303
+muscle artifact
+0.9069803
+brain
+0.37316906
+other
+0.57629055
+other
+0.70442843
+other
+0.62076646
+other
+0.71642077
+other
+0.45381793
+brain
+0.86859876
+other
+0.62564456
+brain
+0.4135918
+brain
+0.68201417
+other
+0.5096712
+brain
+0.5371016
+muscle artifact
+0.7293844
+other
+0.8906104
+brain
+0.41100177
+other
+0.7436838
+channel noise
+0.36647242
+brain
+0.68225694
+other
+0.24104956
+│18:50:41│ ⏳️ sub-012 Detected 8 artifact-related independent component(s) in 207 epochs.
+│18:50:41│ ⏳️ sub-012 Saving ICA solution and detected artifacts to disk.
+│18:50:41│ ⏳️ sub-012 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_proc-ica+eog_ave.fif
+│18:50:41│ ⏳️ sub-012 Adding "ICA: components" to report.
+│18:50:43│ ⏳️ sub-003 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│18:50:43│ 🛑 sub-003 Carefully review the extracted ICs and mark components "bad" in:
+│18:50:43│ 🛑 sub-003 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_proc-ica_components.tsv
+│18:50:44│ ⏳️ sub-014 Loading ICA solution
+│18:50:44│ ⏳️ sub-014 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:50:44│ ⏳️ sub-014 Creating EOG epochs …
+│18:50:44│ ⏳️ sub-014 Performing automated EOG artifact detection …
+│18:50:45│ ⏳️ sub-014 Detected 3 EOG-related ICs in 87 EOG epochs: 0, 24, 1
+│18:50:45│ ⏳️ sub-014 Performing automated artifact detection (MNE-ICALabel) …
+brain
+0.83515286
+brain
+0.7654224
+brain
+0.9979433
+brain
+0.99946606
+brain
+0.9993914
+other
+0.3763115
+brain
+0.9833943
+brain
+0.8144728
+brain
+0.5296401
+brain
+0.99298036
+brain
+0.9972115
+brain
+0.8332745
+muscle artifact
+0.5920733
+channel noise
+0.5307748
+channel noise
+0.41758683
+brain
+0.8983206
+brain
+0.72908366
+brain
+0.98719966
+brain
+0.8577128
+brain
+0.48839498
+other
+0.44221878
+eye blink
+0.44797438
+brain
+0.8648677
+brain
+0.7480961
+other
+0.31984928
+brain
+0.9448259
+brain
+0.5967428
+brain
+0.9780931
+brain
+0.97706527
+eye blink
+0.59539557
+brain
+0.9811928
+brain
+0.9231956
+brain
+0.50668097
+other
+0.54823214
+other
+0.59457517
+brain
+0.48895514
+channel noise
+0.6884927
+brain
+0.86340225
+brain
+0.7640436
+brain
+0.96610737
+brain
+0.85199493
+brain
+0.47429752
+brain
+0.41240394
+other
+0.44094372
+brain
+0.6808229
+other
+0.4097496
+brain
+0.4108591
+brain
+0.9336328
+other
+0.42139357
+other
+0.8854853
+other
+0.50814295
+brain
+0.5961714
+brain
+0.8888302
+other
+0.67586946
+brain
+0.67826486
+brain
+0.9903833
+channel noise
+0.89420325
+channel noise
+0.47175354
+other
+0.48390287
+│18:50:45│ ⏳️ sub-013 Detected 8 artifact-related independent component(s) in 137 epochs.
+│18:50:45│ ⏳️ sub-013 Saving ICA solution and detected artifacts to disk.
+│18:50:45│ ⏳️ sub-013 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_proc-ica+eog_ave.fif
+│18:50:45│ ⏳️ sub-013 Adding "ICA: components" to report.
+│18:50:50│ ⏳️ sub-010 Adding config and sys info to report
+brain
+0.5244705
+brain
+0.9362308
+brain
+0.96773803
+muscle artifact
+0.6036931
+brain
+0.9552955
+brain
+0.35153782
+muscle artifact
+0.94814694
+brain
+0.93492943
+brain
+0.8215565
+eye blink
+0.96992725
+channel noise
+0.7880056
+brain
+0.68275476
+other
+0.3856369
+brain
+0.49906975
+other
+0.5418377
+other
+0.45775893
+brain
+0.5649074
+brain
+0.76052165
+other
+0.5081434
+other
+0.9622196
+brain
+0.63881457
+muscle artifact
+0.6369039
+other
+0.40217406
+other
+0.7835169
+other
+0.8512408
+other
+0.72913337
+other
+0.5487518
+brain
+0.43707108
+other
+0.6094504
+muscle artifact
+0.9974241
+other
+0.8467319
+other
+0.76287985
+other
+0.672189
+other
+0.75968474
+muscle artifact
+0.918733
+brain
+0.9396695
+other
+0.75706285
+other
+0.7564552
+other
+0.52113086
+other
+0.43024504
+brain
+0.83755195
+other
+0.50784266
+channel noise
+0.6327995
+other
+0.635489
+brain
+0.8235583
+channel noise
+0.33858603
+other
+0.79296374
+other
+0.9075818
+channel noise
+0.7145516
+other
+0.58796513
+other
+0.56928504
+channel noise
+0.6344824
+brain
+0.80620193
+brain
+0.72318155
+brain
+0.5314276
+other
+0.43165213
+other
+0.72818893
+muscle artifact
+0.47439665
+other
+0.69806653
+│18:50:51│ ⏳️ sub-014 Detected 12 artifact-related independent component(s) in 149 epochs.
+│18:50:51│ ⏳️ sub-014 Saving ICA solution and detected artifacts to disk.
+│18:50:51│ ⏳️ sub-014 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_proc-ica+eog_ave.fif
+│18:50:51│ ⏳️ sub-001 Adding config and sys info to report
+│18:50:51│ ⏳️ sub-014 Adding "ICA: components" to report.
+│18:50:53│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│18:50:54│ 🛑 sub-010 Carefully review the extracted ICs and mark components "bad" in:
+│18:50:54│ 🛑 sub-010 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_proc-ica_components.tsv
+│18:50:54│ ⏳️ sub-015 Loading ICA solution
+│18:50:54│ ⏳️ sub-015 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:50:55│ ⏳️ sub-015 Creating EOG epochs …
+│18:50:55│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│18:50:55│ ⏳️ sub-015 Performing automated EOG artifact detection …
+│18:50:55│ ⏳️ sub-009 Adding config and sys info to report
+│18:50:55│ ⏳️ sub-015 Detected 2 EOG-related ICs in 106 EOG epochs: 0, 2
+│18:50:55│ ⏳️ sub-015 Performing automated artifact detection (MNE-ICALabel) …
+│18:50:56│ ⏳️ sub-008 Adding config and sys info to report
+│18:50:56│ 🛑 sub-001 Carefully review the extracted ICs and mark components "bad" in:
+│18:50:56│ 🛑 sub-001 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_proc-ica_components.tsv
+│18:50:56│ ⏳️ sub-016 Loading ICA solution
+│18:50:56│ ⏳️ sub-016 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:50:57│ ⏳️ sub-016 Creating EOG epochs …
+│18:50:57│ ⏳️ sub-016 Performing automated EOG artifact detection …
+│18:50:57│ ⏳️ sub-016 Detected 2 EOG-related ICs in 224 EOG epochs: 0, 3
+│18:50:57│ ⏳️ sub-016 Performing automated artifact detection (MNE-ICALabel) …
+│18:50:59│ ⏳️ sub-007 Adding config and sys info to report
+│18:51:00│ ⏳️ sub-008 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│18:51:00│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│18:51:00│ 🛑 sub-009 Carefully review the extracted ICs and mark components "bad" in:
+│18:51:00│ 🛑 sub-009 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_proc-ica_components.tsv
+│18:51:00│ 🛑 sub-008 Carefully review the extracted ICs and mark components "bad" in:
+│18:51:00│ 🛑 sub-008 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_proc-ica_components.tsv
+│18:51:00│ ⏳️ sub-017 Loading ICA solution
+│18:51:01│ ⏳️ sub-017 No ECG or magnetometer channels are present, cannot automate artifact detection for ECG.
+│18:51:01│ ⏳️ sub-017 Creating EOG epochs …
+│18:51:01│ ⏳️ sub-017 Performing automated EOG artifact detection …
+│18:51:02│ ⏳️ sub-017 Detected 3 EOG-related ICs in 128 EOG epochs: 1, 0, 35
+│18:51:02│ ⏳️ sub-017 Performing automated artifact detection (MNE-ICALabel) …
+│18:51:05│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+brain
+0.7684438
+brain
+0.995786
+brain
+0.82893777
+brain
+0.95729494
+brain
+0.99619204
+brain
+0.91767955
+brain
+0.99927074
+brain
+0.995466
+brain
+0.99130833
+brain
+0.9941548
+brain
+0.84293944
+other
+0.67636436
+brain
+0.7247744
+other
+0.9151605
+muscle artifact
+0.46312666
+other
+0.6729498
+other
+0.7539602
+other
+0.9224057
+brain
+0.6349778
+other
+0.70212334
+other
+0.48644945
+eye blink
+0.46944103
+other
+0.3223818
+brain
+0.7534197
+other
+0.49633694
+other
+0.5504723
+brain
+0.9914565
+brain
+0.53572005
+brain
+0.56774324
+other
+0.69149554
+brain
+0.58751404
+other
+0.9540582
+other
+0.76584685
+other
+0.5973608
+eye blink
+0.3379442
+other
+0.6449731
+other
+0.5427718
+other
+0.9211956
+other
+0.74257076
+other
+0.9173478
+other
+0.91914994
+other
+0.95852923
+brain
+0.8937406
+other
+0.62401396
+other
+0.7414792
+brain
+0.74682134
+other
+0.753404
+brain
+0.590004
+other
+0.8316769
+other
+0.6500433
+other
+0.34773234
+brain
+0.49545717
+other
+0.92849094
+channel noise
+0.4797611
+other
+0.66083413
+other
+0.73449045
+other
+0.9454274
+brain
+0.52118003
+channel noise
+0.57995605
+│18:51:05│ ⏳️ sub-015 Detected 5 artifact-related independent component(s) in 236 epochs.
+│18:51:05│ ⏳️ sub-015 Saving ICA solution and detected artifacts to disk.
+│18:51:05│ ⏳️ sub-015 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_proc-ica+eog_ave.fif
+│18:51:05│ ⏳️ sub-015 Adding "ICA: components" to report.
+│18:51:05│ 🛑 sub-007 Carefully review the extracted ICs and mark components "bad" in:
+│18:51:05│ 🛑 sub-007 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_proc-ica_components.tsv
+brain
+0.72934675
+channel noise
+0.40317982
+muscle artifact
+0.90056485
+brain
+0.86706066
+brain
+0.99722606
+muscle artifact
+0.9850566
+eye blink
+0.75403595
+brain
+0.9986792
+muscle artifact
+0.51510036
+muscle artifact
+0.47502846
+brain
+0.9984906
+channel noise
+0.7742782
+channel noise
+0.95821065
+other
+0.5164996
+brain
+0.9997654
+channel noise
+0.31328022
+other
+0.9196853
+eye blink
+0.39429033
+other
+0.52781385
+brain
+0.76712716
+other
+0.450148
+other
+0.82456064
+other
+0.4957544
+channel noise
+0.82818645
+other
+0.7026846
+other
+0.75773734
+other
+0.6740447
+brain
+0.84488904
+other
+0.59807426
+brain
+0.9442081
+other
+0.47314155
+other
+0.578825
+other
+0.88587886
+other
+0.9477426
+other
+0.6423475
+other
+0.94686663
+other
+0.89953643
+other
+0.87428975
+other
+0.6910204
+other
+0.6921619
+channel noise
+0.40447685
+brain
+0.8948864
+channel noise
+0.79350555
+other
+0.89206916
+other
+0.48109815
+other
+0.9080114
+other
+0.5690926
+other
+0.5240742
+other
+0.4887876
+brain
+0.53152996
+other
+0.62337434
+other
+0.857405
+other
+0.48491782
+other
+0.6975024
+other
+0.6353874
+other
+0.6493805
+other
+0.9391839
+other
+0.7078884
+other
+0.9855428
+│18:51:08│ ⏳️ sub-016 Detected 13 artifact-related independent component(s) in 272 epochs.
+│18:51:08│ ⏳️ sub-016 Saving ICA solution and detected artifacts to disk.
+│18:51:08│ ⏳️ sub-016 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_proc-ica+eog_ave.fif
+│18:51:08│ ⏳️ sub-016 Adding "ICA: components" to report.
+brain
+0.63887155
+brain
+0.9320396
+brain
+0.99193114
+muscle artifact
+0.4976796
+channel noise
+0.9722547
+brain
+0.9984492
+muscle artifact
+0.99029607
+brain
+0.97428846
+brain
+0.9656511
+brain
+0.96722853
+brain
+0.9990655
+brain
+0.99768317
+muscle artifact
+0.9929739
+brain
+0.9993743
+brain
+0.98405796
+other
+0.5147956
+muscle artifact
+0.80398
+brain
+0.99976695
+muscle artifact
+0.98863995
+brain
+0.4755799
+muscle artifact
+0.9921247
+brain
+0.9985049
+brain
+0.9426743
+muscle artifact
+0.931666
+muscle artifact
+0.959548
+brain
+0.41036305
+muscle artifact
+0.60187995
+brain
+0.9216328
+muscle artifact
+0.94086236
+muscle artifact
+0.9742521
+muscle artifact
+0.41227084
+muscle artifact
+0.6796256
+muscle artifact
+0.7998867
+muscle artifact
+0.89240706
+other
+0.54428536
+brain
+0.8149915
+muscle artifact
+0.80912685
+muscle artifact
+0.7633012
+brain
+0.7319701
+other
+0.4082131
+brain
+0.5355235
+brain
+0.87281024
+muscle artifact
+0.9912852
+brain
+0.46571672
+brain
+0.565397
+brain
+0.60606045
+brain
+0.7857871
+brain
+0.6699597
+brain
+0.97177917
+brain
+0.69487876
+brain
+0.9400465
+brain
+0.49282858
+channel noise
+0.8148916
+brain
+0.5738228
+brain
+0.69049954
+other
+0.6501386
+other
+0.80903715
+other
+0.92731035
+brain
+0.7876117
+│18:51:11│ ⏳️ sub-017 Detected 20 artifact-related independent component(s) in 232 epochs.
+│18:51:11│ ⏳️ sub-017 Saving ICA solution and detected artifacts to disk.
+│18:51:11│ ⏳️ sub-017 Saving EOG artifact: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_proc-ica+eog_ave.fif
+│18:51:11│ ⏳️ sub-017 Adding "ICA: components" to report.
+│18:51:30│ ⏳️ sub-006 Adding config and sys info to report
+│18:51:35│ ⏳️ sub-006 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│18:51:36│ 🛑 sub-006 Carefully review the extracted ICs and mark components "bad" in:
+│18:51:36│ 🛑 sub-006 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_proc-ica_components.tsv
+│18:52:25│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│18:52:25│ 🛑 sub-014 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:25│ 🛑 sub-014 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_proc-ica_components.tsv
+│18:52:30│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│18:52:30│ 🛑 sub-013 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:30│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│18:52:30│ 🛑 sub-013 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_proc-ica_components.tsv
+│18:52:31│ 🛑 sub-011 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:31│ 🛑 sub-011 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_proc-ica_components.tsv
+│18:52:35│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│18:52:35│ 🛑 sub-012 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:35│ 🛑 sub-012 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_proc-ica_components.tsv
+│18:52:52│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+│18:52:53│ 🛑 sub-017 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:53│ 🛑 sub-017 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_proc-ica_components.tsv
+│18:52:53│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│18:52:54│ 🛑 sub-015 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:54│ 🛑 sub-015 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_proc-ica_components.tsv
+│18:52:55│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│18:52:56│ 🛑 sub-016 Carefully review the extracted ICs and mark components "bad" in:
+│18:52:56│ 🛑 sub-016 /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_proc-ica_components.tsv
+└────────┴ done (4m 43s)
+┌────────┬ preprocessing/_06b_run_ssp ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│18:52:56│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_07_make_epochs ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│18:52:56│ ⏳️ sub-006 run-01 Loading filtered raw data from sub-006_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-003 run-01 Loading filtered raw data from sub-003_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-005 run-01 Loading filtered raw data from sub-005_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-002 run-01 Loading filtered raw data from sub-002_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-001 run-01 Loading filtered raw data from sub-001_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-008 run-01 Loading filtered raw data from sub-008_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-004 run-01 Loading filtered raw data from sub-004_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-007 run-01 Loading filtered raw data from sub-007_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-009 run-01 Loading filtered raw data from sub-009_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-003 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-002 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-009 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-008 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-001 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-007 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-010 run-01 Loading filtered raw data from sub-010_task-OddGamble_run-01_proc-filt_raw.fif
+│18:52:56│ ⏳️ sub-006 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-004 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-005 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-010 run-01 Creating task-related epochs …
+│18:52:56│ ⏳️ sub-003 Created 200 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:56│ ⏳️ sub-003 Selected 200 epochs via metadata query: None
+│18:52:56│ ⏳️ sub-002 Created 200 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:56│ ⏳️ sub-003 Writing 200 epochs to disk.
+│18:52:56│ ⏳️ sub-002 Selected 200 epochs via metadata query: None
+│18:52:56│ ⏳️ sub-002 Writing 200 epochs to disk.
+│18:52:57│ ⏳️ sub-001 Created 235 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-008 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-005 Created 200 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-001 Selected 235 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-007 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-008 Selected 280 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-005 Selected 200 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-001 Writing 235 epochs to disk.
+│18:52:57│ ⏳️ sub-008 Writing 280 epochs to disk.
+│18:52:57│ ⏳️ sub-009 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-007 Selected 280 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-005 Writing 200 epochs to disk.
+│18:52:57│ ⏳️ sub-009 Selected 280 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-007 Writing 280 epochs to disk.
+│18:52:57│ ⏳️ sub-004 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-009 Writing 280 epochs to disk.
+│18:52:57│ ⏳️ sub-010 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-006 Created 440 epochs with time interval: -1.0 – 2.0 sec.
+│18:52:57│ ⏳️ sub-004 Selected 280 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-004 Writing 280 epochs to disk.
+│18:52:57│ ⏳️ sub-010 Selected 280 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-006 Selected 440 epochs via metadata query: None
+│18:52:57│ ⏳️ sub-003 Adding events plot to report.
+│18:52:57│ ⏳️ sub-010 Writing 280 epochs to disk.
+│18:52:57│ ⏳️ sub-006 Writing 440 epochs to disk.
+│18:52:57│ ⏳️ sub-002 Adding events plot to report.
+│18:52:58│ ⏳️ sub-003 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-002 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-001 Adding events plot to report.
+│18:52:58│ ⏳️ sub-008 Adding events plot to report.
+│18:52:58│ ⏳️ sub-005 Adding events plot to report.
+│18:52:58│ ⏳️ sub-009 Adding events plot to report.
+│18:52:58│ ⏳️ sub-007 Adding events plot to report.
+│18:52:58│ ⏳️ sub-001 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-010 Adding events plot to report.
+│18:52:58│ ⏳️ sub-005 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-004 Adding events plot to report.
+│18:52:58│ ⏳️ sub-009 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-007 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-008 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-004 Adding uncleaned epochs to report.
+│18:52:58│ ⏳️ sub-010 Adding uncleaned epochs to report.
+│18:52:59│ ⏳️ sub-006 Adding events plot to report.
+│18:52:59│ ⏳️ sub-006 Adding uncleaned epochs to report.
+│18:53:02│ ⏳️ sub-003 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│18:53:02│ ⏳️ sub-002 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│18:53:02│ ⏳️ sub-005 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│18:53:03│ ⏳️ sub-011 run-01 Loading filtered raw data from sub-011_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:03│ ⏳️ sub-012 run-01 Loading filtered raw data from sub-012_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:03│ ⏳️ sub-011 run-01 Creating task-related epochs …
+│18:53:03│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│18:53:03│ ⏳️ sub-012 run-01 Creating task-related epochs …
+│18:53:03│ ⏳️ sub-013 run-01 Loading filtered raw data from sub-013_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:03│ ⏳️ sub-013 run-01 Creating task-related epochs …
+│18:53:04│ ⏳️ sub-011 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:04│ ⏳️ sub-011 Selected 280 epochs via metadata query: None
+│18:53:04│ ⏳️ sub-014 run-01 Loading filtered raw data from sub-014_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:04│ ⏳️ sub-011 Writing 280 epochs to disk.
+│18:53:04│ ⏳️ sub-012 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:04│ ⏳️ sub-012 Selected 280 epochs via metadata query: None
+│18:53:04│ ⏳️ sub-012 Writing 280 epochs to disk.
+│18:53:04│ ⏳️ sub-014 run-01 Creating task-related epochs …
+│18:53:04│ ⏳️ sub-008 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│18:53:04│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│18:53:04│ ⏳️ sub-013 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:04│ ⏳️ sub-013 Selected 280 epochs via metadata query: None
+│18:53:04│ ⏳️ sub-013 Writing 280 epochs to disk.
+│18:53:04│ ⏳️ sub-011 Adding events plot to report.
+│18:53:04│ ⏳️ sub-014 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:04│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│18:53:04│ ⏳️ sub-014 Selected 280 epochs via metadata query: None
+│18:53:04│ ⏳️ sub-014 Writing 280 epochs to disk.
+│18:53:04│ ⏳️ sub-012 Adding events plot to report.
+│18:53:04│ ⏳️ sub-011 Adding uncleaned epochs to report.
+│18:53:05│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│18:53:05│ ⏳️ sub-015 run-01 Loading filtered raw data from sub-015_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:05│ ⏳️ sub-012 Adding uncleaned epochs to report.
+│18:53:05│ ⏳️ sub-016 run-01 Loading filtered raw data from sub-016_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:05│ ⏳️ sub-013 Adding events plot to report.
+│18:53:05│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│18:53:05│ ⏳️ sub-015 run-01 Creating task-related epochs …
+│18:53:05│ ⏳️ sub-013 Adding uncleaned epochs to report.
+│18:53:05│ ⏳️ sub-014 Adding events plot to report.
+│18:53:05│ ⏳️ sub-016 run-01 Creating task-related epochs …
+│18:53:05│ ⏳️ sub-014 Adding uncleaned epochs to report.
+│18:53:05│ ⏳️ sub-006 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│18:53:05│ ⏳️ sub-015 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:05│ ⏳️ sub-017 run-01 Loading filtered raw data from sub-017_task-OddGamble_run-01_proc-filt_raw.fif
+│18:53:05│ ⏳️ sub-015 Selected 280 epochs via metadata query: None
+│18:53:06│ ⏳️ sub-015 Writing 280 epochs to disk.
+│18:53:06│ ⏳️ sub-016 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:06│ ⏳️ sub-017 run-01 Creating task-related epochs …
+│18:53:06│ ⏳️ sub-016 Selected 280 epochs via metadata query: None
+│18:53:06│ ⏳️ sub-016 Writing 280 epochs to disk.
+│18:53:06│ ⏳️ sub-015 Adding events plot to report.
+│18:53:06│ ⏳️ sub-017 Created 280 epochs with time interval: -1.0 – 2.0 sec.
+│18:53:06│ ⏳️ sub-017 Selected 280 epochs via metadata query: None
+│18:53:06│ ⏳️ sub-017 Writing 280 epochs to disk.
+│18:53:06│ ⏳️ sub-015 Adding uncleaned epochs to report.
+│18:53:06│ ⏳️ sub-016 Adding events plot to report.
+│18:53:07│ ⏳️ sub-016 Adding uncleaned epochs to report.
+│18:53:07│ ⏳️ sub-017 Adding events plot to report.
+│18:53:07│ ⏳️ sub-017 Adding uncleaned epochs to report.
+│18:53:09│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│18:53:09│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│18:53:09│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│18:53:10│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│18:53:10│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│18:53:10│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+│18:53:10│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+└────────┴ done (16s)
+┌────────┬ preprocessing/_08a_apply_ica ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│18:53:11│ ⏳️ sub-005 Input: sub-005_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-007 Input: sub-007_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-010 Input: sub-010_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-003 Input: sub-003_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-006 Input: sub-006_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-004 Input: sub-004_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-001 Input: sub-001_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-008 Input: sub-008_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-002 Input: sub-002_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-009 Input: sub-009_task-OddGamble_epo.fif
+│18:53:11│ ⏳️ sub-007 Output: sub-007_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-005 Output: sub-005_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-006 Output: sub-006_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-003 Output: sub-003_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-010 Output: sub-010_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-001 Output: sub-001_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-004 Output: sub-004_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-002 Output: sub-002_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-008 Output: sub-008_task-OddGamble_proc-ica_epo.fif
+│18:53:11│ ⏳️ sub-009 Output: sub-009_task-OddGamble_proc-ica_epo.fif
+│18:53:12│ ⏳️ sub-001 Rejecting ICs with the following indices: 0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 13, 14, 15, 16, 17, 19, 22, 23, 24, 26, 27, 29, 35, 37, 38, 44, 48, 56, 58
+│18:53:12│ ⏳️ sub-009 Rejecting ICs with the following indices: 0, 8, 11, 13, 15, 21, 26, 28, 38, 43
+│18:53:12│ ⏳️ sub-005 Rejecting ICs with the following indices: 5, 9, 11, 16, 20, 26, 28, 31, 35, 36, 37, 40, 41, 50, 53
+│18:53:12│ ⏳️ sub-002 Rejecting ICs with the following indices: 0, 1, 5, 7, 12, 13, 22, 23, 26, 31, 36, 41, 42, 44, 46, 47
+│18:53:12│ ⏳️ sub-007 Rejecting ICs with the following indices: 0, 1, 3, 10, 11, 14, 16, 19, 20, 24, 29, 32, 34, 39, 42, 43, 51
+│18:53:12│ ⏳️ sub-003 Rejecting ICs with the following indices: 0, 1, 4, 9, 17, 20, 21, 32, 36, 37, 38, 40, 54
+│18:53:12│ ⏳️ sub-010 Rejecting ICs with the following indices: 8, 21, 22, 26, 31, 35, 48, 57
+│18:53:12│ ⏳️ sub-008 Rejecting ICs with the following indices: 1, 2, 3, 5, 6, 14, 17, 21, 25, 27, 30, 38, 45, 47, 50, 53
+│18:53:13│ ⏳️ sub-004 Rejecting ICs with the following indices: 5, 9, 15, 16, 20, 34, 35, 38, 42, 43, 48
+│18:53:13│ ⏳️ sub-001 Saving 235 reconstructed epochs after ICA.
+│18:53:13│ ⏳️ sub-003 Saving 200 reconstructed epochs after ICA.
+│18:53:13│ ⏳️ sub-006 Rejecting ICs with the following indices: 0, 1, 2, 4, 5, 6, 7, 10, 11, 16, 20, 21, 22, 24, 26, 27, 28, 33, 36, 39, 58
+│18:53:13│ ⏳️ sub-002 Saving 200 reconstructed epochs after ICA.
+│18:53:13│ ⏳️ sub-005 Saving 200 reconstructed epochs after ICA.
+│18:53:14│ ⏳️ sub-002 Adding ICA to report.
+│18:53:14│ ⏳️ sub-007 Saving 280 reconstructed epochs after ICA.
+│18:53:14│ ⏳️ sub-009 Saving 280 reconstructed epochs after ICA.
+│18:53:14│ ⏳️ sub-003 Adding ICA to report.
+│18:53:14│ ⏳️ sub-005 Adding ICA to report.
+│18:53:15│ ⏳️ sub-008 Saving 280 reconstructed epochs after ICA.
+│18:53:15│ ⏳️ sub-001 Adding ICA to report.
+│18:53:15│ ⏳️ sub-004 Saving 280 reconstructed epochs after ICA.
+│18:53:15│ ⏳️ sub-010 Saving 280 reconstructed epochs after ICA.
+│18:53:15│ ⏳️ sub-009 Adding ICA to report.
+│18:53:15│ ⏳️ sub-007 Adding ICA to report.
+│18:53:15│ ⏳️ sub-008 Adding ICA to report.
+│18:53:15│ ⏳️ sub-004 Adding ICA to report.
+│18:53:15│ ⏳️ sub-010 Adding ICA to report.
+│18:53:15│ ⏳️ sub-006 Saving 440 reconstructed epochs after ICA.
+│18:53:16│ ⏳️ sub-006 Adding ICA to report.
+│18:53:36│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│18:53:39│ ⏳️ sub-011 Input: sub-011_task-OddGamble_epo.fif
+│18:53:39│ ⏳️ sub-011 Output: sub-011_task-OddGamble_proc-ica_epo.fif
+│18:53:40│ ⏳️ sub-011 Rejecting ICs with the following indices: 0, 8, 14, 17, 20, 23, 24, 25, 28, 30, 31, 32, 41, 42, 48
+│18:53:41│ ⏳️ sub-011 Saving 280 reconstructed epochs after ICA.
+│18:53:42│ ⏳️ sub-011 Adding ICA to report.
+│18:53:43│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│18:53:44│ ⏳️ sub-012 Input: sub-012_task-OddGamble_epo.fif
+│18:53:44│ ⏳️ sub-012 Output: sub-012_task-OddGamble_proc-ica_epo.fif
+│18:53:45│ ⏳️ sub-012 Rejecting ICs with the following indices: 0, 1, 2, 4, 8, 19, 35, 39, 52, 56
+│18:53:45│ ⏳️ sub-003 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│18:53:45│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│18:53:46│ ⏳️ sub-012 Saving 280 reconstructed epochs after ICA.
+│18:53:46│ ⏳️ sub-013 Input: sub-013_task-OddGamble_epo.fif
+│18:53:46│ ⏳️ sub-013 Output: sub-013_task-OddGamble_proc-ica_epo.fif
+│18:53:46│ ⏳️ sub-012 Adding ICA to report.
+│18:53:47│ ⏳️ sub-013 Rejecting ICs with the following indices: 0, 1, 12, 13, 14, 21, 29, 36, 56, 57
+│18:53:47│ ⏳️ sub-014 Input: sub-014_task-OddGamble_epo.fif
+│18:53:47│ ⏳️ sub-014 Output: sub-014_task-OddGamble_proc-ica_epo.fif
+│18:53:48│ ⏳️ sub-013 Saving 280 reconstructed epochs after ICA.
+│18:53:48│ ⏳️ sub-014 Rejecting ICs with the following indices: 0, 1, 3, 6, 9, 10, 21, 24, 29, 34, 42, 45, 48, 51, 57
+│18:53:48│ ⏳️ sub-013 Adding ICA to report.
+│18:53:49│ ⏳️ sub-014 Saving 280 reconstructed epochs after ICA.
+│18:53:49│ ⏳️ sub-014 Adding ICA to report.
+│18:53:51│ ⏳️ sub-005 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│18:53:52│ ⏳️ sub-002 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│18:53:52│ ⏳️ sub-015 Input: sub-015_task-OddGamble_epo.fif
+│18:53:52│ ⏳️ sub-015 Output: sub-015_task-OddGamble_proc-ica_epo.fif
+│18:53:53│ ⏳️ sub-015 Rejecting ICs with the following indices: 0, 2, 14, 21, 34, 53, 58
+│18:53:53│ ⏳️ sub-016 Input: sub-016_task-OddGamble_epo.fif
+│18:53:53│ ⏳️ sub-016 Output: sub-016_task-OddGamble_proc-ica_epo.fif
+│18:53:54│ ⏳️ sub-016 Rejecting ICs with the following indices: 0, 1, 2, 3, 5, 6, 8, 9, 11, 12, 15, 17, 23, 40, 42
+│18:53:54│ ⏳️ sub-015 Saving 280 reconstructed epochs after ICA.
+│18:53:54│ ⏳️ sub-015 Adding ICA to report.
+│18:53:54│ ⏳️ sub-016 Saving 280 reconstructed epochs after ICA.
+│18:53:55│ ⏳️ sub-016 Adding ICA to report.
+│18:53:57│ ⏳️ sub-008 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│18:54:00│ ⏳️ sub-017 Input: sub-017_task-OddGamble_epo.fif
+│18:54:00│ ⏳️ sub-017 Output: sub-017_task-OddGamble_proc-ica_epo.fif
+│18:54:01│ ⏳️ sub-017 Rejecting ICs with the following indices: 0, 1, 3, 4, 6, 12, 16, 18, 20, 23, 24, 26, 28, 29, 30, 31, 32, 33, 35, 36, 37, 42, 52
+│18:54:02│ ⏳️ sub-017 Saving 280 reconstructed epochs after ICA.
+│18:54:02│ ⏳️ sub-017 Adding ICA to report.
+│18:54:02│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│18:54:14│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│18:54:15│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│18:54:16│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│18:54:19│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│18:54:21│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│18:54:23│ ⏳️ sub-006 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│18:54:25│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│18:54:27│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│18:54:38│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+│18:54:39│ ⏳️ sub-005 run-01 Writing sub-005_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-002 run-01 Writing sub-002_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-006 run-01 Writing sub-006_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-004 run-01 Writing sub-004_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-007 run-01 Writing sub-007_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-008 run-01 Writing sub-008_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-009 run-01 Writing sub-009_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-001 run-01 Writing sub-001_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:39│ ⏳️ sub-003 run-01 Writing sub-003_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:40│ ⏳️ sub-010 run-01 Writing sub-010_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:41│ ⏳️ sub-003 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-004 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-007 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-010 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-002 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-001 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-008 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-009 run-01 Adding cleaned raw data to report
+│18:54:41│ ⏳️ sub-005 run-01 Adding cleaned raw data to report
+│18:54:42│ ⏳️ sub-006 run-01 Adding cleaned raw data to report
+│18:54:43│ ⏳️ sub-003 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│18:54:43│ ⏳️ sub-004 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-010 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-011 run-01 Writing sub-011_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:44│ ⏳️ sub-002 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-012 run-01 Writing sub-012_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:44│ ⏳️ sub-008 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-001 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-007 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-005 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│18:54:44│ ⏳️ sub-009 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│18:54:45│ ⏳️ sub-013 run-01 Writing sub-013_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:45│ ⏳️ sub-014 run-01 Writing sub-014_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:45│ ⏳️ sub-015 run-01 Writing sub-015_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:45│ ⏳️ sub-016 run-01 Writing sub-016_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:45│ ⏳️ sub-012 run-01 Adding cleaned raw data to report
+│18:54:45│ ⏳️ sub-017 run-01 Writing sub-017_task-OddGamble_run-01_proc-clean_raw.fif …
+│18:54:45│ ⏳️ sub-006 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│18:54:45│ ⏳️ sub-011 run-01 Adding cleaned raw data to report
+│18:54:46│ ⏳️ sub-013 run-01 Adding cleaned raw data to report
+│18:54:46│ ⏳️ sub-014 run-01 Adding cleaned raw data to report
+│18:54:46│ ⏳️ sub-015 run-01 Adding cleaned raw data to report
+│18:54:47│ ⏳️ sub-016 run-01 Adding cleaned raw data to report
+│18:54:47│ ⏳️ sub-017 run-01 Adding cleaned raw data to report
+│18:54:48│ ⏳️ sub-011 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│18:54:48│ ⏳️ sub-012 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│18:54:48│ ⏳️ sub-013 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│18:54:48│ ⏳️ sub-015 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│18:54:48│ ⏳️ sub-017 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+│18:54:49│ ⏳️ sub-016 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│18:54:49│ ⏳️ sub-014 run-01 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+└────────┴ done (1m 39s)
+┌────────┬ preprocessing/_08b_apply_ssp ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│18:54:50│ ⏩ Skipping …
+└────────┴ done (1s)
+┌────────┬ preprocessing/_09_ptp_reject ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│18:54:50│ ⏳️ sub-001 Input:  sub-001_task-OddGamble_proc-ica_epo.fif
+│18:54:50│ ⏳️ sub-001 Output: sub-001_task-OddGamble_proc-clean_epo.fif
+│18:54:50│ ⏳️ sub-001 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│18:59:52│ ⏳️ sub-001 autoreject marked 1 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│18:59:52│ ⏳️ sub-001 Adding cleaned epochs to report.
+│18:59:55│ ⏳️ sub-001 Adding config and sys info to report
+│18:59:57│ ⏳️ sub-001 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-001/eeg/sub-001_task-OddGamble_report.html
+│18:59:58│ ⏳️ sub-002 Input:  sub-002_task-OddGamble_proc-ica_epo.fif
+│18:59:58│ ⏳️ sub-002 Output: sub-002_task-OddGamble_proc-clean_epo.fif
+│18:59:58│ ⏳️ sub-002 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:03:42│ ⏳️ sub-002 autoreject marked 5 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│19:03:42│ ⏳️ sub-002 Adding cleaned epochs to report.
+│19:03:44│ ⏳️ sub-002 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-002/eeg/sub-002_task-OddGamble_report.html
+│19:03:45│ ⏳️ sub-003 Input:  sub-003_task-OddGamble_proc-ica_epo.fif
+│19:03:45│ ⏳️ sub-003 Output: sub-003_task-OddGamble_proc-clean_epo.fif
+│19:03:45│ ⏳️ sub-003 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:07:54│ ⏳️ sub-003 autoreject marked 1 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│19:07:54│ ⏳️ sub-003 Adding cleaned epochs to report.
+│19:07:56│ ⏳️ sub-003 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-003/eeg/sub-003_task-OddGamble_report.html
+│19:07:57│ ⏳️ sub-004 Input:  sub-004_task-OddGamble_proc-ica_epo.fif
+│19:07:57│ ⏳️ sub-004 Output: sub-004_task-OddGamble_proc-clean_epo.fif
+│19:07:57│ ⏳️ sub-004 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:14:36│ ⏳️ sub-004 autoreject marked 137 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│19:14:37│ ⏳️ sub-004 Adding cleaned epochs to report.
+│19:14:38│ ⏳️ sub-004 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-004/eeg/sub-004_task-OddGamble_report.html
+│19:14:39│ ⏳️ sub-005 Input:  sub-005_task-OddGamble_proc-ica_epo.fif
+│19:14:39│ ⏳️ sub-005 Output: sub-005_task-OddGamble_proc-clean_epo.fif
+│19:14:39│ ⏳️ sub-005 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:19:00│ ⏳️ sub-005 autoreject marked 102 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│19:19:00│ ⏳️ sub-005 More than 50% of all epochs rejected. Please check the rejection thresholds.
+│19:19:00│ ⏳️ sub-005 Adding cleaned epochs to report.
+│19:19:02│ ⏳️ sub-005 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-005/eeg/sub-005_task-OddGamble_report.html
+│19:19:03│ ⏳️ sub-006 Input:  sub-006_task-OddGamble_proc-ica_epo.fif
+│19:19:03│ ⏳️ sub-006 Output: sub-006_task-OddGamble_proc-clean_epo.fif
+│19:19:03│ ⏳️ sub-006 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:31:15│ ⏳️ sub-006 autoreject marked 9 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│19:31:15│ ⏳️ sub-006 Adding cleaned epochs to report.
+│19:31:19│ ⏳️ sub-006 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-006/eeg/sub-006_task-OddGamble_report.html
+│19:31:19│ ⏳️ sub-007 Input:  sub-007_task-OddGamble_proc-ica_epo.fif
+│19:31:19│ ⏳️ sub-007 Output: sub-007_task-OddGamble_proc-clean_epo.fif
+│19:31:20│ ⏳️ sub-007 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:37:51│ ⏳️ sub-007 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│19:37:51│ ⏳️ sub-007 Adding cleaned epochs to report.
+│19:37:54│ ⏳️ sub-007 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-007/eeg/sub-007_task-OddGamble_report.html
+│19:37:54│ ⏳️ sub-008 Input:  sub-008_task-OddGamble_proc-ica_epo.fif
+│19:37:54│ ⏳️ sub-008 Output: sub-008_task-OddGamble_proc-clean_epo.fif
+│19:37:55│ ⏳️ sub-008 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:44:44│ ⏳️ sub-008 autoreject marked 14 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│19:44:44│ ⏳️ sub-008 Adding cleaned epochs to report.
+│19:44:47│ ⏳️ sub-008 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-008/eeg/sub-008_task-OddGamble_report.html
+│19:44:47│ ⏳️ sub-009 Input:  sub-009_task-OddGamble_proc-ica_epo.fif
+│19:44:47│ ⏳️ sub-009 Output: sub-009_task-OddGamble_proc-clean_epo.fif
+│19:44:48│ ⏳️ sub-009 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:51:08│ ⏳️ sub-009 autoreject marked 78 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│19:51:08│ ⏳️ sub-009 Adding cleaned epochs to report.
+│19:51:11│ ⏳️ sub-009 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-009/eeg/sub-009_task-OddGamble_report.html
+│19:51:11│ ⏳️ sub-010 Input:  sub-010_task-OddGamble_proc-ica_epo.fif
+│19:51:11│ ⏳️ sub-010 Output: sub-010_task-OddGamble_proc-clean_epo.fif
+│19:51:11│ ⏳️ sub-010 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│19:58:29│ ⏳️ sub-010 autoreject marked 42 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│19:58:29│ ⏳️ sub-010 Adding cleaned epochs to report.
+│19:58:31│ ⏳️ sub-010 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-010/eeg/sub-010_task-OddGamble_report.html
+│19:58:32│ ⏳️ sub-011 Input:  sub-011_task-OddGamble_proc-ica_epo.fif
+│19:58:32│ ⏳️ sub-011 Output: sub-011_task-OddGamble_proc-clean_epo.fif
+│19:58:32│ ⏳️ sub-011 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:05:15│ ⏳️ sub-011 autoreject marked 27 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│20:05:16│ ⏳️ sub-011 Adding cleaned epochs to report.
+│20:05:18│ ⏳️ sub-011 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-011/eeg/sub-011_task-OddGamble_report.html
+│20:05:19│ ⏳️ sub-012 Input:  sub-012_task-OddGamble_proc-ica_epo.fif
+│20:05:19│ ⏳️ sub-012 Output: sub-012_task-OddGamble_proc-clean_epo.fif
+│20:05:19│ ⏳️ sub-012 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:11:36│ ⏳️ sub-012 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│20:11:37│ ⏳️ sub-012 Adding cleaned epochs to report.
+│20:11:39│ ⏳️ sub-012 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-012/eeg/sub-012_task-OddGamble_report.html
+│20:11:40│ ⏳️ sub-013 Input:  sub-013_task-OddGamble_proc-ica_epo.fif
+│20:11:40│ ⏳️ sub-013 Output: sub-013_task-OddGamble_proc-clean_epo.fif
+│20:11:40│ ⏳️ sub-013 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:18:26│ ⏳️ sub-013 autoreject marked 15 epochs as bad (cross-validated n_interpolate limit: {'eeg': 16})
+│20:18:26│ ⏳️ sub-013 Adding cleaned epochs to report.
+│20:18:29│ ⏳️ sub-013 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-013/eeg/sub-013_task-OddGamble_report.html
+│20:18:29│ ⏳️ sub-014 Input:  sub-014_task-OddGamble_proc-ica_epo.fif
+│20:18:29│ ⏳️ sub-014 Output: sub-014_task-OddGamble_proc-clean_epo.fif
+│20:18:30│ ⏳️ sub-014 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:25:28│ ⏳️ sub-014 autoreject marked 55 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│20:25:28│ ⏳️ sub-014 Adding cleaned epochs to report.
+│20:25:30│ ⏳️ sub-014 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-014/eeg/sub-014_task-OddGamble_report.html
+│20:25:31│ ⏳️ sub-015 Input:  sub-015_task-OddGamble_proc-ica_epo.fif
+│20:25:31│ ⏳️ sub-015 Output: sub-015_task-OddGamble_proc-clean_epo.fif
+│20:25:31│ ⏳️ sub-015 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:31:58│ ⏳️ sub-015 autoreject marked 8 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│20:31:58│ ⏳️ sub-015 Adding cleaned epochs to report.
+│20:32:00│ ⏳️ sub-015 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-015/eeg/sub-015_task-OddGamble_report.html
+│20:32:01│ ⏳️ sub-016 Input:  sub-016_task-OddGamble_proc-ica_epo.fif
+│20:32:01│ ⏳️ sub-016 Output: sub-016_task-OddGamble_proc-clean_epo.fif
+│20:32:01│ ⏳️ sub-016 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:39:02│ ⏳️ sub-016 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 8})
+│20:39:02│ ⏳️ sub-016 Adding cleaned epochs to report.
+│20:39:04│ ⏳️ sub-016 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-016/eeg/sub-016_task-OddGamble_report.html
+│20:39:05│ ⏳️ sub-017 Input:  sub-017_task-OddGamble_proc-ica_epo.fif
+│20:39:05│ ⏳️ sub-017 Output: sub-017_task-OddGamble_proc-clean_epo.fif
+│20:39:05│ ⏳️ sub-017 Using autoreject to find and repair bad epochs (interpolating bad segments)
+│20:45:00│ ⏳️ sub-017 autoreject marked 0 epochs as bad (cross-validated n_interpolate limit: {'eeg': 4})
+│20:45:00│ ⏳️ sub-017 Adding cleaned epochs to report.
+│20:45:03│ ⏳️ sub-017 Saving report: /home/okk/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline/data_split/derivatives/sub-017/eeg/sub-017_task-OddGamble_report.html
+└────────┴ done (1h 50m 14s)
+┌────────┬ sensor/_01_make_evoked ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+│20:45:04│ ⏳️ sub-001 Input: sub-001_task-OddGamble_proc-clean_epo.fif
+│20:45:04│ ⏳️ sub-001 Output: sub-001_task-OddGamble_ave.fif
+│20:45:04│ ⏳️ sub-004 Input: sub-004_task-OddGamble_proc-clean_epo.fif
+│20:45:04│ ⏳️ sub-004 Output: sub-004_task-OddGamble_ave.fif
+│20:45:04│ ⏳️ sub-002 Input: sub-002_task-OddGamble_proc-clean_epo.fif
+│20:45:04│ ⏳️ sub-003 Input: sub-003_task-OddGamble_proc-clean_epo.fif
+│20:45:04│ ⏳️ sub-002 Output: sub-002_task-OddGamble_ave.fif
+│20:45:04│ ⏳️ sub-003 Output: sub-003_task-OddGamble_ave.fif
+│20:45:04│ ⏳️ sub-004 Creating evoked data based on experimental conditions …
+│20:45:04│ ⏳️ sub-001 Creating evoked data based on experimental conditions …
+│20:45:04│ ⏳️ sub-003 Creating evoked data based on experimental conditions …
+│20:45:05│ ⏳️ sub-002 Creating evoked data based on experimental conditions …
+│20:45:05│ ⏳️ sub-004 Adding 4 evoked responses and 0 contrasts to the report.
+│20:45:05│ ❌ sub-003 A critical error occurred. The error message was: 'Event name "GAMBLING LOSS" could not be found. The following events are present in the data: ODDBALL RARE, ODDBALL STANDARD The epochs.metadata Pandas query did not yield any results: invalid syntax'
+
+Aborting pipeline run. The traceback is:
+
+  File "/home/okk/.local/lib/python3.11/site-packages/mne_bids_pipeline/steps/sensor/_01_make_evoked.py", line 97, in run_evoked
+    evoked = epochs.average()
+             ~~~~~~^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 148, in __getitem__
+    return self._getitem(item)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 209, in _getitem
+    select = inst._item_to_select(item)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 160, in _item_to_select
+    select = self._keys_to_idx(item)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 304, in _keys_to_idx
+    raise KeyError(msg)
+
+│20:45:05│ ❌ sub-002 A critical error occurred. The error message was: 'Event name "GAMBLING LOSS" could not be found. The following events are present in the data: ODDBALL RARE, ODDBALL STANDARD The epochs.metadata Pandas query did not yield any results: invalid syntax'
+
+Aborting pipeline run. The traceback is:
+
+  File "/home/okk/.local/lib/python3.11/site-packages/mne_bids_pipeline/steps/sensor/_01_make_evoked.py", line 97, in run_evoked
+    evoked = epochs.average()
+             ~~~~~~^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 148, in __getitem__
+    return self._getitem(item)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 209, in _getitem
+    select = inst._item_to_select(item)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 160, in _item_to_select
+    select = self._keys_to_idx(item)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/okk/.local/lib/python3.11/site-packages/mne/utils/mixin.py", line 304, in _keys_to_idx
+    raise KeyError(msg)
+
+│20:45:05│ ⏳️ sub-001 Adding 4 evoked responses and 0 contrasts to the report.
+okk@okk-MS-7C56:~/Documents/Letztes_Semester/EEG_VL/EVERYTHING_IMPORTANT/Pipeline$
