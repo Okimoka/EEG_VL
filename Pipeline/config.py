@@ -22,6 +22,9 @@ import numpy as np
 
 bids_root = "./data_split/"
 
+subjects_dir = "./data_split/"
+deriv_root = "./data_split/derivatives/"
+
 interactive = False
 
 
@@ -29,14 +32,21 @@ args = [arg for arg in sys.argv if arg.startswith("--task") or not arg.startswit
 parser = argparse.ArgumentParser()
 parser.add_argument("ignored", nargs="*")
 parser.add_argument(
-    "--task", choices=("Gambling","Oddball","Axon"), required=True
+    #"--task", choices=("Gambling","Oddball","Axon"), required=True
+    "--task", choices=("OddGamble","Axon"), required=True
 )
-task = parser.parse_args(args).task 
+
+task = parser.parse_args(args).task
+#task = "Axon"
+#if(parser.parse_args(args).task == "Gambling" or parser.parse_args(args).task == "Oddball"):
+#    task = "OddGamble"
+
 sessions = "all"
 
 runs = "all" # Always 01 anyway
 #crop_runs: tuple[float, float] | None = None
-subjects = "all"
+subjects = ['011','012','013','014','015','016','017'] #"all"
+#subjects = "all"
 
 ch_types = ["eeg"] # not considering eog channels 
 data_type = "eeg" # redundant
@@ -46,7 +56,6 @@ eog_channels = None # can be none, it will simply use all actual EOG channels
 
 eeg_reference = "average" # default setting
 
-#TODO check if this actually applies montage
 eeg_template_montage = None # custom montage
 
 #drop_channels: Sequence[str] = []
@@ -106,8 +115,10 @@ t_break_annot_stop_before_next_event: float = 5.0 # Default value
 #
 # Read full_config.py for context (!!!)
 # mne-bids-pipeline does not allow ICA if l_freq is below 1 Hz!! See ica_l_freq in full_config.py
+# icalabel requires 1 - 100
 l_freq: float | None = 1 # Paper uses 0.1 Hz, full_config.py recommends 1 Hz
-h_freq: float | None = 40 # Paper uses 20 Hz, full_config.py recommends 40 or 120 depending on type of analysis
+h_freq: float | None = 100 # Paper uses 20 Hz, full_config.py recommends 40 or 120 depending on type of analysis
+
 
 #TODO Why does this default to None? Is powerline noise filtered elsewhere?
 notch_freq: float | Sequence[float] | None = 60 # Default is None
@@ -141,19 +152,22 @@ The filtering has already been done in step 01, and the offending events are now
 
 conditions = []
 
-if(task == "Gambling"): #"Wins and losses" Exemplar events
-    conditions = ["GAMBLING LOSS", "GAMBLING WIN"]
-elif(task == "Oddball"): #"Target detection" Exemplar events
-    conditions = ["ODDBALL STANDARD", "ODDBALL RARE"]
+if(task == "OddGamble"): #"Wins and losses" Exemplar events
+    conditions = ["GAMBLING LOSS", "GAMBLING WIN", "ODDBALL STANDARD", "ODDBALL RARE"]
+#elif(task == "Oddball"): #"Target detection" Exemplar events
+#    conditions = 
 elif(task == "Axon"):
     #There are also "GAME OVER" and "GAME START", but they occur only once (?)
     conditions = ["SHOOT_BUTTON", "MISSILE_HIT_ENEMY", "COLLECT_STAR", "COLLECT_AMMO", "PLAYER_CRASH_ENEMY", "PLAYER_CRASH_WALL"]
 
-#TODO Check whether these epoch timings from the paper make sense. They seem unusually long?
-epochs_tmin: float = -2
+#The epoch timings from the paper seemed unusually long (-2000ms to +2000ms) so I shortened them
+#edit: I was wrong, some subjects do need the full 2 second window
+#epochs_tmin: float = -2
+#epochs_tmax: float = 2
+epochs_tmin: float = -1
 epochs_tmax: float = 2
 
-#Also from the paper
+#From the paper. S
 baseline: tuple[float | None, float | None] | None = (-0.2, 0)
 
 
@@ -186,7 +200,10 @@ spatial_filter: Literal["ssp", "ica"] | None = "ica"
 #TODO check percentage of rejected epochs. Paper states 3.27%
 ica_reject: dict[str, float] | Literal["autoreject_local"] | None = "autoreject_local"
 
-
+ica_algorithm = "picard-extended_infomax" #required for icalabel
+ica_use_ecg_detection: bool = True
+ica_use_eog_detection: bool = True
+ica_use_icalabel: bool = True
 # Can go as high as 3000 for convergence
 # ica_max_iterations: int = 500
 
@@ -197,7 +214,7 @@ ica_reject: dict[str, float] | Literal["autoreject_local"] | None = "autoreject_
 
 #TODO Browse raw data to find actual eog and ecg thresholds
 #Read full_config.py for tips on how to do this
-# ica_ecg_threshold: float = 0.1
+ica_ecg_threshold: float = 0.08 #lowered because some participants had no EOG related ICs detected
 # """
 # The cross-trial phase statistics (CTPS) threshold parameter used for detecting
 # ECG-related ICs.
@@ -218,7 +235,7 @@ reject: dict[str, float] | Literal["autoreject_global", "autoreject_local"] | No
 
 
 # In the paper a median of 2 electrodes (range 1 to 3) was interpolated, so add these values
-autoreject_n_interpolate: FloatArrayLike = [1,2,3, 4, 8, 16] # Default [4, 8, 16]
+autoreject_n_interpolate: FloatArrayLike = [1,2,3,4,8,16,24] # Default [4, 8, 16]
 # """
 # The maximum number of bad channels in an epoch that `autoreject` local will try to
 # interpolate. The optimal number among this list will be estimated using a
@@ -255,7 +272,7 @@ time_frequency_crop: dict | None = dict(tmin=-0.5, tmax=1, fmin=1, fmax=50) # De
 
 
 
-n_jobs: int = os.cpu_count()
+n_jobs: int = os.cpu_count() #minus two to allow smooth operation of the computer
 # """
 # Specifies how many subjects you want to process in parallel. If `1`, disables
 # parallel processing.
