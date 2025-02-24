@@ -1,0 +1,7 @@
+-check whether we actually correct for class imbalance in our classifier?
+-for some subjects, mne-bids-pipeline autoreject drops more than 50% of epochs (see output.txt).
+ however, adjusting the n_interpolate limit doesnt help at all (sometimes it still uses a lower number). What can we do? (maybe ask in the forum)
+-Another team used local outlier factor on the dataset, might be interesting
+-processing of axon dataset takes very long (around 20 hours on my Ryzen 5 3600)
+-Still need to do the transferral of weights. It should be relatively easy, classifiers are regular pytorch objects
+-Try to calculate signal to noise ratio (SNR)? I've only gotten very odd results
