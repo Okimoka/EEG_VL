@@ -1,11 +1,14 @@
-Pipeline/data/*
-
-
-Pipeline/__pycache__
-
-!Pipeline/data_split/derivatives/mne-bids-pipeline/_cache
-!Pipeline/data_split/**/*.html
-!Pipeline/data_split/**/*.tsv
-!Pipeline/data_split/**/eeg/*.html
-!Pipeline/data_split/**/eeg/*.tsv
-Pipeline/data_split/*
+# Original and generated EEG stay local.
+/v1.0.0/
+/prepared_bids/
+/prepared_native_bids/
+/artifacts/
+/.venv/
+__pycache__/
+*.py[cod]
+*.lock
+.DS_Store
+/01_review_bad_channels/channel_review.xlsx
+/01_review_bad_channels/evidence/
+# Deliberately keep reference/ models, compact results and report/ figures.
+/report/preprocessing.pdf

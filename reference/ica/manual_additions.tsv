@@ -1,0 +1,16 @@
+subject	component	reason
+001	37	Manual review: Focal frontal broadband fast activity; ICLabel probability split between muscle and eye. Confirmed by project authors.
+002	52	Manual review: Very focal POz map and abrupt transient despite a weak winning brain label. Confirmed by project authors.
+004	17	Manual review: Frontal broadband fast activity; ICLabel probability split between muscle and eye. Confirmed by project authors.
+006	51	Manual review: Focal map and intermittent high-variance low-frequency activity; channel-noise probability just below threshold. Confirmed by project authors.
+007	8	Manual review: Focal TP10 map and 612 uV abrupt excursions in run 02 at 24-28 s, matching the source. Confirmed by project authors.
+008	5	Manual review: focal P6 transient in run 01 at 432-436 s; ICA005 matches the waveform and is dominated by one variance outlier. Confirmed by project authors.
+008	9	Manual review: Very focal frontal map with large isolated slow transients; eye or focal electrode artifact. Confirmed by project authors.
+009	13	Manual review: Very focal frontal map with a dominant isolated slow transient; eye or focal electrode artifact. Confirmed by project authors.
+010	17	Manual review: Temporal source with dominant isolated excursion matching the TP9 transient; reviewed despite possible mixed signal. Confirmed by project authors.
+010	23	Manual review: Focal right-temporal map, isolated transient and strongly uneven source variance. Confirmed by project authors.
+011	8	Manual review: Focal temporal map and dominant abrupt FT8 transient in run 02 at 48-52 s, matching the source. Confirmed by project authors.
+011	29	Manual review: Focal frontal map and broad fast spectrum; muscle probability just below threshold. Confirmed by project authors.
+014	41	Manual review: Focal map and abrupt FC3 step-like transient in run 01 at 312-316 s; channel-noise probability below threshold. Confirmed by project authors.
+014	54	Manual review: Focal map and intermittent high-variance low-frequency activity; channel-noise probability below threshold. Confirmed by project authors.
+016	7	Manual review: Almost single-electrode FT9 map and 763 uV slow excursion in run 01 at 92-96 s, unlike neighboring channels. Confirmed by project authors.

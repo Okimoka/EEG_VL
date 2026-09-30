@@ -1,0 +1,286 @@
+[
+  {
+    "subject": "005",
+    "identical_rejection_mask": true,
+    "max_retained_sample_difference_v": 7.768894739763194e-12,
+    "good_eeg_channels": 58,
+    "consensus": 0.5,
+    "n_interpolate": 8,
+    "minimum_bad_channel_votes_in_rejected": 29,
+    "median_bad_channel_votes_in_rejected": 43.0,
+    "autoreject_rejected": 339,
+    "fixed_500uv_rejected": 37,
+    "rejected_by_both": 37,
+    "fixed_only_rejected": 0,
+    "threshold_min_uv": 29.270428885492404,
+    "threshold_max_uv": 167.09512086095307,
+    "median_max_ptp_rejected_uv": 304.3750432431199,
+    "median_max_ptp_retained_uv": 168.84713296323494,
+    "top_flagged_channels": [
+      {
+        "channel": "AF7",
+        "threshold_uv": 83.58867244105014,
+        "fraction_flagged_all": 0.8735795454545454,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 177.30258385576377,
+        "p95_ptp_uv": 312.0226890522715
+      },
+      {
+        "channel": "AF3",
+        "threshold_uv": 64.71463520627437,
+        "fraction_flagged_all": 0.7741477272727273,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 114.9879560377471,
+        "p95_ptp_uv": 179.91459429881655
+      },
+      {
+        "channel": "POz",
+        "threshold_uv": 36.22199700621139,
+        "fraction_flagged_all": 0.7670454545454546,
+        "fraction_flagged_rejected": 0.9941002949852508,
+        "median_ptp_uv": 53.14118427885906,
+        "p95_ptp_uv": 82.26207000925771
+      },
+      {
+        "channel": "AF8",
+        "threshold_uv": 157.64504323001748,
+        "fraction_flagged_all": 0.71875,
+        "fraction_flagged_rejected": 0.9941002949852508,
+        "median_ptp_uv": 196.2021728598184,
+        "p95_ptp_uv": 414.2020358508974
+      },
+      {
+        "channel": "PO3",
+        "threshold_uv": 41.71924120371156,
+        "fraction_flagged_all": 0.6647727272727273,
+        "fraction_flagged_rejected": 0.9911504424778761,
+        "median_ptp_uv": 51.594129768132056,
+        "p95_ptp_uv": 78.63178953841746
+      },
+      {
+        "channel": "P3",
+        "threshold_uv": 34.68660661602797,
+        "fraction_flagged_all": 0.6661931818181818,
+        "fraction_flagged_rejected": 0.9882005899705014,
+        "median_ptp_uv": 43.36503831604565,
+        "p95_ptp_uv": 68.77204193343036
+      },
+      {
+        "channel": "P4",
+        "threshold_uv": 39.99150305391795,
+        "fraction_flagged_all": 0.6221590909090909,
+        "fraction_flagged_rejected": 0.9852507374631269,
+        "median_ptp_uv": 46.679613740179505,
+        "p95_ptp_uv": 73.2506927791945
+      },
+      {
+        "channel": "Fp2",
+        "threshold_uv": 167.09512086095307,
+        "fraction_flagged_all": 0.6832386363636364,
+        "fraction_flagged_rejected": 0.9852507374631269,
+        "median_ptp_uv": 241.0899127985296,
+        "p95_ptp_uv": 387.4730020711164
+      }
+    ],
+    "task_coverage": [
+      {
+        "task": "gameplay",
+        "candidates": 457,
+        "autoreject_retained": 287,
+        "fixed_500uv_retained": 455,
+        "median_bad_channel_votes": 20.0,
+        "median_max_ptp_uv": 205.30281477334492
+      },
+      {
+        "task": "oddball",
+        "candidates": 99,
+        "autoreject_retained": 46,
+        "fixed_500uv_retained": 97,
+        "median_bad_channel_votes": 29.0,
+        "median_max_ptp_uv": 261.86815294417374
+      },
+      {
+        "task": "outside_inferred_tasks",
+        "candidates": 144,
+        "autoreject_retained": 30,
+        "fixed_500uv_retained": 111,
+        "median_bad_channel_votes": 46.5,
+        "median_max_ptp_uv": 351.61635966540996
+      },
+      {
+        "task": "task_boundary",
+        "candidates": 4,
+        "autoreject_retained": 2,
+        "fixed_500uv_retained": 4,
+        "median_bad_channel_votes": 35.0,
+        "median_max_ptp_uv": 289.30670004552553
+      }
+    ],
+    "examples": [
+      {
+        "candidate_index": 97,
+        "run": "01",
+        "start_s": 388.0,
+        "rejected": false,
+        "votes": 28,
+        "peak_channel": "Fp2",
+        "max_ptp_uv": 232.25207014136183
+      },
+      {
+        "candidate_index": 75,
+        "run": "01",
+        "start_s": 300.0,
+        "rejected": true,
+        "votes": 29,
+        "peak_channel": "Fp2",
+        "max_ptp_uv": 253.28101751109014
+      }
+    ]
+  },
+  {
+    "subject": "014",
+    "identical_rejection_mask": true,
+    "max_retained_sample_difference_v": 7.850760460562795e-12,
+    "good_eeg_channels": 61,
+    "consensus": 0.6000000000000001,
+    "n_interpolate": 16,
+    "minimum_bad_channel_votes_in_rejected": 37,
+    "median_bad_channel_votes_in_rejected": 45.0,
+    "autoreject_rejected": 268,
+    "fixed_500uv_rejected": 22,
+    "rejected_by_both": 22,
+    "fixed_only_rejected": 0,
+    "threshold_min_uv": 38.09296096974547,
+    "threshold_max_uv": 843.8369259522034,
+    "median_max_ptp_rejected_uv": 270.7864978288505,
+    "median_max_ptp_retained_uv": 160.1919029793359,
+    "top_flagged_channels": [
+      {
+        "channel": "P3",
+        "threshold_uv": 45.85793187053487,
+        "fraction_flagged_all": 0.6468842729970327,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 56.93480525608963,
+        "p95_ptp_uv": 88.7235020160999
+      },
+      {
+        "channel": "Oz",
+        "threshold_uv": 63.28285465099896,
+        "fraction_flagged_all": 0.6513353115727003,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 74.20959943955364,
+        "p95_ptp_uv": 114.05361860402427
+      },
+      {
+        "channel": "P1",
+        "threshold_uv": 40.01092210195998,
+        "fraction_flagged_all": 0.672106824925816,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 52.584578057011015,
+        "p95_ptp_uv": 75.18343125554735
+      },
+      {
+        "channel": "P5",
+        "threshold_uv": 49.70100140954792,
+        "fraction_flagged_all": 0.7091988130563798,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 65.49241342481565,
+        "p95_ptp_uv": 105.24808964618748
+      },
+      {
+        "channel": "PO7",
+        "threshold_uv": 54.29442772369881,
+        "fraction_flagged_all": 0.9940652818991098,
+        "fraction_flagged_rejected": 1.0,
+        "median_ptp_uv": 97.54740227580055,
+        "p95_ptp_uv": 134.1378780650633
+      },
+      {
+        "channel": "Fp1",
+        "threshold_uv": 107.77452111907081,
+        "fraction_flagged_all": 0.7270029673590505,
+        "fraction_flagged_rejected": 0.996268656716418,
+        "median_ptp_uv": 176.54779050974716,
+        "p95_ptp_uv": 283.2717975633953
+      },
+      {
+        "channel": "Fz",
+        "threshold_uv": 39.594899527030584,
+        "fraction_flagged_all": 0.7373887240356083,
+        "fraction_flagged_rejected": 0.996268656716418,
+        "median_ptp_uv": 62.49424237043635,
+        "p95_ptp_uv": 107.28929666554035
+      },
+      {
+        "channel": "AF7",
+        "threshold_uv": 127.22433512644878,
+        "fraction_flagged_all": 0.7106824925816023,
+        "fraction_flagged_rejected": 0.996268656716418,
+        "median_ptp_uv": 170.43179923818596,
+        "p95_ptp_uv": 317.0014678884876
+      }
+    ],
+    "task_coverage": [
+      {
+        "task": "gambling",
+        "candidates": 33,
+        "autoreject_retained": 4,
+        "fixed_500uv_retained": 33,
+        "median_bad_channel_votes": 40.0,
+        "median_max_ptp_uv": 283.5288534429648
+      },
+      {
+        "task": "gameplay",
+        "candidates": 489,
+        "autoreject_retained": 326,
+        "fixed_500uv_retained": 477,
+        "median_bad_channel_votes": 26.0,
+        "median_max_ptp_uv": 189.06271990763742
+      },
+      {
+        "task": "oddball",
+        "candidates": 101,
+        "autoreject_retained": 75,
+        "fixed_500uv_retained": 98,
+        "median_bad_channel_votes": 31.0,
+        "median_max_ptp_uv": 222.10188289042543
+      },
+      {
+        "task": "outside_inferred_tasks",
+        "candidates": 43,
+        "autoreject_retained": 0,
+        "fixed_500uv_retained": 36,
+        "median_bad_channel_votes": 55.0,
+        "median_max_ptp_uv": 355.0239224450777
+      },
+      {
+        "task": "task_boundary",
+        "candidates": 8,
+        "autoreject_retained": 1,
+        "fixed_500uv_retained": 8,
+        "median_bad_channel_votes": 47.5,
+        "median_max_ptp_uv": 290.1237620551361
+      }
+    ],
+    "examples": [
+      {
+        "candidate_index": 156,
+        "run": "01",
+        "start_s": 624.0,
+        "rejected": false,
+        "votes": 35,
+        "peak_channel": "AF8",
+        "max_ptp_uv": 261.47903123614077
+      },
+      {
+        "candidate_index": 145,
+        "run": "01",
+        "start_s": 580.0,
+        "rejected": true,
+        "votes": 37,
+        "peak_channel": "AF8",
+        "max_ptp_uv": 298.9053949871457
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "subject": "003",
+    "matched_first_50_codes": true,
+    "offset_s": 40.884,
+    "offset_range_s": [
+      40.88299999999998,
+      40.88500000000002
+    ]
+  },
+  {
+    "subject": "008",
+    "matched_first_50_codes": true,
+    "offset_s": 45.980000000000004,
+    "offset_range_s": [
+      45.97899999999999,
+      45.981
+    ],
+    "run1_tail_codes_matched": 12,
+    "run1_tail_recorded_s": 11.178999999999974,
+    "gap_between_recordings_s": 34.80100000000003
+  }
+]

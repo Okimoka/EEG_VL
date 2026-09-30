@@ -1,0 +1,22 @@
+{
+  "source_dataset_files_verified": 316,
+  "prepared_sidecars_identical": 238,
+  "config_imports": [
+    "config.py",
+    "config_ica_native_cohort.py",
+    "config_postica.py",
+    "config_broadband.py",
+    "config_ica_picard_pilot.py"
+  ],
+  "reference_staging_exclusions": 193,
+  "native_continuous_application_max_error_v": 3.792922939160719e-12,
+  "eog_unchanged_in_native_application": true,
+  "full_cohort_rerun": false,
+  "clean_network_install_tested": false,
+  "metadata_tests_passed": 5,
+  "environment_filter_checks_passed": 4,
+  "reference_plots_regenerated": true,
+  "typst_compilation_passed": true,
+  "original_project_results_modified": false,
+  "packaging_date": "2026-09-30"
+}

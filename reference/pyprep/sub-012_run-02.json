@@ -1,0 +1,6218 @@
+{
+  "schema_version": 2,
+  "subject": "012",
+  "run": "02",
+  "recording": "sub-012_run-02",
+  "task": "ContinuousVideoGamePlay",
+  "sfreq": 500.0,
+  "duration": 1516.8,
+  "ch_names": [
+    "Fp1",
+    "Fz",
+    "F3",
+    "F7",
+    "FT9",
+    "FC5",
+    "FC1",
+    "C3",
+    "T7",
+    "TP9",
+    "CP5",
+    "CP1",
+    "Pz",
+    "P3",
+    "P7",
+    "O1",
+    "Oz",
+    "O2",
+    "P4",
+    "P8",
+    "TP10",
+    "CP6",
+    "CP2",
+    "Cz",
+    "C4",
+    "T8",
+    "FT10",
+    "FC6",
+    "FC2",
+    "F4",
+    "F8",
+    "Fp2",
+    "AF7",
+    "AF3",
+    "AFz",
+    "F1",
+    "F5",
+    "FT7",
+    "FC3",
+    "FCz",
+    "C1",
+    "C5",
+    "TP7",
+    "CP3",
+    "P1",
+    "P5",
+    "PO7",
+    "PO3",
+    "POz",
+    "PO4",
+    "PO8",
+    "P6",
+    "P2",
+    "CP4",
+    "TP8",
+    "C6",
+    "C2",
+    "FC4",
+    "FT8",
+    "F6",
+    "F2",
+    "AF4",
+    "AF8",
+    "VEOG",
+    "HEOG"
+  ],
+  "eeg_ch_names": [
+    "Fp1",
+    "Fz",
+    "F3",
+    "F7",
+    "FT9",
+    "FC5",
+    "FC1",
+    "C3",
+    "T7",
+    "TP9",
+    "CP5",
+    "CP1",
+    "Pz",
+    "P3",
+    "P7",
+    "O1",
+    "Oz",
+    "O2",
+    "P4",
+    "P8",
+    "TP10",
+    "CP6",
+    "CP2",
+    "Cz",
+    "C4",
+    "T8",
+    "FT10",
+    "FC6",
+    "FC2",
+    "F4",
+    "F8",
+    "Fp2",
+    "AF7",
+    "AF3",
+    "AFz",
+    "F1",
+    "F5",
+    "FT7",
+    "FC3",
+    "FCz",
+    "C1",
+    "C5",
+    "TP7",
+    "CP3",
+    "P1",
+    "P5",
+    "PO7",
+    "PO3",
+    "POz",
+    "PO4",
+    "PO8",
+    "P6",
+    "P2",
+    "CP4",
+    "TP8",
+    "C6",
+    "C2",
+    "FC4",
+    "FT8",
+    "F6",
+    "F2",
+    "AF4",
+    "AF8"
+  ],
+  "bads": {
+    "bad_by_nan": [],
+    "bad_by_flat": [],
+    "bad_by_deviation": [],
+    "bad_by_hf_noise": [
+      "CP1"
+    ],
+    "bad_by_correlation": [
+      "TP9",
+      "CP2"
+    ],
+    "bad_by_SNR": [],
+    "bad_by_dropout": [],
+    "bad_by_psd": [
+      "TP9"
+    ],
+    "bad_by_ransac": [],
+    "bad_by_manual": [],
+    "bad_all": [
+      "TP9",
+      "CP1",
+      "CP2"
+    ]
+  },
+  "windows": [
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_correlation",
+      "start": 1044.0,
+      "stop": 1045.0,
+      "value": 0.3356194695987173,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_correlation",
+      "start": 184.0,
+      "stop": 185.0,
+      "value": 0.3614382017086347,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_correlation",
+      "start": 1486.0,
+      "stop": 1487.0,
+      "value": 0.39299515311748356,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_correlation",
+      "start": 217.0,
+      "stop": 218.0,
+      "value": 0.3931720024451829,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_correlation",
+      "start": 431.0,
+      "stop": 432.0,
+      "value": 0.39321363694008776,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "FC5",
+      "criterion": "bad_by_correlation",
+      "start": 1242.0,
+      "stop": 1243.0,
+      "value": 0.38995244208351154,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 7.0,
+      "stop": 8.0,
+      "value": 0.28107325616074935,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 8.0,
+      "stop": 9.0,
+      "value": 0.2935893384423819,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 12.0,
+      "stop": 13.0,
+      "value": 0.2812607260058733,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 106.0,
+      "stop": 107.0,
+      "value": 0.39855642312594614,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 108.0,
+      "stop": 109.0,
+      "value": 0.3199931542472678,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 109.0,
+      "stop": 110.0,
+      "value": 0.37551673551615156,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 116.0,
+      "stop": 117.0,
+      "value": 0.2727200229829628,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 123.0,
+      "stop": 124.0,
+      "value": 0.31099150557240657,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 127.0,
+      "stop": 128.0,
+      "value": 0.2540699791016395,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 128.0,
+      "stop": 129.0,
+      "value": 0.39392500761515803,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 153.0,
+      "stop": 154.0,
+      "value": 0.31102888293561076,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 154.0,
+      "stop": 155.0,
+      "value": 0.36826188581172115,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 172.0,
+      "stop": 173.0,
+      "value": 0.3897280677269811,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 173.0,
+      "stop": 174.0,
+      "value": 0.29352190122972127,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 177.0,
+      "stop": 178.0,
+      "value": 0.20766245658785423,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 178.0,
+      "stop": 179.0,
+      "value": 0.22600081033195138,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 185.0,
+      "stop": 186.0,
+      "value": 0.3380111572309246,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 186.0,
+      "stop": 187.0,
+      "value": 0.3227987556142089,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 191.0,
+      "stop": 192.0,
+      "value": 0.1770280035158492,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 192.0,
+      "stop": 193.0,
+      "value": 0.38241099805137513,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 200.0,
+      "stop": 201.0,
+      "value": 0.19227985077977555,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 201.0,
+      "stop": 202.0,
+      "value": 0.29716225438199934,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 211.0,
+      "stop": 212.0,
+      "value": 0.3947115121593888,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 212.0,
+      "stop": 213.0,
+      "value": 0.35707455278929856,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 213.0,
+      "stop": 214.0,
+      "value": 0.29968598637153276,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 231.0,
+      "stop": 232.0,
+      "value": 0.3432123133936726,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 253.0,
+      "stop": 254.0,
+      "value": 0.2798267762727128,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 254.0,
+      "stop": 255.0,
+      "value": 0.33718142605679213,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 267.0,
+      "stop": 268.0,
+      "value": 0.2968572387560161,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 274.0,
+      "stop": 275.0,
+      "value": 0.33898571996950283,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 276.0,
+      "stop": 277.0,
+      "value": 0.3210885372519663,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 290.0,
+      "stop": 291.0,
+      "value": 0.3652393931153504,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 301.0,
+      "stop": 302.0,
+      "value": 0.25854154136898067,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 335.0,
+      "stop": 336.0,
+      "value": 0.37137390612188476,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 346.0,
+      "stop": 347.0,
+      "value": 0.3489159542907555,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 398.0,
+      "stop": 399.0,
+      "value": 0.20769811487165765,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 419.0,
+      "stop": 420.0,
+      "value": 0.3671519188887443,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 429.0,
+      "stop": 430.0,
+      "value": 0.3214391533369059,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 431.0,
+      "stop": 432.0,
+      "value": 0.3901322204330459,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 435.0,
+      "stop": 436.0,
+      "value": 0.30028894462500055,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 436.0,
+      "stop": 437.0,
+      "value": 0.3192097919799107,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 439.0,
+      "stop": 440.0,
+      "value": 0.3862964028644981,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 440.0,
+      "stop": 441.0,
+      "value": 0.3842267101900727,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 441.0,
+      "stop": 442.0,
+      "value": 0.34935705883984747,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 442.0,
+      "stop": 443.0,
+      "value": 0.34055340589993827,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 447.0,
+      "stop": 448.0,
+      "value": 0.363947560716585,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 452.0,
+      "stop": 453.0,
+      "value": 0.2554525018106245,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 456.0,
+      "stop": 457.0,
+      "value": 0.3708680590079371,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 467.0,
+      "stop": 468.0,
+      "value": 0.3825053322300019,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 482.0,
+      "stop": 483.0,
+      "value": 0.3485779612043986,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 484.0,
+      "stop": 485.0,
+      "value": 0.3092798765432571,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 488.0,
+      "stop": 489.0,
+      "value": 0.3930587578257877,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 489.0,
+      "stop": 490.0,
+      "value": 0.17955939586940295,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 500.0,
+      "stop": 501.0,
+      "value": 0.377135593132752,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 503.0,
+      "stop": 504.0,
+      "value": 0.37561927491823976,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 508.0,
+      "stop": 509.0,
+      "value": 0.22615904700824196,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 517.0,
+      "stop": 518.0,
+      "value": 0.23072059233287326,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 530.0,
+      "stop": 531.0,
+      "value": 0.3494637890444403,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 535.0,
+      "stop": 536.0,
+      "value": 0.39626449449868556,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 538.0,
+      "stop": 539.0,
+      "value": 0.36644950219588857,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 544.0,
+      "stop": 545.0,
+      "value": 0.39946034583309437,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 545.0,
+      "stop": 546.0,
+      "value": 0.328185348950282,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 547.0,
+      "stop": 548.0,
+      "value": 0.39321577963010923,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 559.0,
+      "stop": 560.0,
+      "value": 0.3592727519359143,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 561.0,
+      "stop": 562.0,
+      "value": 0.3877518149137821,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 562.0,
+      "stop": 563.0,
+      "value": 0.32957301136517103,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 590.0,
+      "stop": 591.0,
+      "value": 0.37352498268752976,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 601.0,
+      "stop": 602.0,
+      "value": 0.3180040718681126,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 604.0,
+      "stop": 605.0,
+      "value": 0.20693426459416034,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 609.0,
+      "stop": 610.0,
+      "value": 0.39635905867055465,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 611.0,
+      "stop": 612.0,
+      "value": 0.29773659444925993,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 615.0,
+      "stop": 616.0,
+      "value": 0.38366486661337684,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 622.0,
+      "stop": 623.0,
+      "value": 0.202311321311324,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 626.0,
+      "stop": 627.0,
+      "value": 0.3197179745220792,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 633.0,
+      "stop": 634.0,
+      "value": 0.38479353253747384,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 634.0,
+      "stop": 635.0,
+      "value": 0.3938001016286533,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 635.0,
+      "stop": 636.0,
+      "value": 0.2710041057557674,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 653.0,
+      "stop": 654.0,
+      "value": 0.3956006612942664,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 658.0,
+      "stop": 659.0,
+      "value": 0.3059103117126166,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 659.0,
+      "stop": 660.0,
+      "value": 0.25281689083473285,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 660.0,
+      "stop": 661.0,
+      "value": 0.20983106245121758,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 663.0,
+      "stop": 664.0,
+      "value": 0.17008881482792618,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 666.0,
+      "stop": 667.0,
+      "value": 0.3962747619873695,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 669.0,
+      "stop": 670.0,
+      "value": 0.3943399273486803,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 682.0,
+      "stop": 683.0,
+      "value": 0.25838439510661376,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 683.0,
+      "stop": 684.0,
+      "value": 0.34032938583151484,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 684.0,
+      "stop": 685.0,
+      "value": 0.32391207213128215,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 693.0,
+      "stop": 694.0,
+      "value": 0.2958494345421185,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 694.0,
+      "stop": 695.0,
+      "value": 0.26381810798156485,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 695.0,
+      "stop": 696.0,
+      "value": 0.3081068881546061,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 700.0,
+      "stop": 701.0,
+      "value": 0.2371575718573011,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 709.0,
+      "stop": 710.0,
+      "value": 0.3745408203601364,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 749.0,
+      "stop": 750.0,
+      "value": 0.3958532859740946,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 754.0,
+      "stop": 755.0,
+      "value": 0.36826441457041514,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 760.0,
+      "stop": 761.0,
+      "value": 0.3111143781921936,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 776.0,
+      "stop": 777.0,
+      "value": 0.31135737541319364,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 783.0,
+      "stop": 784.0,
+      "value": 0.2688042004479774,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 786.0,
+      "stop": 787.0,
+      "value": 0.3728007887005177,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 789.0,
+      "stop": 790.0,
+      "value": 0.26195255770875986,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 802.0,
+      "stop": 803.0,
+      "value": 0.3534497047029983,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 805.0,
+      "stop": 806.0,
+      "value": 0.30399024033170674,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 808.0,
+      "stop": 809.0,
+      "value": 0.23911608256550695,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 817.0,
+      "stop": 818.0,
+      "value": 0.290823265143904,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 824.0,
+      "stop": 825.0,
+      "value": 0.3923568563372653,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 844.0,
+      "stop": 845.0,
+      "value": 0.3109286872046475,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 851.0,
+      "stop": 852.0,
+      "value": 0.2340681682832731,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 852.0,
+      "stop": 853.0,
+      "value": 0.3722564192761473,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 855.0,
+      "stop": 856.0,
+      "value": 0.384272217558383,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 856.0,
+      "stop": 857.0,
+      "value": 0.35682647896893305,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 866.0,
+      "stop": 867.0,
+      "value": 0.2383245701891665,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 872.0,
+      "stop": 873.0,
+      "value": 0.3494180001183397,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 873.0,
+      "stop": 874.0,
+      "value": 0.24512225295865733,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 877.0,
+      "stop": 878.0,
+      "value": 0.39966331568538876,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 888.0,
+      "stop": 889.0,
+      "value": 0.3601464163873488,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 889.0,
+      "stop": 890.0,
+      "value": 0.3534404036787663,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 905.0,
+      "stop": 906.0,
+      "value": 0.36827930913530477,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 913.0,
+      "stop": 914.0,
+      "value": 0.23175219299171657,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 928.0,
+      "stop": 929.0,
+      "value": 0.31719413677159247,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 933.0,
+      "stop": 934.0,
+      "value": 0.3930525814808213,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 950.0,
+      "stop": 951.0,
+      "value": 0.335106126238745,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 951.0,
+      "stop": 952.0,
+      "value": 0.24347887359042067,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 954.0,
+      "stop": 955.0,
+      "value": 0.36599279078161123,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 960.0,
+      "stop": 961.0,
+      "value": 0.34017601872192366,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 973.0,
+      "stop": 974.0,
+      "value": 0.3976323084137048,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 975.0,
+      "stop": 976.0,
+      "value": 0.3591154886168378,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 976.0,
+      "stop": 977.0,
+      "value": 0.345179292786688,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 989.0,
+      "stop": 990.0,
+      "value": 0.3173942249564219,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1032.0,
+      "stop": 1033.0,
+      "value": 0.21367898589099837,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1039.0,
+      "stop": 1040.0,
+      "value": 0.34465622098831716,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1089.0,
+      "stop": 1090.0,
+      "value": 0.1955741954670023,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1105.0,
+      "stop": 1106.0,
+      "value": 0.3041976348708378,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1107.0,
+      "stop": 1108.0,
+      "value": 0.2930387939352161,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1120.0,
+      "stop": 1121.0,
+      "value": 0.3905593963428696,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1121.0,
+      "stop": 1122.0,
+      "value": 0.18442276843386166,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1125.0,
+      "stop": 1126.0,
+      "value": 0.25855924465686436,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1136.0,
+      "stop": 1137.0,
+      "value": 0.2797726969661271,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1139.0,
+      "stop": 1140.0,
+      "value": 0.326353768048792,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1147.0,
+      "stop": 1148.0,
+      "value": 0.3167420813885154,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1150.0,
+      "stop": 1151.0,
+      "value": 0.3173296609240009,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1164.0,
+      "stop": 1165.0,
+      "value": 0.36368970075359136,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1180.0,
+      "stop": 1181.0,
+      "value": 0.32375444167940814,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1224.0,
+      "stop": 1225.0,
+      "value": 0.3054630121098193,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1242.0,
+      "stop": 1243.0,
+      "value": 0.2595516811563671,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1266.0,
+      "stop": 1267.0,
+      "value": 0.21592255268951108,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1275.0,
+      "stop": 1276.0,
+      "value": 0.27887094692394476,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1277.0,
+      "stop": 1278.0,
+      "value": 0.2874107754870629,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1298.0,
+      "stop": 1299.0,
+      "value": 0.2853088228760098,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1300.0,
+      "stop": 1301.0,
+      "value": 0.18156136089525524,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1301.0,
+      "stop": 1302.0,
+      "value": 0.14657470050309274,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1302.0,
+      "stop": 1303.0,
+      "value": 0.33506666988587264,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1304.0,
+      "stop": 1305.0,
+      "value": 0.24654170216443977,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1305.0,
+      "stop": 1306.0,
+      "value": 0.2845381266261865,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1306.0,
+      "stop": 1307.0,
+      "value": 0.2723522846680192,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1308.0,
+      "stop": 1309.0,
+      "value": 0.35250740007334813,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1309.0,
+      "stop": 1310.0,
+      "value": 0.3651876202719517,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1312.0,
+      "stop": 1313.0,
+      "value": 0.3482139031646273,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1319.0,
+      "stop": 1320.0,
+      "value": 0.3252550928805202,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1320.0,
+      "stop": 1321.0,
+      "value": 0.388211859154715,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1325.0,
+      "stop": 1326.0,
+      "value": 0.3858388346733203,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1359.0,
+      "stop": 1360.0,
+      "value": 0.3525364248361541,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1383.0,
+      "stop": 1384.0,
+      "value": 0.3064120817599079,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1407.0,
+      "stop": 1408.0,
+      "value": 0.37947497985648876,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1414.0,
+      "stop": 1415.0,
+      "value": 0.32185309730524597,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1456.0,
+      "stop": 1457.0,
+      "value": 0.3765948630439835,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1483.0,
+      "stop": 1484.0,
+      "value": 0.35858982065098427,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1494.0,
+      "stop": 1495.0,
+      "value": 0.31720031767359,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1510.0,
+      "stop": 1511.0,
+      "value": 0.24854243510380122,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1514.0,
+      "stop": 1515.0,
+      "value": 0.28278588170211016,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_correlation",
+      "start": 1515.0,
+      "stop": 1516.0,
+      "value": 0.3887131779553876,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_correlation",
+      "start": 23.0,
+      "stop": 24.0,
+      "value": 0.38631195488027165,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_correlation",
+      "start": 1074.0,
+      "stop": 1075.0,
+      "value": 0.3910876891740881,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_correlation",
+      "start": 1327.0,
+      "stop": 1328.0,
+      "value": 0.35860028821186185,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 24.0,
+      "stop": 25.0,
+      "value": 0.35255821995233155,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 25.0,
+      "stop": 26.0,
+      "value": 0.22371019699489844,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 26.0,
+      "stop": 27.0,
+      "value": 0.32873690328574,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 32.0,
+      "stop": 33.0,
+      "value": 0.2921957038619766,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 35.0,
+      "stop": 36.0,
+      "value": 0.33690768806523064,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 36.0,
+      "stop": 37.0,
+      "value": 0.38746846175760624,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 42.0,
+      "stop": 43.0,
+      "value": 0.3999703653380763,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 44.0,
+      "stop": 45.0,
+      "value": 0.37651314716235285,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 51.0,
+      "stop": 52.0,
+      "value": 0.39870400680565976,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 56.0,
+      "stop": 57.0,
+      "value": 0.3635698683802275,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 57.0,
+      "stop": 58.0,
+      "value": 0.23920370223618345,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 58.0,
+      "stop": 59.0,
+      "value": 0.3715536295416978,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 69.0,
+      "stop": 70.0,
+      "value": 0.37228660229423505,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 70.0,
+      "stop": 71.0,
+      "value": 0.3427924649739351,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 88.0,
+      "stop": 89.0,
+      "value": 0.38337144323149874,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 91.0,
+      "stop": 92.0,
+      "value": 0.39149112336101966,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 93.0,
+      "stop": 94.0,
+      "value": 0.27486992240135977,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 108.0,
+      "stop": 109.0,
+      "value": 0.18363479428716414,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 133.0,
+      "stop": 134.0,
+      "value": 0.347879243040203,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 134.0,
+      "stop": 135.0,
+      "value": 0.26549339241030284,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 137.0,
+      "stop": 138.0,
+      "value": 0.30890644495283853,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 145.0,
+      "stop": 146.0,
+      "value": 0.37547818467171623,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 150.0,
+      "stop": 151.0,
+      "value": 0.3588917389160012,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 151.0,
+      "stop": 152.0,
+      "value": 0.302319217702621,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 167.0,
+      "stop": 168.0,
+      "value": 0.3344064809925426,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 172.0,
+      "stop": 173.0,
+      "value": 0.30723665610474826,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 174.0,
+      "stop": 175.0,
+      "value": 0.31219039859487385,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 180.0,
+      "stop": 181.0,
+      "value": 0.35394493317033104,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 192.0,
+      "stop": 193.0,
+      "value": 0.3284164341969066,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 196.0,
+      "stop": 197.0,
+      "value": 0.32001221806090757,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 203.0,
+      "stop": 204.0,
+      "value": 0.35086729166686015,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 205.0,
+      "stop": 206.0,
+      "value": 0.3233961206685174,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 207.0,
+      "stop": 208.0,
+      "value": 0.31735067894845537,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 208.0,
+      "stop": 209.0,
+      "value": 0.31076389392242354,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 212.0,
+      "stop": 213.0,
+      "value": 0.32303860806966594,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 218.0,
+      "stop": 219.0,
+      "value": 0.39965054314060877,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 225.0,
+      "stop": 226.0,
+      "value": 0.2999308047830843,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 226.0,
+      "stop": 227.0,
+      "value": 0.38619935950077366,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 233.0,
+      "stop": 234.0,
+      "value": 0.3746656566804093,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 237.0,
+      "stop": 238.0,
+      "value": 0.32621728984859427,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 249.0,
+      "stop": 250.0,
+      "value": 0.37655866080792966,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 252.0,
+      "stop": 253.0,
+      "value": 0.25933126335268447,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 253.0,
+      "stop": 254.0,
+      "value": 0.37636490401963524,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 262.0,
+      "stop": 263.0,
+      "value": 0.37987716558059853,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 270.0,
+      "stop": 271.0,
+      "value": 0.3779442624673706,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 275.0,
+      "stop": 276.0,
+      "value": 0.34619851913651933,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 278.0,
+      "stop": 279.0,
+      "value": 0.37678057893580547,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 280.0,
+      "stop": 281.0,
+      "value": 0.2832788751383108,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 286.0,
+      "stop": 287.0,
+      "value": 0.39397729205373827,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 289.0,
+      "stop": 290.0,
+      "value": 0.3114637915297365,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 292.0,
+      "stop": 293.0,
+      "value": 0.3395420123411763,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 299.0,
+      "stop": 300.0,
+      "value": 0.36971576964855246,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 301.0,
+      "stop": 302.0,
+      "value": 0.3876880816532151,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 303.0,
+      "stop": 304.0,
+      "value": 0.37341431330294783,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 315.0,
+      "stop": 316.0,
+      "value": 0.3705950910041523,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 317.0,
+      "stop": 318.0,
+      "value": 0.3527171733176131,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 322.0,
+      "stop": 323.0,
+      "value": 0.32088595578553947,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 324.0,
+      "stop": 325.0,
+      "value": 0.34466898607042235,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 327.0,
+      "stop": 328.0,
+      "value": 0.3905421591259308,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 349.0,
+      "stop": 350.0,
+      "value": 0.3255166329311508,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 351.0,
+      "stop": 352.0,
+      "value": 0.3607206093580862,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 354.0,
+      "stop": 355.0,
+      "value": 0.3401460660596782,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 364.0,
+      "stop": 365.0,
+      "value": 0.3979971856656276,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 366.0,
+      "stop": 367.0,
+      "value": 0.3788461798554511,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 368.0,
+      "stop": 369.0,
+      "value": 0.3519626831372221,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 370.0,
+      "stop": 371.0,
+      "value": 0.3254326522075597,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 375.0,
+      "stop": 376.0,
+      "value": 0.2977910348857291,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 382.0,
+      "stop": 383.0,
+      "value": 0.25057567092555855,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 397.0,
+      "stop": 398.0,
+      "value": 0.35193714128596454,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 406.0,
+      "stop": 407.0,
+      "value": 0.28609263309973265,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 407.0,
+      "stop": 408.0,
+      "value": 0.3817064771726268,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 416.0,
+      "stop": 417.0,
+      "value": 0.3245509678161674,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 423.0,
+      "stop": 424.0,
+      "value": 0.3045932160225787,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 433.0,
+      "stop": 434.0,
+      "value": 0.2609081677120845,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 436.0,
+      "stop": 437.0,
+      "value": 0.3955113352885642,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 438.0,
+      "stop": 439.0,
+      "value": 0.34843222181178934,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 444.0,
+      "stop": 445.0,
+      "value": 0.35529579053468746,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 452.0,
+      "stop": 453.0,
+      "value": 0.3886813182107029,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 464.0,
+      "stop": 465.0,
+      "value": 0.3975385076145797,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 469.0,
+      "stop": 470.0,
+      "value": 0.34445418400290684,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 471.0,
+      "stop": 472.0,
+      "value": 0.3273433627434133,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 475.0,
+      "stop": 476.0,
+      "value": 0.34851671535318174,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 477.0,
+      "stop": 478.0,
+      "value": 0.3804694667583113,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 478.0,
+      "stop": 479.0,
+      "value": 0.31082008289299023,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 484.0,
+      "stop": 485.0,
+      "value": 0.32732337095209124,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 488.0,
+      "stop": 489.0,
+      "value": 0.3424155813671533,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 490.0,
+      "stop": 491.0,
+      "value": 0.3888528260815911,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 494.0,
+      "stop": 495.0,
+      "value": 0.3632079444157745,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 496.0,
+      "stop": 497.0,
+      "value": 0.36856204115851154,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 505.0,
+      "stop": 506.0,
+      "value": 0.33483123796890985,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 506.0,
+      "stop": 507.0,
+      "value": 0.16348398967572095,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 511.0,
+      "stop": 512.0,
+      "value": 0.3751822371566824,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 519.0,
+      "stop": 520.0,
+      "value": 0.35165642743847886,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 535.0,
+      "stop": 536.0,
+      "value": 0.28558443893516194,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 541.0,
+      "stop": 542.0,
+      "value": 0.3687222807870154,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 543.0,
+      "stop": 544.0,
+      "value": 0.15660614602097567,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 545.0,
+      "stop": 546.0,
+      "value": 0.33400875133873936,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 549.0,
+      "stop": 550.0,
+      "value": 0.3862116907914399,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 552.0,
+      "stop": 553.0,
+      "value": 0.3139231128188694,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 558.0,
+      "stop": 559.0,
+      "value": 0.34655083567029515,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 571.0,
+      "stop": 572.0,
+      "value": 0.2918607070365447,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 575.0,
+      "stop": 576.0,
+      "value": 0.36021058419804486,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 580.0,
+      "stop": 581.0,
+      "value": 0.2762969733115813,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 592.0,
+      "stop": 593.0,
+      "value": 0.30333766443216914,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 596.0,
+      "stop": 597.0,
+      "value": 0.37910280615985253,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 597.0,
+      "stop": 598.0,
+      "value": 0.35957985115338703,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 599.0,
+      "stop": 600.0,
+      "value": 0.2555479720311621,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 606.0,
+      "stop": 607.0,
+      "value": 0.36610049133537764,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 611.0,
+      "stop": 612.0,
+      "value": 0.34878356417097856,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 612.0,
+      "stop": 613.0,
+      "value": 0.3571175760353357,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 622.0,
+      "stop": 623.0,
+      "value": 0.30546174887009403,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 624.0,
+      "stop": 625.0,
+      "value": 0.346053237863132,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 629.0,
+      "stop": 630.0,
+      "value": 0.39644631904518646,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 631.0,
+      "stop": 632.0,
+      "value": 0.330113757692736,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 634.0,
+      "stop": 635.0,
+      "value": 0.30759229706010344,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 638.0,
+      "stop": 639.0,
+      "value": 0.36039871085748043,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 640.0,
+      "stop": 641.0,
+      "value": 0.3983231094630814,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 641.0,
+      "stop": 642.0,
+      "value": 0.3037437541633958,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 651.0,
+      "stop": 652.0,
+      "value": 0.3856142807533819,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 652.0,
+      "stop": 653.0,
+      "value": 0.3865021861041044,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 657.0,
+      "stop": 658.0,
+      "value": 0.3770756177476541,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 659.0,
+      "stop": 660.0,
+      "value": 0.2949437722014732,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 661.0,
+      "stop": 662.0,
+      "value": 0.3569024728886445,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 668.0,
+      "stop": 669.0,
+      "value": 0.25472529535508265,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 669.0,
+      "stop": 670.0,
+      "value": 0.37772364707111283,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 671.0,
+      "stop": 672.0,
+      "value": 0.25087794611089714,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 672.0,
+      "stop": 673.0,
+      "value": 0.28829454591032605,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 673.0,
+      "stop": 674.0,
+      "value": 0.2964264566951071,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 681.0,
+      "stop": 682.0,
+      "value": 0.3807862658532367,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 684.0,
+      "stop": 685.0,
+      "value": 0.380843431917512,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 686.0,
+      "stop": 687.0,
+      "value": 0.3623491108181577,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 689.0,
+      "stop": 690.0,
+      "value": 0.2759458196283906,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 690.0,
+      "stop": 691.0,
+      "value": 0.3993238573444031,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 694.0,
+      "stop": 695.0,
+      "value": 0.1916639158303208,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 695.0,
+      "stop": 696.0,
+      "value": 0.32767601911916194,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 719.0,
+      "stop": 720.0,
+      "value": 0.3332605457513166,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 725.0,
+      "stop": 726.0,
+      "value": 0.1438564562842791,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 728.0,
+      "stop": 729.0,
+      "value": 0.36729957913927264,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 729.0,
+      "stop": 730.0,
+      "value": 0.38567039858614116,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 737.0,
+      "stop": 738.0,
+      "value": 0.3462053345902909,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 744.0,
+      "stop": 745.0,
+      "value": 0.2622529084636109,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 747.0,
+      "stop": 748.0,
+      "value": 0.2854886396761762,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 755.0,
+      "stop": 756.0,
+      "value": 0.20376224320433628,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 762.0,
+      "stop": 763.0,
+      "value": 0.38225827372237436,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 763.0,
+      "stop": 764.0,
+      "value": 0.39248377075065716,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 764.0,
+      "stop": 765.0,
+      "value": 0.27664013529123566,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 770.0,
+      "stop": 771.0,
+      "value": 0.39663577179950066,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 771.0,
+      "stop": 772.0,
+      "value": 0.3035092517184292,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 775.0,
+      "stop": 776.0,
+      "value": 0.3290921924503443,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 776.0,
+      "stop": 777.0,
+      "value": 0.38172646418708633,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 781.0,
+      "stop": 782.0,
+      "value": 0.37643249638856346,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 790.0,
+      "stop": 791.0,
+      "value": 0.3525912747486907,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 803.0,
+      "stop": 804.0,
+      "value": 0.38200264178296145,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 822.0,
+      "stop": 823.0,
+      "value": 0.36681432996075186,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 826.0,
+      "stop": 827.0,
+      "value": 0.37855623359536633,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 829.0,
+      "stop": 830.0,
+      "value": 0.32962006517437636,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 833.0,
+      "stop": 834.0,
+      "value": 0.3750169926569684,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 835.0,
+      "stop": 836.0,
+      "value": 0.26321313707197314,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 840.0,
+      "stop": 841.0,
+      "value": 0.2929572306699778,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 841.0,
+      "stop": 842.0,
+      "value": 0.35369887692534985,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 849.0,
+      "stop": 850.0,
+      "value": 0.26832984260978066,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 852.0,
+      "stop": 853.0,
+      "value": 0.24179914496058535,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 856.0,
+      "stop": 857.0,
+      "value": 0.3867871185900451,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 864.0,
+      "stop": 865.0,
+      "value": 0.33056366450182606,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 870.0,
+      "stop": 871.0,
+      "value": 0.21589601495747682,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 873.0,
+      "stop": 874.0,
+      "value": 0.3430411398619074,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 884.0,
+      "stop": 885.0,
+      "value": 0.30627850456875183,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 907.0,
+      "stop": 908.0,
+      "value": 0.39343466369934166,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 913.0,
+      "stop": 914.0,
+      "value": 0.24752297397780174,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 915.0,
+      "stop": 916.0,
+      "value": 0.3592005357831168,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 917.0,
+      "stop": 918.0,
+      "value": 0.31194156939026874,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 918.0,
+      "stop": 919.0,
+      "value": 0.39378944144600425,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 919.0,
+      "stop": 920.0,
+      "value": 0.25487304966775765,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 931.0,
+      "stop": 932.0,
+      "value": 0.3681998663713158,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 932.0,
+      "stop": 933.0,
+      "value": 0.34083065712115634,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 943.0,
+      "stop": 944.0,
+      "value": 0.31329522942122373,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 944.0,
+      "stop": 945.0,
+      "value": 0.3869618026815627,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 945.0,
+      "stop": 946.0,
+      "value": 0.38572342403013155,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 956.0,
+      "stop": 957.0,
+      "value": 0.35424127855536547,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 969.0,
+      "stop": 970.0,
+      "value": 0.2906026741223241,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 970.0,
+      "stop": 971.0,
+      "value": 0.3282372008267117,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 980.0,
+      "stop": 981.0,
+      "value": 0.37475909440606636,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 985.0,
+      "stop": 986.0,
+      "value": 0.35319461974700034,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1009.0,
+      "stop": 1010.0,
+      "value": 0.3814482479647793,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1010.0,
+      "stop": 1011.0,
+      "value": 0.33355625301056885,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1013.0,
+      "stop": 1014.0,
+      "value": 0.39512836311043514,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1033.0,
+      "stop": 1034.0,
+      "value": 0.3463976983110148,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1039.0,
+      "stop": 1040.0,
+      "value": 0.3375549253483297,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1056.0,
+      "stop": 1057.0,
+      "value": 0.3871104769140213,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1061.0,
+      "stop": 1062.0,
+      "value": 0.3841556079881241,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1065.0,
+      "stop": 1066.0,
+      "value": 0.367868178678668,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1080.0,
+      "stop": 1081.0,
+      "value": 0.3721085285896997,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1090.0,
+      "stop": 1091.0,
+      "value": 0.29051992325407444,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1096.0,
+      "stop": 1097.0,
+      "value": 0.29825224027628255,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1103.0,
+      "stop": 1104.0,
+      "value": 0.31367321913050117,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1108.0,
+      "stop": 1109.0,
+      "value": 0.36226013120658285,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1114.0,
+      "stop": 1115.0,
+      "value": 0.3910865165524481,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1115.0,
+      "stop": 1116.0,
+      "value": 0.27174230685202083,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1117.0,
+      "stop": 1118.0,
+      "value": 0.3481201640927421,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1123.0,
+      "stop": 1124.0,
+      "value": 0.26261812034811116,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1133.0,
+      "stop": 1134.0,
+      "value": 0.39165343042892425,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1143.0,
+      "stop": 1144.0,
+      "value": 0.26705659184101893,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1144.0,
+      "stop": 1145.0,
+      "value": 0.34926837652955356,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1154.0,
+      "stop": 1155.0,
+      "value": 0.2258138071462993,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1164.0,
+      "stop": 1165.0,
+      "value": 0.37460859747076314,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1171.0,
+      "stop": 1172.0,
+      "value": 0.27698222172706,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1173.0,
+      "stop": 1174.0,
+      "value": 0.3900750549843904,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1177.0,
+      "stop": 1178.0,
+      "value": 0.38300044832268515,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1182.0,
+      "stop": 1183.0,
+      "value": 0.33801800502718227,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1186.0,
+      "stop": 1187.0,
+      "value": 0.380455911070526,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1204.0,
+      "stop": 1205.0,
+      "value": 0.33845705000892085,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1205.0,
+      "stop": 1206.0,
+      "value": 0.29199993737988367,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1206.0,
+      "stop": 1207.0,
+      "value": 0.26203355594293765,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1208.0,
+      "stop": 1209.0,
+      "value": 0.28472208364564916,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1209.0,
+      "stop": 1210.0,
+      "value": 0.34373710916153305,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1217.0,
+      "stop": 1218.0,
+      "value": 0.24900445597110663,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1220.0,
+      "stop": 1221.0,
+      "value": 0.36115550954200426,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1221.0,
+      "stop": 1222.0,
+      "value": 0.3545843445245938,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1227.0,
+      "stop": 1228.0,
+      "value": 0.37443111258569783,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1233.0,
+      "stop": 1234.0,
+      "value": 0.3596733575375688,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1238.0,
+      "stop": 1239.0,
+      "value": 0.25040914366438577,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1242.0,
+      "stop": 1243.0,
+      "value": 0.3162726431900186,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1256.0,
+      "stop": 1257.0,
+      "value": 0.37544088916844237,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1265.0,
+      "stop": 1266.0,
+      "value": 0.3926799598998817,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1270.0,
+      "stop": 1271.0,
+      "value": 0.35508973757414164,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1272.0,
+      "stop": 1273.0,
+      "value": 0.36006298356583666,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1274.0,
+      "stop": 1275.0,
+      "value": 0.28676127986518835,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1282.0,
+      "stop": 1283.0,
+      "value": 0.3899138411496023,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1286.0,
+      "stop": 1287.0,
+      "value": 0.3899441817793697,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1287.0,
+      "stop": 1288.0,
+      "value": 0.327518643135898,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1291.0,
+      "stop": 1292.0,
+      "value": 0.3569252905005245,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1296.0,
+      "stop": 1297.0,
+      "value": 0.3472197365390423,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1301.0,
+      "stop": 1302.0,
+      "value": 0.33450395923735077,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1302.0,
+      "stop": 1303.0,
+      "value": 0.24658428839408528,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1320.0,
+      "stop": 1321.0,
+      "value": 0.367868422152476,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1324.0,
+      "stop": 1325.0,
+      "value": 0.36461909343314425,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1330.0,
+      "stop": 1331.0,
+      "value": 0.3262259747709457,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1331.0,
+      "stop": 1332.0,
+      "value": 0.3942192144235225,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1339.0,
+      "stop": 1340.0,
+      "value": 0.3622495226451152,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1348.0,
+      "stop": 1349.0,
+      "value": 0.2958048376108178,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1357.0,
+      "stop": 1358.0,
+      "value": 0.38907152262060335,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1363.0,
+      "stop": 1364.0,
+      "value": 0.3614912329312103,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1367.0,
+      "stop": 1368.0,
+      "value": 0.35513695569852677,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1372.0,
+      "stop": 1373.0,
+      "value": 0.3632184040330736,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1375.0,
+      "stop": 1376.0,
+      "value": 0.37039725765101467,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1382.0,
+      "stop": 1383.0,
+      "value": 0.3988738944391444,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1388.0,
+      "stop": 1389.0,
+      "value": 0.27841253287185874,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1391.0,
+      "stop": 1392.0,
+      "value": 0.33575306280984096,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1415.0,
+      "stop": 1416.0,
+      "value": 0.35320170976053294,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1422.0,
+      "stop": 1423.0,
+      "value": 0.3921433341982074,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1464.0,
+      "stop": 1465.0,
+      "value": 0.3829008602452248,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1467.0,
+      "stop": 1468.0,
+      "value": 0.3310560071223381,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1468.0,
+      "stop": 1469.0,
+      "value": 0.306343016287763,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1469.0,
+      "stop": 1470.0,
+      "value": 0.2528980827223215,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1470.0,
+      "stop": 1471.0,
+      "value": 0.3493572179240018,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1472.0,
+      "stop": 1473.0,
+      "value": 0.34386306502430125,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1475.0,
+      "stop": 1476.0,
+      "value": 0.2752049815957257,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1477.0,
+      "stop": 1478.0,
+      "value": 0.3722251466529282,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1482.0,
+      "stop": 1483.0,
+      "value": 0.34784040717302794,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1494.0,
+      "stop": 1495.0,
+      "value": 0.37663197600233145,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1497.0,
+      "stop": 1498.0,
+      "value": 0.3600971341725681,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "CP2",
+      "criterion": "bad_by_correlation",
+      "start": 1509.0,
+      "stop": 1510.0,
+      "value": 0.2597721945948614,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "Cz",
+      "criterion": "bad_by_correlation",
+      "start": 1023.0,
+      "stop": 1024.0,
+      "value": 0.3687278562318664,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_correlation",
+      "start": 452.0,
+      "stop": 453.0,
+      "value": 0.3737431632551231,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_correlation",
+      "start": 1042.0,
+      "stop": 1043.0,
+      "value": 0.3950353404087832,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_correlation",
+      "start": 1140.0,
+      "stop": 1141.0,
+      "value": 0.3850688232179795,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_correlation",
+      "start": 815.0,
+      "stop": 816.0,
+      "value": 0.39462064734243585,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "AF7",
+      "criterion": "bad_by_correlation",
+      "start": 1098.0,
+      "stop": 1099.0,
+      "value": 0.3860715822442948,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "C5",
+      "criterion": "bad_by_correlation",
+      "start": 174.0,
+      "stop": 175.0,
+      "value": 0.29106811044153624,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "P6",
+      "criterion": "bad_by_correlation",
+      "start": 640.0,
+      "stop": 641.0,
+      "value": 0.3326982757967197,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "F6",
+      "criterion": "bad_by_correlation",
+      "start": 802.0,
+      "stop": 803.0,
+      "value": 0.3946537432422592,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_correlation",
+      "start": 677.0,
+      "stop": 678.0,
+      "value": 0.24555439254424657,
+      "threshold": 0.4,
+      "detail": "Flag requires >1% failing 1-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 50.0,
+      "stop": 55.0,
+      "value": 0.5043288329073387,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 55.0,
+      "stop": 60.0,
+      "value": 0.6275833571201087,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 95.0,
+      "stop": 100.0,
+      "value": 0.6273918116358868,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 295.0,
+      "stop": 300.0,
+      "value": 0.6489658965723055,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 660.0,
+      "stop": 665.0,
+      "value": 0.5859650611260908,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 735.0,
+      "stop": 740.0,
+      "value": 0.7382557326591646,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 765.0,
+      "stop": 770.0,
+      "value": 0.4181434066587179,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 905.0,
+      "stop": 910.0,
+      "value": 0.7315065315439098,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1040.0,
+      "stop": 1045.0,
+      "value": 0.5728571673446409,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1045.0,
+      "stop": 1050.0,
+      "value": 0.5528382919661923,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1085.0,
+      "stop": 1090.0,
+      "value": 0.6989912709469326,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1095.0,
+      "stop": 1100.0,
+      "value": 0.678169381797959,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1105.0,
+      "stop": 1110.0,
+      "value": 0.688269393403037,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1130.0,
+      "stop": 1135.0,
+      "value": 0.7173915930258269,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1365.0,
+      "stop": 1370.0,
+      "value": 0.292591767763387,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp1",
+      "criterion": "bad_by_ransac",
+      "start": 1375.0,
+      "stop": 1380.0,
+      "value": 0.6225100513921151,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 115.0,
+      "stop": 120.0,
+      "value": 0.7256784159014392,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 135.0,
+      "stop": 140.0,
+      "value": 0.7463351853107664,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 170.0,
+      "stop": 175.0,
+      "value": 0.7199718040218401,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 180.0,
+      "stop": 185.0,
+      "value": 0.5530155574086524,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 300.0,
+      "stop": 305.0,
+      "value": 0.7374138370258545,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 320.0,
+      "stop": 325.0,
+      "value": 0.5725388501728893,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 385.0,
+      "stop": 390.0,
+      "value": 0.7135474388269826,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 985.0,
+      "stop": 990.0,
+      "value": 0.7482236100465569,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 1095.0,
+      "stop": 1100.0,
+      "value": 0.6905830671302579,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 1130.0,
+      "stop": 1135.0,
+      "value": 0.7154679426412544,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 1300.0,
+      "stop": 1305.0,
+      "value": 0.7262475200575313,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 1485.0,
+      "stop": 1490.0,
+      "value": 0.7249242581884875,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F7",
+      "criterion": "bad_by_ransac",
+      "start": 1495.0,
+      "stop": 1500.0,
+      "value": 0.49651664047655064,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 105.0,
+      "stop": 110.0,
+      "value": 0.7175132733963341,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 200.0,
+      "stop": 205.0,
+      "value": 0.7271668496263368,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 215.0,
+      "stop": 220.0,
+      "value": 0.44334329903153097,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 315.0,
+      "stop": 320.0,
+      "value": 0.6508113473759016,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 760.0,
+      "stop": 765.0,
+      "value": 0.7308689813461083,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 895.0,
+      "stop": 900.0,
+      "value": 0.6896674635012369,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 1400.0,
+      "stop": 1405.0,
+      "value": 0.36074624382721177,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 1435.0,
+      "stop": 1440.0,
+      "value": 0.6889332236147404,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 1490.0,
+      "stop": 1495.0,
+      "value": 0.45215082889837305,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT9",
+      "criterion": "bad_by_ransac",
+      "start": 1495.0,
+      "stop": 1500.0,
+      "value": 0.7231381331529045,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC5",
+      "criterion": "bad_by_ransac",
+      "start": 260.0,
+      "stop": 265.0,
+      "value": 0.7357074353809576,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC5",
+      "criterion": "bad_by_ransac",
+      "start": 1420.0,
+      "stop": 1425.0,
+      "value": 0.691570153396937,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC5",
+      "criterion": "bad_by_ransac",
+      "start": 1425.0,
+      "stop": 1430.0,
+      "value": 0.6671056157055101,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC5",
+      "criterion": "bad_by_ransac",
+      "start": 1495.0,
+      "stop": 1500.0,
+      "value": 0.7288214641944298,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC5",
+      "criterion": "bad_by_ransac",
+      "start": 1500.0,
+      "stop": 1505.0,
+      "value": 0.7276058907880293,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T7",
+      "criterion": "bad_by_ransac",
+      "start": 320.0,
+      "stop": 325.0,
+      "value": 0.7392352589825704,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T7",
+      "criterion": "bad_by_ransac",
+      "start": 540.0,
+      "stop": 545.0,
+      "value": 0.556948493140653,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T7",
+      "criterion": "bad_by_ransac",
+      "start": 705.0,
+      "stop": 710.0,
+      "value": 0.6845188682550557,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 35.0,
+      "stop": 40.0,
+      "value": 0.7448510935449699,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 65.0,
+      "stop": 70.0,
+      "value": 0.6348879870497968,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 920.0,
+      "stop": 925.0,
+      "value": 0.6491638158244862,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1015.0,
+      "stop": 1020.0,
+      "value": 0.39132128186534193,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1040.0,
+      "stop": 1045.0,
+      "value": 0.6517419345346781,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1045.0,
+      "stop": 1050.0,
+      "value": 0.7319758198763848,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1095.0,
+      "stop": 1100.0,
+      "value": 0.6774243227184131,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1335.0,
+      "stop": 1340.0,
+      "value": 0.7170324892604492,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1425.0,
+      "stop": 1430.0,
+      "value": 0.7044629698714578,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1485.0,
+      "stop": 1490.0,
+      "value": 0.7353417691791398,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_ransac",
+      "start": 1490.0,
+      "stop": 1495.0,
+      "value": 0.6929951742814457,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Pz",
+      "criterion": "bad_by_ransac",
+      "start": 1015.0,
+      "stop": 1020.0,
+      "value": 0.6175126453195844,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P7",
+      "criterion": "bad_by_ransac",
+      "start": 1015.0,
+      "stop": 1020.0,
+      "value": 0.7438966226328503,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "O1",
+      "criterion": "bad_by_ransac",
+      "start": 410.0,
+      "stop": 415.0,
+      "value": 0.7173965261244002,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "O1",
+      "criterion": "bad_by_ransac",
+      "start": 630.0,
+      "stop": 635.0,
+      "value": 0.6695134388784388,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "O1",
+      "criterion": "bad_by_ransac",
+      "start": 1115.0,
+      "stop": 1120.0,
+      "value": 0.7057552061121164,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "O1",
+      "criterion": "bad_by_ransac",
+      "start": 1120.0,
+      "stop": 1125.0,
+      "value": 0.7483917417685664,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Oz",
+      "criterion": "bad_by_ransac",
+      "start": 15.0,
+      "stop": 20.0,
+      "value": 0.6605009927236342,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Oz",
+      "criterion": "bad_by_ransac",
+      "start": 1300.0,
+      "stop": 1305.0,
+      "value": 0.6405432413259211,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P8",
+      "criterion": "bad_by_ransac",
+      "start": 1095.0,
+      "stop": 1100.0,
+      "value": 0.7197901054623856,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P8",
+      "criterion": "bad_by_ransac",
+      "start": 1500.0,
+      "stop": 1505.0,
+      "value": 0.7118441840582045,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_ransac",
+      "start": 260.0,
+      "stop": 265.0,
+      "value": 0.6165376594380805,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_ransac",
+      "start": 560.0,
+      "stop": 565.0,
+      "value": 0.7052721234668285,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_ransac",
+      "start": 1015.0,
+      "stop": 1020.0,
+      "value": 0.24672571943050975,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_ransac",
+      "start": 1085.0,
+      "stop": 1090.0,
+      "value": 0.7161477814967141,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_ransac",
+      "start": 1095.0,
+      "stop": 1100.0,
+      "value": 0.6543788704781368,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "TP10",
+      "criterion": "bad_by_ransac",
+      "start": 1440.0,
+      "stop": 1445.0,
+      "value": 0.6501105170209183,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP6",
+      "criterion": "bad_by_ransac",
+      "start": 795.0,
+      "stop": 800.0,
+      "value": 0.555512782940175,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Cz",
+      "criterion": "bad_by_ransac",
+      "start": 15.0,
+      "stop": 20.0,
+      "value": 0.43818002151239355,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Cz",
+      "criterion": "bad_by_ransac",
+      "start": 330.0,
+      "stop": 335.0,
+      "value": 0.624544783468909,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Cz",
+      "criterion": "bad_by_ransac",
+      "start": 515.0,
+      "stop": 520.0,
+      "value": 0.7024530342773432,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Cz",
+      "criterion": "bad_by_ransac",
+      "start": 585.0,
+      "stop": 590.0,
+      "value": 0.48184168079776385,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Cz",
+      "criterion": "bad_by_ransac",
+      "start": 590.0,
+      "stop": 595.0,
+      "value": 0.5460820941703761,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 405.0,
+      "stop": 410.0,
+      "value": 0.5761127130313716,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 440.0,
+      "stop": 445.0,
+      "value": 0.6485999953521152,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 450.0,
+      "stop": 455.0,
+      "value": 0.6153883669069756,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 455.0,
+      "stop": 460.0,
+      "value": 0.08516213823840918,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 460.0,
+      "stop": 465.0,
+      "value": 0.6878260931494276,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 810.0,
+      "stop": 815.0,
+      "value": 0.6357112571763411,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 930.0,
+      "stop": 935.0,
+      "value": 0.7163217255757056,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 940.0,
+      "stop": 945.0,
+      "value": 0.6171619689299207,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 945.0,
+      "stop": 950.0,
+      "value": 0.6728364769202351,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1000.0,
+      "stop": 1005.0,
+      "value": 0.7484825276647148,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1040.0,
+      "stop": 1045.0,
+      "value": 0.7174385961206755,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1090.0,
+      "stop": 1095.0,
+      "value": 0.6772311465104732,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1120.0,
+      "stop": 1125.0,
+      "value": 0.6721876949111396,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1135.0,
+      "stop": 1140.0,
+      "value": 0.705307272161179,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1140.0,
+      "stop": 1145.0,
+      "value": 0.6500296949283757,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1170.0,
+      "stop": 1175.0,
+      "value": 0.6203629020015788,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1290.0,
+      "stop": 1295.0,
+      "value": 0.5402109672763886,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1345.0,
+      "stop": 1350.0,
+      "value": 0.7377063214360949,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "T8",
+      "criterion": "bad_by_ransac",
+      "start": 1505.0,
+      "stop": 1510.0,
+      "value": 0.5786089578404843,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 220.0,
+      "stop": 225.0,
+      "value": 0.7433771473545133,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 280.0,
+      "stop": 285.0,
+      "value": 0.5688911219709276,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 655.0,
+      "stop": 660.0,
+      "value": 0.5033713419573748,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 810.0,
+      "stop": 815.0,
+      "value": 0.5536281736177716,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 815.0,
+      "stop": 820.0,
+      "value": 0.6269484077351042,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 975.0,
+      "stop": 980.0,
+      "value": 0.7148640370231424,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 980.0,
+      "stop": 985.0,
+      "value": 0.6598807211196188,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 1130.0,
+      "stop": 1135.0,
+      "value": 0.7234265722273179,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 1500.0,
+      "stop": 1505.0,
+      "value": 0.5846855250249605,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FC2",
+      "criterion": "bad_by_ransac",
+      "start": 1505.0,
+      "stop": 1510.0,
+      "value": 0.5946188954116906,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp2",
+      "criterion": "bad_by_ransac",
+      "start": 1040.0,
+      "stop": 1045.0,
+      "value": 0.486020431380697,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp2",
+      "criterion": "bad_by_ransac",
+      "start": 1045.0,
+      "stop": 1050.0,
+      "value": 0.2801260155563044,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "Fp2",
+      "criterion": "bad_by_ransac",
+      "start": 1425.0,
+      "stop": 1430.0,
+      "value": 0.4097226762536704,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF7",
+      "criterion": "bad_by_ransac",
+      "start": 765.0,
+      "stop": 770.0,
+      "value": 0.5187381278231715,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF7",
+      "criterion": "bad_by_ransac",
+      "start": 1365.0,
+      "stop": 1370.0,
+      "value": 0.5335196978052532,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF7",
+      "criterion": "bad_by_ransac",
+      "start": 1375.0,
+      "stop": 1380.0,
+      "value": 0.6487089127682915,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF7",
+      "criterion": "bad_by_ransac",
+      "start": 1505.0,
+      "stop": 1510.0,
+      "value": 0.7176314242173115,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF3",
+      "criterion": "bad_by_ransac",
+      "start": 1130.0,
+      "stop": 1135.0,
+      "value": 0.7100503153551613,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AFz",
+      "criterion": "bad_by_ransac",
+      "start": 1015.0,
+      "stop": 1020.0,
+      "value": 0.713073547622762,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AFz",
+      "criterion": "bad_by_ransac",
+      "start": 1065.0,
+      "stop": 1070.0,
+      "value": 0.415736407595559,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT7",
+      "criterion": "bad_by_ransac",
+      "start": 320.0,
+      "stop": 325.0,
+      "value": 0.7463931948498661,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT7",
+      "criterion": "bad_by_ransac",
+      "start": 1115.0,
+      "stop": 1120.0,
+      "value": 0.7436593794063887,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT7",
+      "criterion": "bad_by_ransac",
+      "start": 1265.0,
+      "stop": 1270.0,
+      "value": 0.6743841206300688,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C5",
+      "criterion": "bad_by_ransac",
+      "start": 170.0,
+      "stop": 175.0,
+      "value": 0.6504266040290549,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C5",
+      "criterion": "bad_by_ransac",
+      "start": 375.0,
+      "stop": 380.0,
+      "value": 0.3515291707288528,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C5",
+      "criterion": "bad_by_ransac",
+      "start": 755.0,
+      "stop": 760.0,
+      "value": 0.7379761756873426,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C5",
+      "criterion": "bad_by_ransac",
+      "start": 965.0,
+      "stop": 970.0,
+      "value": 0.7341357987773837,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "PO4",
+      "criterion": "bad_by_ransac",
+      "start": 1125.0,
+      "stop": 1130.0,
+      "value": 0.7246241731577349,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "PO4",
+      "criterion": "bad_by_ransac",
+      "start": 1130.0,
+      "stop": 1135.0,
+      "value": 0.6662104727484446,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "PO4",
+      "criterion": "bad_by_ransac",
+      "start": 1435.0,
+      "stop": 1440.0,
+      "value": 0.6517000806250812,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "PO4",
+      "criterion": "bad_by_ransac",
+      "start": 1495.0,
+      "stop": 1500.0,
+      "value": 0.6213986372020648,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "PO4",
+      "criterion": "bad_by_ransac",
+      "start": 1500.0,
+      "stop": 1505.0,
+      "value": 0.6052656611861648,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "PO4",
+      "criterion": "bad_by_ransac",
+      "start": 1505.0,
+      "stop": 1510.0,
+      "value": 0.5289064785800024,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P6",
+      "criterion": "bad_by_ransac",
+      "start": 525.0,
+      "stop": 530.0,
+      "value": 0.3472724825079803,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P6",
+      "criterion": "bad_by_ransac",
+      "start": 570.0,
+      "stop": 575.0,
+      "value": 0.7126213422667825,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P6",
+      "criterion": "bad_by_ransac",
+      "start": 820.0,
+      "stop": 825.0,
+      "value": 0.7310070563027046,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P6",
+      "criterion": "bad_by_ransac",
+      "start": 905.0,
+      "stop": 910.0,
+      "value": 0.5855121808811672,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P6",
+      "criterion": "bad_by_ransac",
+      "start": 1510.0,
+      "stop": 1515.0,
+      "value": 0.6825341872435096,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P2",
+      "criterion": "bad_by_ransac",
+      "start": 185.0,
+      "stop": 190.0,
+      "value": 0.7410467216607581,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P2",
+      "criterion": "bad_by_ransac",
+      "start": 430.0,
+      "stop": 435.0,
+      "value": 0.656504841700958,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "P2",
+      "criterion": "bad_by_ransac",
+      "start": 1500.0,
+      "stop": 1505.0,
+      "value": 0.5163993262985344,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP4",
+      "criterion": "bad_by_ransac",
+      "start": 760.0,
+      "stop": 765.0,
+      "value": 0.7153434104487255,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP4",
+      "criterion": "bad_by_ransac",
+      "start": 840.0,
+      "stop": 845.0,
+      "value": 0.7187584213298286,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP4",
+      "criterion": "bad_by_ransac",
+      "start": 940.0,
+      "stop": 945.0,
+      "value": 0.7299793528717711,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C6",
+      "criterion": "bad_by_ransac",
+      "start": 680.0,
+      "stop": 685.0,
+      "value": 0.708212906328312,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C6",
+      "criterion": "bad_by_ransac",
+      "start": 1085.0,
+      "stop": 1090.0,
+      "value": 0.6856436595787634,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "C6",
+      "criterion": "bad_by_ransac",
+      "start": 1495.0,
+      "stop": 1500.0,
+      "value": 0.44195097993733495,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "FT8",
+      "criterion": "bad_by_ransac",
+      "start": 245.0,
+      "stop": 250.0,
+      "value": 0.38650350416538953,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F6",
+      "criterion": "bad_by_ransac",
+      "start": 435.0,
+      "stop": 440.0,
+      "value": 0.6888880661138215,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F6",
+      "criterion": "bad_by_ransac",
+      "start": 440.0,
+      "stop": 445.0,
+      "value": 0.5332395277940242,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F6",
+      "criterion": "bad_by_ransac",
+      "start": 800.0,
+      "stop": 805.0,
+      "value": 0.7135951738029359,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "F6",
+      "criterion": "bad_by_ransac",
+      "start": 845.0,
+      "stop": 850.0,
+      "value": 0.679076279270878,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 115.0,
+      "stop": 120.0,
+      "value": 0.633468931489372,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 155.0,
+      "stop": 160.0,
+      "value": 0.7189230221876497,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 610.0,
+      "stop": 615.0,
+      "value": 0.5518302832457718,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 1095.0,
+      "stop": 1100.0,
+      "value": 0.6257129717316784,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 1105.0,
+      "stop": 1110.0,
+      "value": 0.7092121908243882,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 1390.0,
+      "stop": 1395.0,
+      "value": 0.6881813050311192,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 1425.0,
+      "stop": 1430.0,
+      "value": 0.7412494734443261,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "AF8",
+      "criterion": "bad_by_ransac",
+      "start": 1505.0,
+      "stop": 1510.0,
+      "value": 0.5153708103841579,
+      "threshold": 0.75,
+      "detail": "Flag requires >40% failing 5-s windows."
+    },
+    {
+      "channel": "CP1",
+      "criterion": "bad_by_hf_noise",
+      "start": 0.0,
+      "stop": 1516.8,
+      "value": 5.680751212026096,
+      "threshold": 5,
+      "detail": "Whole-record statistic; no unique trigger interval."
+    },
+    {
+      "channel": "TP9",
+      "criterion": "bad_by_psd",
+      "start": 0.0,
+      "stop": 1516.8,
+      "value": 3.5586893420724506,
+      "threshold": 3,
+      "detail": "Whole-record statistic; no unique trigger interval. PSD can also flag 1/f violations (ratios are diagnostic only); The displayed max ABSOLUTE band z-score includes negative low-power outliers, which do not trigger the band rule. A displayed value >3 alone does not reproduce the flag; band flags require POSITIVE z>3."
+    }
+  ],
+  "metrics": {
+    "bad_by_correlation": {
+      "Fp1": 0.0006596306068601583,
+      "Fz": 0.0,
+      "F3": 0.0,
+      "F7": 0.0013192612137203166,
+      "FT9": 0.0013192612137203166,
+      "FC5": 0.0006596306068601583,
+      "FC1": 0.0,
+      "C3": 0.0,
+      "T7": 0.0,
+      "TP9": 0.11147757255936676,
+      "CP5": 0.0,
+      "CP1": 0.0006596306068601583,
+      "Pz": 0.0,
+      "P3": 0.0,
+      "P7": 0.0,
+      "O1": 0.0,
+      "Oz": 0.0,
+      "O2": 0.0,
+      "P4": 0.0,
+      "P8": 0.0,
+      "TP10": 0.0013192612137203166,
+      "CP6": 0.0,
+      "CP2": 0.17282321899736147,
+      "Cz": 0.0006596306068601583,
+      "C4": 0.0,
+      "T8": 0.001978891820580475,
+      "FT10": 0.0,
+      "FC6": 0.0,
+      "FC2": 0.0006596306068601583,
+      "F4": 0.0,
+      "F8": 0.0,
+      "Fp2": 0.0,
+      "AF7": 0.0006596306068601583,
+      "AF3": 0.0,
+      "AFz": 0.0,
+      "F1": 0.0,
+      "F5": 0.0,
+      "FT7": 0.0,
+      "FC3": 0.0,
+      "FCz": 0.0,
+      "C1": 0.0,
+      "C5": 0.0006596306068601583,
+      "TP7": 0.0,
+      "CP3": 0.0,
+      "P1": 0.0,
+      "P5": 0.0,
+      "PO7": 0.0,
+      "PO3": 0.0,
+      "POz": 0.0,
+      "PO4": 0.0,
+      "PO8": 0.0,
+      "P6": 0.0006596306068601583,
+      "P2": 0.0,
+      "CP4": 0.0,
+      "TP8": 0.0,
+      "C6": 0.0,
+      "C2": 0.0,
+      "FC4": 0.0,
+      "FT8": 0.0,
+      "F6": 0.0006596306068601583,
+      "F2": 0.0,
+      "AF4": 0.0,
+      "AF8": 0.0006596306068601583
+    },
+    "bad_by_dropout": {
+      "Fp1": 0.0,
+      "Fz": 0.0,
+      "F3": 0.0,
+      "F7": 0.0,
+      "FT9": 0.0,
+      "FC5": 0.0,
+      "FC1": 0.0,
+      "C3": 0.0,
+      "T7": 0.0,
+      "TP9": 0.0,
+      "CP5": 0.0,
+      "CP1": 0.0,
+      "Pz": 0.0,
+      "P3": 0.0,
+      "P7": 0.0,
+      "O1": 0.0,
+      "Oz": 0.0,
+      "O2": 0.0,
+      "P4": 0.0,
+      "P8": 0.0,
+      "TP10": 0.0,
+      "CP6": 0.0,
+      "CP2": 0.0,
+      "Cz": 0.0,
+      "C4": 0.0,
+      "T8": 0.0,
+      "FT10": 0.0,
+      "FC6": 0.0,
+      "FC2": 0.0,
+      "F4": 0.0,
+      "F8": 0.0,
+      "Fp2": 0.0,
+      "AF7": 0.0,
+      "AF3": 0.0,
+      "AFz": 0.0,
+      "F1": 0.0,
+      "F5": 0.0,
+      "FT7": 0.0,
+      "FC3": 0.0,
+      "FCz": 0.0,
+      "C1": 0.0,
+      "C5": 0.0,
+      "TP7": 0.0,
+      "CP3": 0.0,
+      "P1": 0.0,
+      "P5": 0.0,
+      "PO7": 0.0,
+      "PO3": 0.0,
+      "POz": 0.0,
+      "PO4": 0.0,
+      "PO8": 0.0,
+      "P6": 0.0,
+      "P2": 0.0,
+      "CP4": 0.0,
+      "TP8": 0.0,
+      "C6": 0.0,
+      "C2": 0.0,
+      "FC4": 0.0,
+      "FT8": 0.0,
+      "F6": 0.0,
+      "F2": 0.0,
+      "AF4": 0.0,
+      "AF8": 0.0
+    },
+    "bad_by_ransac": {
+      "Fp1": 0.052805280528052806,
+      "Fz": 0.0,
+      "F3": 0.0,
+      "F7": 0.0429042904290429,
+      "FT9": 0.033003300330033,
+      "FC5": 0.0165016501650165,
+      "FC1": 0.0,
+      "C3": 0.0,
+      "T7": 0.009900990099009901,
+      "TP9": null,
+      "CP5": 0.0,
+      "CP1": 0.036303630363036306,
+      "Pz": 0.0033003300330033004,
+      "P3": 0.0,
+      "P7": 0.0033003300330033004,
+      "O1": 0.013201320132013201,
+      "Oz": 0.006600660066006601,
+      "O2": 0.0,
+      "P4": 0.0,
+      "P8": 0.006600660066006601,
+      "TP10": 0.019801980198019802,
+      "CP6": 0.0033003300330033004,
+      "CP2": null,
+      "Cz": 0.0165016501650165,
+      "C4": 0.0,
+      "T8": 0.0627062706270627,
+      "FT10": 0.0,
+      "FC6": 0.0,
+      "FC2": 0.033003300330033,
+      "F4": 0.0,
+      "F8": 0.0,
+      "Fp2": 0.009900990099009901,
+      "AF7": 0.013201320132013201,
+      "AF3": 0.0033003300330033004,
+      "AFz": 0.006600660066006601,
+      "F1": 0.0,
+      "F5": 0.0,
+      "FT7": 0.009900990099009901,
+      "FC3": 0.0,
+      "FCz": 0.0,
+      "C1": 0.0,
+      "C5": 0.013201320132013201,
+      "TP7": 0.0,
+      "CP3": 0.0,
+      "P1": 0.0,
+      "P5": 0.0,
+      "PO7": 0.0,
+      "PO3": 0.0,
+      "POz": 0.0,
+      "PO4": 0.019801980198019802,
+      "PO8": 0.0,
+      "P6": 0.0165016501650165,
+      "P2": 0.009900990099009901,
+      "CP4": 0.009900990099009901,
+      "TP8": 0.0,
+      "C6": 0.009900990099009901,
+      "C2": 0.0,
+      "FC4": 0.0,
+      "FT8": 0.0033003300330033004,
+      "F6": 0.013201320132013201,
+      "F2": 0.0,
+      "AF4": 0.0,
+      "AF8": 0.026402640264026403
+    },
+    "bad_by_deviation": {
+      "Fp1": 2.0023426970390292,
+      "Fz": -0.3143098319117827,
+      "F3": 0.17092109382625975,
+      "F7": 2.2159201949416825,
+      "FT9": 1.8148278347766273,
+      "FC5": 0.5553384191321419,
+      "FC1": -0.7500956992028077,
+      "C3": -0.7759512194914514,
+      "T7": 0.8608364773611885,
+      "TP9": 2.1567707435537096,
+      "CP5": -0.3446913976442875,
+      "CP1": -1.4891172175822807,
+      "Pz": -1.2362457126652866,
+      "P3": -0.7136936733471422,
+      "P7": 0.2589302511279305,
+      "O1": 0.271595409471377,
+      "Oz": 0.030897194271082878,
+      "O2": 0.010171034351054278,
+      "P4": -0.903803368674053,
+      "P8": 0.12118610262139459,
+      "TP10": 0.6773743932667059,
+      "CP6": -0.658425678085779,
+      "CP2": -1.2741514655666908,
+      "Cz": -1.2872594645708992,
+      "C4": -0.9820021777485525,
+      "T8": 0.45918839019594165,
+      "FT10": 1.4989710259368574,
+      "FC6": 0.21525711688143576,
+      "FC2": -0.589130890962939,
+      "F4": 0.0,
+      "F8": 1.5245991447114535,
+      "Fp2": 1.5863412052023242,
+      "AF7": 2.368734993924158,
+      "AF3": 0.7855200940040395,
+      "AFz": 0.34627322171370994,
+      "F1": -0.22728070975844517,
+      "F5": 0.9762427862212457,
+      "FT7": 1.190408542150164,
+      "FC3": -0.29475710049296006,
+      "FCz": -0.774971139896315,
+      "C1": -1.2576677755377512,
+      "C5": -0.04721399251089764,
+      "TP7": 0.34446954465262813,
+      "CP3": -1.0258799543845911,
+      "P1": -1.1729369653547663,
+      "P5": -0.2565739820960887,
+      "PO7": 0.3085309176696856,
+      "PO3": -0.17402451369935323,
+      "POz": -0.454472698254912,
+      "PO4": -0.255819019661102,
+      "PO8": 0.21498479813658697,
+      "P6": -0.3107502585793085,
+      "P2": -1.1868852671961614,
+      "CP4": -1.1423696415157147,
+      "TP8": 0.046405682408775434,
+      "C6": -0.24516952608350828,
+      "C2": -1.3073186890121438,
+      "FC4": -0.5189587393242006,
+      "FT8": 0.9437710040267414,
+      "F6": 0.981818091862198,
+      "F2": -0.30048692227289886,
+      "AF4": 0.5642961978854384,
+      "AF8": 1.9531355205326955
+    },
+    "bad_by_hf_noise": {
+      "Fp1": -0.9112567722857653,
+      "Fz": -0.6869942771123922,
+      "F3": -0.6508071953675056,
+      "F7": -1.552710027178982,
+      "FT9": -0.6352856235923255,
+      "FC5": 0.37187011097634093,
+      "FC1": 0.2786749769103765,
+      "C3": 0.8659358609586669,
+      "T7": 0.6982685640103121,
+      "TP9": 0.5593243935395626,
+      "CP5": -0.019728716520723156,
+      "CP1": 5.680751212026096,
+      "Pz": 1.8425738948861994,
+      "P3": 0.38384020299176314,
+      "P7": 0.19010391557156908,
+      "O1": 1.3533132512098451,
+      "Oz": 0.35001326503816205,
+      "O2": -0.11618099076289184,
+      "P4": 0.43195734586656204,
+      "P8": -0.41176215684464584,
+      "TP10": 0.8050322979100342,
+      "CP6": 0.638230420015768,
+      "CP2": 4.812381481062074,
+      "Cz": 3.2557721416660335,
+      "C4": 1.2378423085703905,
+      "T8": -0.26971976653038954,
+      "FT10": -0.7772510638584963,
+      "FC6": -0.3880523301959907,
+      "FC2": 0.4153059327280897,
+      "F4": -0.8091202411790277,
+      "F8": -1.567162906438822,
+      "Fp2": -0.9476534015022414,
+      "AF7": -1.6133828175283247,
+      "AF3": -0.8880616668167552,
+      "AFz": -0.7850697631978343,
+      "F1": -0.6181774105230275,
+      "F5": -1.0795213698162103,
+      "FT7": 0.0,
+      "FC3": 0.14075679244017938,
+      "FCz": -0.26436897974364193,
+      "C1": 2.462272431583311,
+      "C5": 0.08331359377064634,
+      "TP7": -0.06592244854728951,
+      "CP3": 1.1560638800539904,
+      "P1": 1.809047196588496,
+      "P5": 0.19890539613231567,
+      "PO7": 1.3650325323584558,
+      "PO3": -0.34342202726664917,
+      "POz": -0.3539173708996435,
+      "PO4": -0.5777038343675673,
+      "PO8": -0.19508395292133374,
+      "P6": 0.35216875113532076,
+      "P2": 2.210262759965548,
+      "CP4": 2.2726949525584264,
+      "TP8": 0.06518709809517363,
+      "C6": 0.3024700412947802,
+      "C2": 2.4702510225160355,
+      "FC4": -0.23643901034164821,
+      "FT8": -0.6744907594765952,
+      "F6": -1.3660810104076968,
+      "F2": -0.7506932784482001,
+      "AF4": -0.9808903721757682,
+      "AF8": -1.6193186479245103
+    },
+    "bad_by_psd": {
+      "Fp1": 2.0408804678952954,
+      "Fz": 0.5450682873854812,
+      "F3": 0.37840742413506706,
+      "F7": 1.2620297611363926,
+      "FT9": 1.0703881178614052,
+      "FC5": 0.6124613445153847,
+      "FC1": 1.2416055984642669,
+      "C3": 1.5690662962217863,
+      "T7": 0.772601297161744,
+      "TP9": 3.5586893420724506,
+      "CP5": 0.6744907594765952,
+      "CP1": 3.503080827306056,
+      "Pz": 2.421817809491221,
+      "P3": 0.8742791918477274,
+      "P7": 0.5495637294902225,
+      "O1": 0.6744907594765952,
+      "Oz": 0.2822840405187809,
+      "O2": 0.33465728047652205,
+      "P4": 1.3773664588622436,
+      "P8": 0.4920405852468963,
+      "TP10": 0.7038806160927282,
+      "CP6": 0.9671254255104377,
+      "CP2": 2.7139511427003145,
+      "Cz": 2.5508085840749173,
+      "C4": 1.795232422355599,
+      "T8": 0.4268250401335512,
+      "FT10": 1.1738802052914135,
+      "FC6": 0.3810773929070077,
+      "FC2": 0.9273521885473727,
+      "F4": 0.24899395021773477,
+      "F8": 1.1423969009787798,
+      "Fp2": 1.733781835011764,
+      "AF7": 1.6121011204906408,
+      "AF3": 0.8077181319154988,
+      "AFz": 0.5087854807779316,
+      "F1": 0.4247106010744305,
+      "F5": 0.839177889885534,
+      "FT7": 0.9057386877077676,
+      "FC3": 0.7444579846775203,
+      "FCz": 1.2601784861317658,
+      "C1": 2.5478952001874187,
+      "C5": 0.5287322965562309,
+      "TP7": 0.3375831912523809,
+      "CP3": 1.9286276371703999,
+      "P1": 2.015681130409155,
+      "P5": 0.1296496793610321,
+      "PO7": 0.8460561262865006,
+      "PO3": 0.2587449844828664,
+      "POz": 0.5743908776856077,
+      "PO4": 0.38893164233539707,
+      "PO8": 0.7175905175535702,
+      "P6": 0.2690710875973335,
+      "P2": 2.2321616716946964,
+      "CP4": 2.1371689542469228,
+      "TP8": 0.19793393706427795,
+      "C6": 0.6029217144501114,
+      "C2": 2.655862758725536,
+      "FC4": 0.8343111595069249,
+      "FT8": 0.7820020361669697,
+      "F6": 0.7797035125208014,
+      "F2": 0.4938813588483855,
+      "AF4": 0.6998736130017926,
+      "AF8": 1.4992369075840353
+    }
+  },
+  "summary": {
+    "bad_by_psd": "Metric is max ABSOLUTE band z. Negative low-power outliers can exceed 3 without a PSD flag. Final flags require positive band z>3 or a 1/f violation; ratios are diagnostic only."
+  },
+  "all_bads": [
+    "TP9",
+    "CP1",
+    "CP2"
+  ],
+  "input": "artifacts/mne-bids-pipeline/sub-012/eeg/sub-012_task-ContinuousVideoGamePlay_run-02_proc-filt_raw.fif",
+  "fingerprint": {
+    "size": 197429222,
+    "mtime_ns": 1790643756047697867,
+    "input_sha256": "7fc05f522955720de1882a1a59a954fee1a9d486193f713eb101e11e8dafca2d",
+    "script_sha256": "ddcdf3bfc3faec2f858d0742e2e7d31582553c604d96b1cfac574210775fd232",
+    "software": {
+      "versions": {
+        "pyprep": "0.9.0",
+        "mne": "1.13.2",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "pyprep_source_sha256": "64ccc8680f3cff9456d35ca2469b36fb2ba9b7d6fa8ede08cca7d3489d6c9656",
+      "pyprep_source_files": {
+        "__init__.py": "273125afac5eb526832363abc915f0b1f3b30f4e22299af951c7e6d2c6a1a316",
+        "_logging.py": "e3ecd9aed3c61e3a42e6739c23b21314d9890710733ccdbb3ee2db8e4d9f7db2",
+        "find_noisy_channels.py": "64168e893143e4d121b1248543c6ea94c435ee4e5e0ef81460eb66632c9476f7",
+        "prep_pipeline.py": "6d7c9893b947f3fd0636d579cf55173b4a1a8520ec2dfd66cc5379f309365bf5",
+        "ransac.py": "815fc721846c20474dd5705d7b780eda454c326fc00d61efe7fc0d82c7961097",
+        "reference.py": "68a21a6016a5bc28dd9e91d8a308c4e49160cc5068e41ea1776ec08582cede21",
+        "removeTrend.py": "15a27472f35f712d11871ff6cdca7d3dea7996f40fc3c03d0501dbcf7775f21d",
+        "utils.py": "060d8f0fb4149499d8ea7a603e7ae0c587d43befaabda3143b95403cef817b9e"
+      }
+    },
+    "random_state": 2026,
+    "ransac": {
+      "n_samples": 1000,
+      "sample_prop": 0.25,
+      "corr_thresh": 0.75,
+      "frac_bad": 0.4,
+      "corr_window_secs": 5.0,
+      "channel_wise": false,
+      "max_chunk_size": null
+    }
+  },
+  "software": {
+    "versions": {
+      "pyprep": "0.9.0",
+      "mne": "1.13.2",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1"
+    },
+    "pyprep_source_sha256": "64ccc8680f3cff9456d35ca2469b36fb2ba9b7d6fa8ede08cca7d3489d6c9656",
+    "pyprep_source_files": {
+      "__init__.py": "273125afac5eb526832363abc915f0b1f3b30f4e22299af951c7e6d2c6a1a316",
+      "_logging.py": "e3ecd9aed3c61e3a42e6739c23b21314d9890710733ccdbb3ee2db8e4d9f7db2",
+      "find_noisy_channels.py": "64168e893143e4d121b1248543c6ea94c435ee4e5e0ef81460eb66632c9476f7",
+      "prep_pipeline.py": "6d7c9893b947f3fd0636d579cf55173b4a1a8520ec2dfd66cc5379f309365bf5",
+      "ransac.py": "815fc721846c20474dd5705d7b780eda454c326fc00d61efe7fc0d82c7961097",
+      "reference.py": "68a21a6016a5bc28dd9e91d8a308c4e49160cc5068e41ea1776ec08582cede21",
+      "removeTrend.py": "15a27472f35f712d11871ff6cdca7d3dea7996f40fc3c03d0501dbcf7775f21d",
+      "utils.py": "060d8f0fb4149499d8ea7a603e7ae0c587d43befaabda3143b95403cef817b9e"
+    }
+  },
+  "diagnostics_sha256": "32a3410c0cf9032ab2df4830bc48f0d0d4cc47eb5b7554de6baafed00e0bf2e8",
+  "ransac_tested_channels": [
+    "Fp1",
+    "Fz",
+    "F3",
+    "F7",
+    "FT9",
+    "FC5",
+    "FC1",
+    "C3",
+    "T7",
+    "CP5",
+    "CP1",
+    "Pz",
+    "P3",
+    "P7",
+    "O1",
+    "Oz",
+    "O2",
+    "P4",
+    "P8",
+    "TP10",
+    "CP6",
+    "Cz",
+    "C4",
+    "T8",
+    "FT10",
+    "FC6",
+    "FC2",
+    "F4",
+    "F8",
+    "Fp2",
+    "AF7",
+    "AF3",
+    "AFz",
+    "F1",
+    "F5",
+    "FT7",
+    "FC3",
+    "FCz",
+    "C1",
+    "C5",
+    "TP7",
+    "CP3",
+    "P1",
+    "P5",
+    "PO7",
+    "PO3",
+    "POz",
+    "PO4",
+    "PO8",
+    "P6",
+    "P2",
+    "CP4",
+    "TP8",
+    "C6",
+    "C2",
+    "FC4",
+    "FT8",
+    "F6",
+    "F2",
+    "AF4",
+    "AF8"
+  ],
+  "ransac_excluded_channels": [
+    "TP9",
+    "CP2"
+  ],
+  "ransac_exclusion_note": "NaN/flat/manual exclusions and channels already flagged by deviation, correlation or dropout are not tested by RANSAC; native diagnostic correlations of 1 for these channels are placeholders.",
+  "settings": {
+    "random_state": 2026,
+    "ransac": true,
+    "n_samples": 1000,
+    "sample_prop": 0.25,
+    "corr_thresh": 0.75,
+    "frac_bad": 0.4,
+    "corr_window_secs": 5.0,
+    "channel_wise": false,
+    "max_chunk_size": null,
+    "do_detrend": true,
+    "correlation": true,
+    "reject_by_annotation": null,
+    "detector_input": "0.1\u2013100 Hz, 60 Hz notch, original reference; internal PyPREP 1 Hz detrending",
+    "resampling": null,
+    "manual_decisions_applied": false
+  },
+  "eog_qc": {
+    "VEOG": {
+      "std_uV": 86126.98883913226,
+      "peak_to_peak_uV": 1022471.4661685077
+    },
+    "HEOG": {
+      "std_uV": 60689.155515167746,
+      "peak_to_peak_uV": 631335.9671560299
+    }
+  },
+  "seconds_elapsed": 1028.08
+}
