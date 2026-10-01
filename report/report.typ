@@ -279,7 +279,5 @@ For the Gambling task, cleaning mostly corrects the dip seen at \~0.5 s from -4 
 
 #include "analysis_discussion.typ"
 
-#include "analysis_methods.typ"
-
 
 #bibliography("references.bib", style: "ieee", title: [References])
