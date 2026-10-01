@@ -1,0 +1,25 @@
+{
+  "EEGCoordinateUnits": "m",
+  "EEGCoordinateSystem": "CapTrak",
+  "EEGCoordinateSystemDescription": "RAS head coordinates: +X right, +Y anterior, +Z superior; origin at the midpoint of the BESA template LPA/RPA, nasion defining +Y. Supplied spherical BESA positions were rigidly transformed using the matching standard-10-5-cap385.elp template landmarks. CapTrak names the coordinate convention only; no CapTrak device or individual digitization was used. All participants share template positions. VEOG/HEOG rows remain transformed source placeholders, not scalp EEG electrodes.",
+  "AnatomicalLandmarkCoordinates": {
+    "LPA": [
+      -0.07358989628413566,
+      -8.673617379884035e-19,
+      0.0
+    ],
+    "RPA": [
+      0.07358989628413566,
+      -8.673617379884035e-19,
+      0.0
+    ],
+    "NAS": [
+      2.7591791714300986e-34,
+      0.07803673216376947,
+      0.0
+    ]
+  },
+  "AnatomicalLandmarkCoordinateSystem": "CapTrak",
+  "AnatomicalLandmarkCoordinateUnits": "m",
+  "AnatomicalLandmarkCoordinateSystemDescription": "Inferred BESA template landmarks in the same head frame as the electrodes; not measured participant anatomy."
+}

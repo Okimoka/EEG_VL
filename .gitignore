@@ -1,0 +1,15 @@
+.venv/
+v1.0.0/
+prepared_bids/
+prepared_final_bids/
+__pycache__/
+*.pyc
+*.lock
+*.fif
+*.fdt
+*.set
+*.h5
+01_bad_channels/channel_review.xlsx
+logs/review/
+logs/**/_cache/
+report/report.pdf

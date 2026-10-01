@@ -1,0 +1,31 @@
+# Python 3.12.3
+# Course pipeline fork pinned to the installed commit.
+mne-bids-pipeline @ git+https://github.com/jschepers/mne-bids-pipeline.git@cd468c3f4971416275f949085ac8c2d717744f90
+mne==1.13.2
+mne-bids==0.19.0
+pyprep==0.9.0
+mne-icalabel==0.9.0
+autoreject==0.5.0
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+pandas==3.0.5
+scikit-learn==1.9.1
+threadpoolctl==3.7.0
+pymatreader==1.3.1
+h5io==0.2.5
+h5py==3.16.0
+python-picard==0.8.2
+onnxruntime==1.30.0
+openpyxl==3.1.5
+PyQt6==6.11.0
+PyQt6-Qt6==6.11.2
+mne-qt-browser==0.7.5
+QtPy==2.4.3
+# Report compiler: external Typst CLI 0.15.1 (not a Python package).
+# Recreated environments: run ./setup-environment for the recorded upstream compatibility patch.
+
+# EEG classification and training loop.
+braindecode==1.5.1
+skorch==1.4.0
+torch==2.8.0
