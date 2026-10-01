@@ -277,15 +277,6 @@ For the Gambling task, cleaning mostly corrects the dip seen at \~0.5 s from -4 
 
 #include "paper_comparison.typ"
 
-== Reproducible deliverables
-
-This report presents the selected preprocessing, EEGNet classification with default model parameters, and gameplay transfer using whole responses and shorter response intervals. The source is `report/report.typ`; compile it from the project root with `typst compile --root . report/report.typ report/report.pdf`.
-
-The submission’s `readme.md` documents preprocessing and execution. Its `analysis/README.md` describes the analysis code, bundled cleaned EEG, saved predictions and model checks. Report tables and the transfer figure are generated from these saved predictions by `analysis/results.py`.
-
-The published article defines the scientific question and original method. @cavanagh2016 The shared dataset and local event tables define the observations available for this reanalysis. @openneuro The report follows the article where the provisional scripts disagree and documents implementation-level ambiguities in the appendix.
-
-
 #include "analysis_discussion.typ"
 
 #include "analysis_methods.typ"

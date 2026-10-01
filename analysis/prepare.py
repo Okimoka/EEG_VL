@@ -1,4 +1,7 @@
-"""Run from submission/: python analysis/prepare.py"""
+"""
+Prepare cleaned EEG trials and random gameplay controls.
+Partly assisted by LLM
+"""
 import os
 for name in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
     os.environ[name] = '1'
@@ -15,6 +18,7 @@ mne.set_log_level('ERROR')
 
 
 def features(epochs):
+    # Convert epochs to 63 EEG channels at 250 Hz, in microvolts.
     epochs.pick('eeg').interpolate_bads()
     epochs.resample(250, method='polyphase').crop(0, .796)
     return epochs.get_data().astype('float32') * 1e6
@@ -25,9 +29,12 @@ def prepare(subject, event_rows):
     folder.mkdir(parents=True, exist_ok=True)
     prefix = POSTICA / f'sub-{subject}/eeg/sub-{subject}_task-ContinuousVideoGamePlay'
     native = mne.read_epochs(f'{prefix}_proc-clean_epo.fif', preload=True)
+    # Keep the exemplary trials and the three gameplay event types.
     wanted = ['ODDBALL STANDARD', 'ODDBALL RARE', 'GAMBLING LOSS', 'GAMBLING WIN',
               'MISSILE_HIT_ENEMY', 'PLAYER_CRASH_ENEMY', 'PLAYER_CRASH_WALL']
     native = native[native.metadata.event_name.isin(wanted).to_numpy()]
+
+    # Recover the AutoReject settings used to clean the gameplay controls.
     ica = mne.read_epochs(f'{prefix}_proc-ica_epo.fif', preload=True)
     ar = autoreject.AutoReject(n_interpolate=[4, 8, 16], random_state=2026, n_jobs=2, verbose=False).fit(ica)
     joblib.dump(ar, folder / 'autoreject.joblib')
@@ -57,6 +64,8 @@ def prepare(subject, event_rows):
         events = np.column_stack([rows['sample'], np.zeros(len(rows), int), np.full(len(rows), 999)])
         parts.append(mne.Epochs(raws[run], events, event_id={'RANDOM_GAMEPLAY': 999},
             tmin=-.2, tmax=.8, baseline=None, metadata=rows, preload=True))
+
+    # Repair or reject control epochs before applying the baseline correction.
     controls = mne.concatenate_epochs(parts)
     clean, log = ar.transform(controls, return_log=True)
     log.save(folder / 'control_reject_log.npz', overwrite=True)

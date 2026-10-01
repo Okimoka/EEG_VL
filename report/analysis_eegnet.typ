@@ -24,16 +24,16 @@ The cleaned dataset contains 2,786 oddball trials from 17 participants: 2,247 st
 
 == Whole-epoch classification and transfer: 0–800 ms
 
-We use a training/test split of *16/1 participants for oddball* and *13/1 participants for gambling*. All trials from a participant stay in that person’s set. Each model is trained for *20 epochs with a batch size of 64*. The test participant remains excluded throughout. This procedure is repeated until each participant has served as the test participant once.
+We use a training/test split of 16/1 participants for oddball and 13/1 participants for gambling. All trials from a participant stay in that person’s set. Each model is trained for 20 epochs with a batch size of 64. The test participant remains excluded throughout. This procedure is repeated until each participant has served as the test participant once.
 
-We run each training/test split three times with fixed random seeds. Performance and transfer fractions are calculated separately for each run and then averaged within each test participant. This reduces dependence on a single random training run.
+We run each training/test split three times with fixed random seeds, as we have observed that random seeds can again significantly impact the results we get here. Performance and transfer fractions are calculated separately for each run and then averaged within each test participant. This reduces dependence on a single random training run.
 
-EEG values are standardized using means and standard deviations calculated from the training data only. Class weights are inversely proportional to the number of training trials in each class. Detailed settings are provided in the methods appendix.
+EEG values are standardized using means and standard deviations calculated from the training data only. Class weights are inversely proportional to the number of training trials in each class.
 
-For the test participant’s exemplary trials, we compare the predicted labels with the known event labels. We calculate the percentage of correctly classified trials separately for each class, then average the two percentages. This is balanced accuracy: standard and rare trials, or wins and losses, contribute equally even when their trial counts differ. Random guessing has an expected balanced accuracy of 50%.
+For the test participant’s exemplary trials, we compare the predicted labels with the known event labels. We calculate the percentage of correctly classified trials separately for each class, then average the two percentages. Standard and rare trials, or wins and losses, contribute equally even when their trial counts differ, meaning random guessing has an expected balanced accuracy of 50%.
 
-For gameplay events, there is no known exemplary-task label against which to measure accuracy. Instead, we report the percentage of each event type assigned to rare by the oddball classifier or win by the gambling classifier. A model score of at least 0.5 gives the rare or win label; a lower score gives standard or loss, respectively. We compare these percentages with the same classifier’s predictions on epochs sampled at random times during gameplay. These control epochs represent ordinary gameplay and may contain recorded events.
+For gameplay events, we simply report the percentage of each event type assigned to rare by the oddball classifier or win by the gambling classifier. A model score of at least 0.5 gives the rare or win label; a lower score gives standard or loss, respectively. We compare these percentages with the same classifier’s predictions on epochs sampled at random times during gameplay. These control epochs represent ordinary gameplay and may contain recorded events.
 
-We calculate the percentages separately for each participant and then average them, giving every participant equal weight. Each event comparison requires at least 20 retained trials of that event type and 20 control epochs per participant. Only subject 007 falls below this minimum, with ten retained wall-crash trials, and is therefore excluded from the wall-crash comparison. Their other gameplay comparisons are retained.
+We calculate the percentages separately for each participant and then average them, giving every participant equal weight. Because subject 007 only has ten retained wall-crash trials, we decided to exclude it here (their other gameplay comparisons are retained).
 
 #include "analysis_eegnet_results.typ"

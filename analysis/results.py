@@ -1,9 +1,11 @@
-"""Run from submission/: python analysis/results.py"""
+"""
+Summarize predictions and generate report tables and the figure.
+Partly assisted by LLM
+"""
 from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 
 WORK = Path('../artifacts/analysis_final')
@@ -14,18 +16,13 @@ NAMES = ['Missile hit', 'Enemy crash', 'Wall crash']
 
 def summary(name, keys, metrics):
     runs = pd.read_csv(WORK / f'{name}_runs.tsv', sep='\t', dtype={'subject': str})
+    # Average runs within each participant, then give participants equal weight.
     people = runs.groupby(keys + ['subject'])[metrics].mean().reset_index()
     people.to_csv(WORK / f'{name}_participants.tsv', sep='\t', index=False)
-    rows = []
-    for key, group in people.groupby(keys):
-        row = dict(zip(keys, key), n=len(group))
-        for metric in metrics:
-            values = group[metric].to_numpy()
-            means = np.random.default_rng(2026).choice(values, size=(10000, len(values))).mean(axis=1)
-            row[metric] = values.mean()
-            row[metric + '_low'], row[metric + '_high'] = np.quantile(means, [.025, .975])
-        rows.append(row)
-    result = pd.DataFrame(rows)
+    grouped = people.groupby(keys)
+    result = grouped[metrics].mean()
+    result.insert(0, 'n', grouped.size())
+    result = result.reset_index()
     result.to_csv(WORK / f'{name}_summary.tsv', sep='\t', index=False)
     return result
 
@@ -38,9 +35,10 @@ def table(name, widths, headers, rows):
 
 
 def report(source, transfer):
-    rows = [[r.task.title(), str(r.n), f'{r.accuracy:.1%}', f'{r.accuracy_low*100:.1f}–{r.accuracy_high*100:.1f}%']
+    # Write the classification and transfer tables used in the report.
+    rows = [[r.task.title(), str(r.n), f'{r.accuracy:.1%}']
             for r in source[source.profile.eq('whole_epoch')].sort_values('task', ascending=False).itertuples()]
-    table('source', '1fr, .7fr, 1fr, 1.3fr', ['Task', 'Participants', 'Balanced accuracy', '95% bootstrap interval'], rows)
+    table('source', '1fr, .7fr, 1fr', ['Task', 'Participants', 'Balanced accuracy'], rows)
     direct = transfer[transfer.contrast.eq('direct')].set_index(['profile', 'task', 'event']).sort_index()
     for profile in ['whole_epoch', 'fixed_window']:
         rows = []
@@ -59,19 +57,18 @@ def report(source, transfer):
     table('background', '1fr, 1.2fr, 1fr, 1fr, 1fr',
           ['Exemplary category', 'Source balanced accuracy', 'Hit labels', 'Enemy-crash labels', 'Wall-crash labels'], rows)
 
+    # Plot event-minus-control differences in percentage points.
     plt.rcParams.update({'font.size': 11, 'axes.spines.top': False, 'axes.spines.right': False})
     fig, axes = plt.subplots(2, 2, figsize=(9, 5.5), sharex=True, layout='constrained')
-    limits = (min(-2, direct.difference_low.min()*100-2), max(36, direct.difference_high.max()*100+2))
     for row, profile in enumerate(['whole_epoch', 'fixed_window']):
         for col, (task, label) in enumerate([('oddball', 'rare'), ('gambling', 'win')]):
             ax = axes[row, col]
             r = direct.loc[(profile, task)].loc[EVENTS]
-            ax.errorbar(r.difference*100, range(3), xerr=[(r.difference-r.difference_low)*100,
-                (r.difference_high-r.difference)*100], fmt='o', capsize=4,
+            ax.plot(r.difference*100, range(3), 'o',
                 color='#167c80' if task == 'oddball' else '#a66e29')
             window = '0–800 ms' if profile == 'whole_epoch' else ('300–600 ms' if task == 'oddball' else '200–350 ms')
             ax.axvline(0, color='#666666', ls='--', lw=1)
-            ax.set(title=f'{task.title()} · {window}', xlim=limits, ylim=(2.6, -.6), yticks=range(3), yticklabels=NAMES)
+            ax.set(title=f'{task.title()} · {window}', xlim=(-2, 30), ylim=(2.6, -.6), yticks=range(3), yticklabels=NAMES)
             ax.grid(axis='x', alpha=.14)
             if row == 1:
                 ax.set_xlabel(f'Increase in {label} labels vs controls (pp)')
