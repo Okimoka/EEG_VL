@@ -1,14 +1,15 @@
-# Original and generated EEG stay local.
-/v1.0.0/
-/prepared_bids/
-/prepared_native_bids/
-/artifacts/
-/.venv/
+.venv/
+v1.0.0/
+prepared_bids/
+prepared_final_bids/
 __pycache__/
-*.py[cod]
+*.pyc
 *.lock
-.DS_Store
-/01_review_bad_channels/channel_review.xlsx
-/01_review_bad_channels/evidence/
-# Deliberately keep reference/ models, compact results and report/ figures.
-/report/preprocessing.pdf
+*.fif
+*.fdt
+*.set
+*.h5
+01_bad_channels/channel_review.xlsx
+logs/review/
+logs/**/_cache/
+report/report.pdf

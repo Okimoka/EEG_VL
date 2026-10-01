@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Resolve the launcher itself, so links in submission/ use the working project.
+launcher="$(readlink -f -- "${BASH_SOURCE[0]}")"
+review_dir="$(dirname -- "$launcher")"
+project_dir="$(dirname -- "$review_dir")"
+if [[ ! -x "$project_dir/.venv/bin/python" ]]; then
+    printf 'Python environment missing. Run ./setup-environment from the project root first.\n' >&2
+    exit 1
+fi
+exec "$project_dir/.venv/bin/python" "$review_dir/review_channels.py" "$@"

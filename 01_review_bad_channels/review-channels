@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-review_dir="$(cd -- "$(dirname -- "$0")" && pwd)"
-project_dir="$(cd -- "$review_dir/.." && pwd)"
-exec "$project_dir/.venv/bin/python" "$review_dir/review_channels.py" "$@"
